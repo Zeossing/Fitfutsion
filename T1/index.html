@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จองเครื่องออกกำลังกาย</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e1e2b;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #1a2d3d;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        p, .time-slot, .btn {
+            font-size: 1.1em;
+        }
+        .time-slot-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .arrow {
+            cursor: pointer;
+            font-size: 24px;
+            padding: 8px;
+            background-color: #333;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+        .time-slots {
+            display: flex;
+            gap: 10px;
+            padding-bottom: 10px;
+            overflow: hidden;
+            width: 100%;
+        }
+        .time-slot {
+            background-color: #ff8c00;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            white-space: nowrap;
+            display: none; /* ซ่อนช่องเวลาเริ่มต้น */
+        }
+        .time-slot.selected {
+            background-color: #fa4a3f;
+        }
+        .machine-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .info {
+            text-align: left;
+            margin-top: 15px;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .dropdown {
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 8px;
+            margin-left: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .btn {
+            padding: 12px;
+            width: 48%;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 1.1em;
+        }
+        .btn-cancel {
+            background-color: #ff4d4d;
+            color: #fff;
+        }
+        .btn-confirm {
+            background-color: #4caf50;
+            color: #fff;
+        }
+        .muscle-info {
+            margin-top: 15px;
+            text-align: left;
+        }
+        .highlight {
+            background-color: #fff;
+            color: #000;
+            padding: 12px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            margin-top: -10px;
+        }
+        .highlight img {
+            max-width: 80px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 style="font-weight: bolder;">จองเครื่องออกกำลังกายประจำวันที่ 25/09/2567</h3>
+        <div class="time-slot-container">
+            <div class="arrow" onclick="scrollSlots(-1)">&#9664;</div>
+            <div class="time-slots" id="timeSlots">
+                <!-- Time slots from 10:00 to 18:00 -->
+                <div class="time-slot selected">10.00-10.15</div>
+                <div class="time-slot">10.15-10.30</div>
+                <div class="time-slot">10.30-10.45</div>
+                <div class="time-slot">10.45-11.00</div>
+                <div class="time-slot">11.00-11.15</div>
+                <div class="time-slot">11.15-11.30</div>
+                <div class="time-slot">11.30-11.45</div>
+                <div class="time-slot">11.45-12.00</div>
+                <div class="time-slot">12.00-12.15</div>
+                <div class="time-slot">12.15-12.30</div>
+                <div class="time-slot">12.30-12.45</div>
+                <div class="time-slot">12.45-13.00</div>
+                <div class="time-slot">13.00-13.15</div>
+                <div class="time-slot">13.15-13.30</div>
+                <div class="time-slot">13.30-13.45</div>
+                <div class="time-slot">13.45-14.00</div>
+                <div class="time-slot">14.00-14.15</div>
+                <div class="time-slot">14.15-14.30</div>
+                <div class="time-slot">14.30-14.45</div>
+                <div class="time-slot">14.45-15.00</div>
+                <div class="time-slot">15.00-15.15</div>
+                <div class="time-slot">15.15-15.30</div>
+                <div class="time-slot">15.30-15.45</div>
+                <div class="time-slot">15.45-16.00</div>
+                <div class="time-slot">16.00-16.15</div>
+                <div class="time-slot">16.15-16.30</div>
+                <div class="time-slot">16.30-16.45</div>
+                <div class="time-slot">16.45-17.00</div>
+                <div class="time-slot">17.00-17.15</div>
+                <div class="time-slot">17.15-17.30</div>
+                <div class="time-slot">17.30-17.45</div>
+                <div class="time-slot">17.45-18.00</div>
+            </div>
+            <div class="arrow" onclick="scrollSlots(1)">&#9654;</div>
+        </div>
+        <div class="machine-image">
+            <img src="เครื่องเดินวงรี-elliptical-xg8.jpg" alt="เครื่อง A 1">
+        </div>
+        <p style="font-weight: bolder; font-size: large;">เครื่อง A 1</p>
+        <div class="info" style="font-weight: bolder;">
+            <p style="margin-top: -10px;">ประเภทเครื่อง: คาร์ดิโอ</p>
+            <p>เวลา: 
+                <select class="dropdown">
+                    <option value="1">1 นาที</option>
+                    <option value="2">2 นาที</option>
+                    <option value="3">3 นาที</option>
+                    <option value="4">4 นาที</option>
+                    <option value="5">5 นาที</option>
+                    <option value="6">6 นาที</option>
+                    <option value="7">7 นาที</option>
+                    <option value="8">8 นาที</option>
+                    <option value="9">9 นาที</option>
+                    <option value="10">10 นาที</option>
+                    <option value="11">11 นาที</option>
+                    <option value="12">12 นาที</option>
+                    <option value="13">13 นาที</option>
+                    <option value="14">14 นาที</option>
+                    <option value="15" selected>15 นาที</option>
+                </select>
+                <span style="color: red; margin-left: 10px; font-size: 12px;">*กรุณาใช้เครื่องออกกำลังกายตามเวลาที่เลือกไว้</span>
+            </p>
+        </div>
+        <div class="content" style="text-align: left; margin-top: -10px;">
+            <h4>รายละเอียดของเครื่องออกกำลังกาย:</h4>
+            <p style="margin-top: -10px; font-size: large;">การใช้งานลู่วิ่งง่ายและเหมาะสำหรับผู้ที่เริ่มต้นออกกำลังกาย
+            หรืออยากออกกำลังกายที่บ้าน อย่างไรก็ตาม ควรให้ความสำคัญกับการอบอุ่นร่างกาย
+            และคูลดาวน์</p>
+            <h4>กล้ามเนื้อที่ใช้ได้:</h4>
+            <div class="highlight">
+                <img src="1-248-โครงสร้างของกล้ามเนื้อต้นขา-Quadriceps.jpg" alt="กล้ามเนื้อ" />
+                <div>
+                    <p style="font-weight: bolder;">กล้ามเนื้อต้นขา</p>
+                    <p>ในขณะการวิ่งจะใช้กล้ามเนื้อต้นขาเป็นหลัก</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-cancel">ยกเลิก</button>
+            <button class="btn btn-confirm">ยืนยันการจอง</button>
+        </div>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const timeSlots = document.querySelectorAll('.time-slot');
+        const slotsToShow = 3;
+        const maxIndex = timeSlots.length - slotsToShow;
+        
+        function updateVisibleSlots() {
+            timeSlots.forEach((slot, index) => {
+                slot.style.display = index >= currentIndex && index < currentIndex + slotsToShow ? 'block' : 'none';
+            });
+        }
+
+        function scrollSlots(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = 0;
+            if (currentIndex > maxIndex) currentIndex = maxIndex;
+            updateVisibleSlots();
+        }
+
+        updateVisibleSlots();
+    </script>
+</body>
+</html>
