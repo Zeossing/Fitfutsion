@@ -1,0 +1,75 @@
+.plan {
+    margin-top: 80px;
+    display: flex;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.card-excercise {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    padding: 20px 10px;
+    color: #000;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 49%;
+}
+
+.pic-excercise {
+    width: 100%;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.set-and-rep {
+    align-content: center;
+}
+
+.set-and-rep ul{
+    font-weight: 400;
+}
+
+.btn-setting {
+    border-radius: 5px;
+    border: none;
+    padding: 3px 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.button-edit {
+    background-color: #FF832A;
+    
+}
+
+.button-save {
+    background-color: #009821;
+}
+
+.button-addset {
+    background-color: #009821;
+}
+
+.button-unit {
+    background-color: #000;
+}
+
+.button-deleteset {
+    background-color: #FF1123;
+}
+
+@media screen and (max-width: 990px) {
+    .card-excercise {
+        width: 100%;
+    }
+}

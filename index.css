@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+nav {
+    background-color: #1C1C1C;
+}
+
+.navactive a {
+    background-color: #FF832A; 
+    color: #000;
+    border-radius: 15px;
+}
+
+.nav-item a.active {
+    background-color: #FF832A;
+    color: #000;
+    border-radius: 15px;
+}
+
+.nav-link:hover {
+    color: #007bff; /* สีที่จะแสดงเมื่อ hover */
+}
+
+/* ถ้าต้องการเปลี่ยนสีพื้นหลังเมื่อ hover ด้วย */
+.nav-item:hover {
+    background-color: #545454;
+    border-radius: 15px;
+}
+
+
+.navbar-nav .nav-link,
+.navbar-toggler,
+.form-control,
+.btn {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.usersetting {
+    margin-left: 15px;
+}
+
+.btn-login {
+    margin-left: 10px;
+    background-color: transparent;
+    right: 20px; 
+    top: 10px;   
+}
+
+.icon {
+    font-size: 48px;
+    color: #fff;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #FF832A;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF832A;
+    border-color: #FF832A;
+}
+
+body {
+    background: linear-gradient(to bottom right, #1C1C1C 0%, #0F2C5A 100%);
+    color: white;
+    font-family: "Kanit", sans-serif;
+    background-repeat: no-repeat;
+}
+
+.core-muscle {
+    margin-top: 50px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-for-mb {
+    display: none;
+}
+
+.container-for-pc {
+    width: 95%;
+    height: 500px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card1 , .card2 , .card3 , .card4, .card5, .card6{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    transition: ease-in-out 0.5s;
+    background-color: #1C1C1C;
+    border-radius: 15px;
+    border: 1px solid #444444;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    text-decoration: none !important;
+}
+
+.card1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("pic_chest_muscle.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.card2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("pic_back_muscle.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.card3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("pic_sholder_muscle.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.card4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("pic_arm_muscle.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.card5::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("pic_leg_muscle.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.card6::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("pic_abs_muscle.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.card1 .nonehover, .card2 .nonehover, .card3 .nonehover, .card4 .nonehover, .card5 .nonehover, .card6 .nonehover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; /* ให้สูงกว่า background */
+}
+
+.card1 .activehover, .card2 .activehover, .card3 .activehover, .card4 .activehover, .card5 .activehover, .card6 .activehover {
+    display: none; /* ซ่อนข้อมูลเริ่มต้น */
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; /* ให้สูงกว่า background */
+    color: #fff;
+}
+
+.card-image {
+    position: relative; /* ทำให้แน่ใจว่าภาพจะอยู่ด้านหน้า */
+    z-index: 2; /* ตั้งค่า z-index สูงขึ้นเพื่อให้อยู่ด้านหน้า */
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างภาพและข้อความ */
+    width: 80%;
+    height: auto;
+}
+
+.card-image-hover {
+    width: 30%;
+    height: auto;
+}
+
+.core-muscle h4 {
+    color: white; /* เปลี่ยนสีข้อความให้เห็นชัด */
+    z-index: 2; /* ตั้งค่า z-index สูงขึ้นเพื่อให้อยู่ด้านหน้า */
+    position: relative; /* ทำให้แน่ใจว่าข้อความจะอยู่ด้านหน้า */
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.activehover h1 {
+    color: #FF1123;
+}
+
+.activehover h3 {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Bai Jamjuree", sans-serif !important;
+    width: 70%;
+}
+
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover{
+    flex: 2.5;
+    border: 5px solid #848484;
+}
+
+.card1:hover .nonehover, .card2:hover .nonehover, .card3:hover .nonehover, .card4:hover .nonehover, .card5:hover .nonehover, .card6:hover .nonehover{
+    display: none; /* ซ่อนข้อมูลเมื่อ hover */
+}
+
+.card1:hover .activehover, .card2:hover .activehover, .card3:hover .activehover, .card4:hover .activehover, .card5:hover .activehover, .card6:hover .activehover{
+    display: flex; /* แสดงข้อมูลเมื่อ hover */
+}
+
+
+.center-img {
+    justify-content: space-around;
+}
+
+.icon-muscle {
+    background-color: #757A82;
+    margin: 2px;
+    width: 45%;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+
+.pic-muscle {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    border: solid 1px #fff;
+    padding: 20px;
+}
+
+.main-question {
+    display: flex;
+    margin: 20px 0;
+}
+
+.pic-question {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.block-question p , .block-question ul {
+    font-family: "Bai Jamjuree", sans-serif !important;
+    font-size: 18px;
+}
+
+.block-question h3 {
+    color: #FF832A;
+}
+
+.link {
+    color: #FF832A;
+}
+
+.block-question {
+    align-content: center;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .block-question.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+.footer {
+    background-color: #1C1C1C;
+    font-weight: 300;
+}
+
+.pic-contact {
+    margin-right: 10px; 
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row; /* จัดเรียงไอคอนในแนวตั้ง */
+    gap: 15px; /* ระยะห่างระหว่างไอคอน */
+    margin-top: 10px; /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+    transition: transform 0.3s ease; /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+    transform: scale(1.1); /* ขยายไอคอนเมื่อ hover */
+}
+
+
+@media screen and (max-width: 990px) {
+
+    .navactive a {
+        background-color: transparent;
+        color: #000;
+        border-radius: 15px;
+    }
+    
+    .nav-item a.active {
+        background-color: transparent;
+        color: #000;
+        border-radius: 15px;
+    }
+
+    .btn-login {
+        position: absolute;
+    }
+
+    .container-for-pc {
+        display: none;
+    }
+
+    .container-for-mb {
+        display: flex;
+    }
+
+    .block-question {
+        width: 100%;
+    } 
+    
+    .right {
+        flex-direction: column-reverse;
+    }
+}

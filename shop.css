@@ -1,0 +1,82 @@
+body {
+    color: #000;
+}
+
+.shop {
+    margin: 70px 0;
+}
+
+.shop h6 {
+    color: #fff;
+    text-align: end;
+    margin-right: 30px;
+}
+
+
+.content {
+    justify-content: space-evenly;
+}
+
+
+.card-shop {
+    background-color: #d6d6d6;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.pic-code {
+    width: 100%;
+    height: auto;
+}
+
+.card-shop h3 {
+    font-size: 20px;
+}
+.card-shop h5 {
+    font-weight: 300;
+}
+
+.button-change { 
+    background-color: #00890b;
+    border: none;
+    width: 100%;
+}
+
+.button-change:hover {
+    background-color: #015e08;
+}
+
+.button-change-active {
+    background-color: #00890b;
+    border: none;
+    width: 45%;
+}
+
+.button-change-active:hover {
+    background-color: #015e08;
+}
+
+.button-cancel {
+    background-color: #f00505;
+    border: none;
+    width: 45%;
+}
+
+.button-cancel:hover {
+    background-color: #940101;
+}
+
+.code-select {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 520px) {
+    .card-shop {
+        width: 100%;
+    }
+}
