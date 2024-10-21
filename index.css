@@ -6,8 +6,8 @@ nav {
 }
 
 .navactive a {
-    background-color: #FF832A; /* สีพื้นหลังเมื่ออยู่หน้าหลัก */
-    color: #000; /* สีตัวอักษร */
+    background-color: #FF832A; 
+    color: #000;
     border-radius: 15px;
 }
 
@@ -46,6 +46,8 @@ nav {
 .btn-login {
     margin-left: 10px;
     background-color: transparent;
+    right: 20px; 
+    top: 10px;   
 }
 
 .icon {
@@ -76,6 +78,7 @@ body {
 
 .core-muscle {
     margin-top: 50px;
+    padding-top: 70px;
     display: flex;
     justify-content: center;
 }
@@ -225,13 +228,13 @@ body {
     height: auto;
 }
 
-h4 {
+.core-muscle h4 {
     color: white; /* เปลี่ยนสีข้อความให้เห็นชัด */
     z-index: 2; /* ตั้งค่า z-index สูงขึ้นเพื่อให้อยู่ด้านหน้า */
     position: relative; /* ทำให้แน่ใจว่าข้อความจะอยู่ด้านหน้า */
     text-align: center;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .activehover h1 {
@@ -280,13 +283,108 @@ h4 {
     border-radius: 15px;
 }
 
+.container h1 {
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    border: solid 1px #fff;
+    padding: 20px;
+}
+
+.main-question {
+    display: flex;
+    margin: 20px 0;
+}
+
+.pic-question {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.block-question p , .block-question ul {
+    font-family: "Bai Jamjuree", sans-serif !important;
+    font-size: 18px;
+}
+
+.block-question h3 {
+    color: #FF832A;
+}
+
+.link {
+    color: #FF832A;
+}
+
+.block-question {
+    align-content: center;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .block-question.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+.footer {
+    background-color: #1C1C1C;
+    font-weight: 300;
+}
+
+.pic-contact {
+    margin-right: 10px; 
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row; /* จัดเรียงไอคอนในแนวตั้ง */
+    gap: 15px; /* ระยะห่างระหว่างไอคอน */
+    margin-top: 10px; /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+    transition: transform 0.3s ease; /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+    transform: scale(1.1); /* ขยายไอคอนเมื่อ hover */
+}
+
 
 @media screen and (max-width: 990px) {
+
+    .navactive a {
+        background-color: transparent;
+        color: #000;
+        border-radius: 15px;
+    }
+    
+    .nav-item a.active {
+        background-color: transparent;
+        color: #000;
+        border-radius: 15px;
+    }
+
+    .btn-login {
+        position: absolute;
+    }
+
     .container-for-pc {
         display: none;
     }
 
     .container-for-mb {
         display: flex;
+    }
+
+    .block-question {
+        width: 100%;
+    } 
+    
+    .right {
+        flex-direction: column-reverse;
     }
 }
