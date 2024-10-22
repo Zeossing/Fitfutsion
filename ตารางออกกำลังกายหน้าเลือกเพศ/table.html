@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เลือกเวลาออกกำลังกาย</title>
+    <!-- Import Kanit and Bai Jamjuree fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Kanit:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/table.css">
+    <script>
+        function showExtraInfo(gender) {
+            const extraInfo = document.querySelector('.extra-info');
+            extraInfo.style.display = 'block';
+
+            // เปลี่ยนแปลงรูปภาพตามเพศที่เลือก
+            const ageImages = document.querySelectorAll('.age-img');
+            const goalImages = document.querySelectorAll('.goal-img');
+
+            if (gender === 'male') {
+                ageImages[0].src = "./images/MAN18-24.jpg";
+                ageImages[1].src = "./images/MAN25-34.jpg";
+                ageImages[2].src = "./images/MAN35.jpg";
+                ageImages[3].src = "./images/MAN45+.jpg";
+                goalImages[0].src = "./images/lose-weight.jpg";
+                goalImages[1].src = "./images/muscle-building-man2.jpg";
+            } else if (gender === 'female') {
+                ageImages[0].src = "./images/18-24-women-1.jpg";
+                ageImages[1].src = "./images/25-34-women.jpg";
+                ageImages[2].src = "./images/35-44-women.png";
+                ageImages[3].src = "./images/45+-women.jpg";
+                goalImages[0].src = "./images/lose-weight-women.jpg";
+                goalImages[1].src = "./images/muscle-building-women.jpg";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1>เลือกเพศ</h1>
+        <div class="gender-select">
+            <label>ชาย<input type="radio" name="gender" value="male" onclick="showExtraInfo('male')"></label>
+            <label>หญิง<input type="radio" name="gender" value="female" onclick="showExtraInfo('female')"></label>
+        </div>
+
+        <!-- ส่วนข้อมูลเพิ่มเติมที่จะแสดงผลเมื่อเลือกเพศ -->
+        <div class="extra-info">
+            <h2>อายุ</h2>
+            <div class="age-group">
+                <div class="age-item">
+                    <img src="path/to/image1.jpg" alt="Age 18-24" class="age-img">
+                    <div class="label-box">อายุ 18-24</div>
+                </div>
+                <div class="age-item">
+                    <img src="path/to/image2.jpg" alt="Age 25-34" class="age-img">
+                    <div class="label-box">อายุ 25-34</div>
+                </div>
+                <div class="age-item">
+                    <img src="path/to/image3.jpg" alt="Age 35-44" class="age-img">
+                    <div class="label-box">อายุ 35-44</div>
+                </div>
+                <div class="age-item">
+                    <img src="path/to/image4.jpg" alt="Age 45+" class="age-img">
+                    <div class="label-box">อายุ 45+</div>
+                </div>
+            </div>
+
+            <h2>ท่านต้องการออกกำลังกายเพื่ออะไร</h2>
+            <div class="goal-group">
+                <div class="goal-item">
+                    <img src="path/to/weight_loss.jpg" alt="Weight Loss" class="goal-img">
+                    <div class="label-box">ลดน้ำหนัก</div>
+                </div>
+                <div class="goal-item">
+                    <img src="path/to/muscle_building.jpg" alt="Muscle Building" class="goal-img">
+                    <div class="label-box">สร้างกล้ามเนื้อ</div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>วันที่ออกกำลังกาย</h2>
+        <div class="days-select">
+            <button>จันทร์</button>
+            <button>อังคาร</button>
+            <button>พุธ</button>
+            <button>พฤหัสบดี</button>
+            <button>ศุกร์</button>
+            <button>เสาร์</button>
+            <button>อาทิตย์</button>
+        </div>
+
+        <h2>ระยะเวลาในการออกกำลังกาย</h2>
+        <div class="time-wrapper">
+            <div class="time-display">
+                <span>2 ชั่วโมง : 0 นาที</span>
+            </div>
+            <div class="time-input">
+                <button>-</button>
+                <input type="text" value="02" maxlength="2">
+                :
+                <input type="text" value="00" maxlength="2">
+                <button>+</button>
+            </div>
+        </div>
+
+        <!-- ปุ่มยืนยัน -->
+        <div class="confirm-button-wrapper">
+            <button class="confirm-button">ยืนยัน</button>
+        </div>
+    </div>
+</body>
+</html>
