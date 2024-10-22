@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: linear-gradient(180deg, #0F2C5A 0%, #1C1C1C 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    margin-top: 100px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.filter button {
+    background-color: #F1F1F1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.filter button.active {
+    background-color: #FF6F61;
+    color: white;
+}
+
+.content-card {
+    background-color: #2E3A59;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    max-width: 90%;
+    margin: 0 auto 20px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* เส้นขอบเบลอ */
+}
+
+.content-card:hover {
+    transform: scale(1.05);
+}
+
+.content-card img {
+    width: 100%;
+    height: auto;
+}
+
+.content-details {
+    padding: 15px;
+}
+
+.content-details h3 {
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.content-details p {
+    font-size: 14px;
+    margin: 8px 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.content-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.meta-left {
+    display: flex;
+    align-items: center;
+}
+
+.meta-left img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.meta-right img {
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.popular-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FF6F61;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+}
