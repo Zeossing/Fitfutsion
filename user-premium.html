@@ -11,6 +11,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/premium.css" type="text/css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -33,14 +34,16 @@
                         <a class="nav-link" href="table-gender/table.html">ตารางออกกำลังกาย</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cadio">แนะนำการคาร์ดิโอ</a>
+                        <a class="nav-link" href="index.html#cadio">แนะนำการคาร์ดิโอ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reservation.html">จองเครื่องออกกำลังกาย</a>
                     </li>
                 </ul>
 
-                <form class="d-flex" role="search">
+                
+
+                <form class="d-flex ms-auto" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success me-2" type="submit">
                         <span class="material-symbols-outlined icon">
@@ -49,25 +52,26 @@
                     </button>
                 </form>
             </div>
-            <a href="Login-Regis/LogIN.html"><button
-                    class="btn btn-primary btn-login ms-3 ms-auto">เข้าสู่ระบบ</button></a>
 
-
-            <!-- <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="pic_abs_muscle.jpg" width="50px" height="50px" style="border-radius: 100%;">
+            <!-- Profile Icon -->
+            <ul class="navbar-nav mb-2 mb-lg-0 profile ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle click" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="img/pic_abs_muscle.jpg" width="40px" height="40px" style="border-radius: 100%;">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                      <li><a class="dropdown-item" href="#">ตารางออกกำลังกายของฉัน</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">แก้ไขหน้าโปรไฟล์</a></li>
-                      <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                        <li><a class="dropdown-item" href="#">ตารางออกกำลังกายของฉัน</a></li>
+                        <li><a class="dropdown-item" href="pickpoint.html">รับคะแนน</a></li>
+                        <li><a class="dropdown-item" href="shop.html">แลกคะแนน</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">แก้ไขหน้าโปรไฟล์</a></li>
+                        <li><a class="dropdown-item" href="index.html">ออกจากระบบ</a></li>
                     </ul>
-                  </li>
-                  </ul> -->
-
-
+                </li>
+            </ul>
 
         </div>
     </nav>
@@ -224,35 +228,33 @@
         </article>
 
         <article id="cadio" class="cadio">
-
+            
             <div class="container">
                 <div class="text-head">
                     <h1>แนะนำการคาร์ดิโอ</h1> <br>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 card">
-                        <a href="recoment-cadio/cardio-2.html">
-                            <h1>คาร์ดิโอแบบเบา</h1>
-                            <p>ระดับเริ่มต้น</p>
+                        <h1>คาร์ดิโอแบบเบา</h1>
+                        <p>ระดับเริ่มต้น</p>
 
-                            <div class="icon-text">
-                                <i class="fas fa-fire calories"></i>
-                                <span>150-300 แคลอรี</span>
-                            </div>
+                        <div class="icon-text">
+                            <i class="fas fa-fire calories"></i>
+                            <span>150-300 แคลอรี</span>
+                        </div>
 
-                            <div class="icon-text">
-                                <i class="fas fa-clock time"></i>
-                                <span>30-60 นาที</span>
-                            </div>
+                        <div class="icon-text">
+                            <i class="fas fa-clock time"></i>
+                            <span>30-60 นาที</span>
+                        </div>
 
-                            <i class="fas fa-male person-icon"></i>
-                        </a>
+                        <i class="fas fa-male person-icon"></i>
+
                         <!-- ปุ่ม "อ่านข้อมูลเพิ่มเติม" -->
                         <button class="read-more"
                             onclick="toggleMoreInfo('more-info1', 'arrow-btn1')">อ่านข้อมูลเพิ่มเติม</button>
 
                         <!-- ข้อมูลเพิ่มเติม -->
-                        <a href="recoment-cadio/cardio-2.html">
                         <div class="more-info" id="more-info1">
                             <p style="margin-top: 20px;">เหมาะสำหรับใครบ้าง?</p>
                             <ul>
@@ -264,75 +266,68 @@
                         </div>
 
                         <!-- ปุ่มลูกศร -->
-                        
-                            <button class="arrow-btn" id="arrow-btn1">
-                                <i class="fas fa-arrow-right" style="color: white;"></i>
-                            </button>
-                        </a>
+                        <button class="arrow-btn" id="arrow-btn1">
+                            <a href="recoment-cadio/cardio-2.html"><i class="fas fa-arrow-right" style="color: white;"></i></a>
+                        </button>
                     </div>
 
                     <div class="col-lg-4 card">
-                        <a href="recoment-cadio/cardio-2.html">
-                            <h1>คาร์ดิโอระดับกลาง</h1>
-                            <p>ระดับปานกลาง</p>
+                        <h1>คาร์ดิโอระดับกลาง</h1>
+                        <p>ระดับปานกลาง</p>
 
-                            <div class="icon-text">
-                                <i class="fas fa-fire calories"></i>
-                                <span>300-600 แคลอรี</span>
-                            </div>
+                        <div class="icon-text">
+                            <i class="fas fa-fire calories"></i>
+                            <span>300-600 แคลอรี</span>
+                        </div>
 
-                            <div class="icon-text">
-                                <i class="fas fa-clock time"></i>
-                                <span>30-60 นาที</span>
-                            </div>
+                        <div class="icon-text">
+                            <i class="fas fa-clock time"></i>
+                            <span>30-60 นาที</span>
+                        </div>
 
-                            <i class="fas fa-walking person-icon"></i>
-                        </a>
+                        <i class="fas fa-walking person-icon"></i>
+
                         <!-- ปุ่ม "อ่านข้อมูลเพิ่มเติม" -->
                         <button class="read-more"
                             onclick="toggleMoreInfo('more-info2', 'arrow-btn2')">อ่านข้อมูลเพิ่มเติม</button>
 
-                        <!-- ข้อมูลเพิ่มเติม --><a href="recoment-cadio/cardio-2.html">
-                            <div class="more-info" id="more-info2">
-                                <p style="margin-top: 20px;">เหมาะสำหรับใครบ้าง?</p>
-                                <ul>
-                                    <li>ผู้ที่มีประสบการณ์ในการออกกำลังกาย</li>
-                                    <li>ผู้ที่ต้องการเพิ่มระดับความฟิต</li>
-                                    <li>ผู้ที่ต้องการเผาผลาญแคลอรีเพิ่ม</li>
-                                </ul>
-                            </div>
+                        <!-- ข้อมูลเพิ่มเติม -->
+                        <div class="more-info" id="more-info2">
+                            <p style="margin-top: 20px;">เหมาะสำหรับใครบ้าง?</p>
+                            <ul>
+                                <li>ผู้ที่มีประสบการณ์ในการออกกำลังกาย</li>
+                                <li>ผู้ที่ต้องการเพิ่มระดับความฟิต</li>
+                                <li>ผู้ที่ต้องการเผาผลาญแคลอรีเพิ่ม</li>
+                            </ul>
+                        </div>
 
-                            <!-- ปุ่มลูกศร -->
-
-                            <button class="arrow-btn" id="arrow-btn2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </a>
+                        <!-- ปุ่มลูกศร -->
+                        <button class="arrow-btn" id="arrow-btn2">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
 
                     <div class="col-lg-4 card">
-                        <a href="recoment-cadio/cardio-2.html">
-                            <h1>คาร์ดิโอระดับสูง</h1>
-                            <p>ระดับสูง</p>
+                        <h1>คาร์ดิโอระดับสูง</h1>
+                        <p>ระดับสูง</p>
 
-                            <div class="icon-text">
-                                <i class="fas fa-fire calories"></i>
-                                <span>600-1000 แคลอรี</span>
-                            </div>
+                        <div class="icon-text">
+                            <i class="fas fa-fire calories"></i>
+                            <span>600-1000 แคลอรี</span>
+                        </div>
 
-                            <div class="icon-text">
-                                <i class="fas fa-clock time"></i>
-                                <span>45-90 นาที</span>
-                            </div>
+                        <div class="icon-text">
+                            <i class="fas fa-clock time"></i>
+                            <span>45-90 นาที</span>
+                        </div>
 
-                            <i class="fas fa-running person-icon"></i>
-                        </a>
+                        <i class="fas fa-running person-icon"></i>
+
                         <!-- ปุ่ม "อ่านข้อมูลเพิ่มเติม" -->
                         <button class="read-more"
                             onclick="toggleMoreInfo('more-info3', 'arrow-btn3')">อ่านข้อมูลเพิ่มเติม</button>
 
                         <!-- ข้อมูลเพิ่มเติม -->
-                        <a href="recoment-cadio/cardio-2.html">
                         <div class="more-info" id="more-info3">
                             <p style="margin-top: 20px;">เหมาะสำหรับใครบ้าง?</p>
                             <ul>
@@ -343,11 +338,9 @@
                         </div>
 
                         <!-- ปุ่มลูกศร -->
-
                         <button class="arrow-btn" id="arrow-btn3">
                             <i class="fas fa-arrow-right"></i>
                         </button>
-                        </a>
                     </div>
                 </div>
             </div>
