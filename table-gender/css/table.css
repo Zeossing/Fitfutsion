@@ -83,6 +83,15 @@ a {
     border-color: #FF832A;
 }
 
+.profile {
+    margin: 0 0 0 auto;
+}
+
+.click {
+    padding: 0px;
+    width: 70px;
+}
+
 .unlock a {   
     text-decoration: none !important;
   }
@@ -221,8 +230,6 @@ h2 {
     transform: scale(1.1);
     /* ขยายขนาดเมื่อวางเมาส์ */
 }
-
-.material-icons {}
 
 .hidden {
     display: none;
@@ -364,5 +371,16 @@ h2 {
     .days-select,
     .goal-group {
         overflow: scroll;
+    }
+
+    .profile {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+
+
+    .unlock-premium {
+        margin-right: 80px;
     }
 }

@@ -8,6 +8,11 @@ body {
     background-repeat: no-repeat;
 
 }
+
+a {
+  text-decoration: none;
+}
+
 .exercise-card {
   width: 80%;
   max-width: 600px;
@@ -98,7 +103,7 @@ body {
 
 .container {
   width: 80%;
-  margin: 50px auto;
+  margin: 70px auto;
 }
 
 header {
@@ -194,7 +199,7 @@ h1,h2 {
 
 }
 
-.row{
+.main-excercise   .row{
   flex-wrap: nowrap;
   display: flex;
   width: 100%;
@@ -437,6 +442,10 @@ nav {
   color: #555;
 }
 
+.muscle-active {
+  background-color: #007bff;
+}
+
 /* Button Styling */
 .buttonconfirm {
   text-align: center;
@@ -457,6 +466,43 @@ nav {
   background-color: #1e1e1e;
 }
 
+.footer {
+  background-color: #1C1C1C;
+  font-weight: 300;
+}
+
+.footer .row {
+  flex-wrap: wrap!important;
+}
+
+.footer .container {
+  margin: 0 auto !important;
+  width: 100%;
+}
+
+.pic-contact {
+  margin-right: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  /* จัดเรียงไอคอนในแนวตั้ง */
+  gap: 15px;
+  /* ระยะห่างระหว่างไอคอน */
+  margin-top: 10px;
+  /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+  transition: transform 0.3s ease;
+  /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+  transform: scale(1.1);
+  /* ขยายไอคอนเมื่อ hover */
+}
 
 
 @media (max-width: 768px) {
@@ -469,7 +515,7 @@ display: flex;
  margin-bottom: 20px;
  width: 100%;
   }
-  .row{gap: 45px;}
+  .main-excercise .row{gap: 45px;}
   .d2 {
 
     flex-wrap: nowrap;
@@ -591,7 +637,7 @@ display: flex;
     width: 120px; /* ลดขนาดของการ์ดให้เล็กลง */
     font-size: 14px; /* ปรับขนาดฟอนต์ */
   }
-  .row{
+  .main-excercise .row{
     gap: 65px;
   }
   
@@ -698,12 +744,12 @@ display: flex;
     -webkit-overflow-scrolling: touch; /* ให้การเลื่อนลื่นบนมือถือ */
   }
 
-  .row {
+  .main-excercise .row {
     display: flex;
     flex-wrap: nowrap; /* ห้ามเคาะบรรทัด */
     gap: 75px;
   }
-  .row-2 {
+  .main-excercise .row-2 {
     display: flex;
     flex-wrap: nowrap; /* ห้ามเคาะบรรทัด */
 

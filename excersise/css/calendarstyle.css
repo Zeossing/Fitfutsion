@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-.unlock a {   
+.profile {
+  margin: 0 0 0 auto;
+}
+
+.click {
+  padding: 0px;
+  width: 70px;
+}
+
+.unlock a {
   text-decoration: none !important;
 }
 
 
-.unlock-premium {   
+.unlock-premium {
   background-color: #9200fa !important;
   border: none !important;
 }
@@ -35,13 +44,13 @@ body {
 }
 
 .weekdays div {
-  border: solid 2px #000;
+  border: solid 1px #000;
   border-left: none;
 
 }
 
 .weekdays div:first-child {
-  border-left: solid 2px #000;
+  border-left: solid 1px #000;
 }
 
 .calendar-container {
@@ -91,7 +100,6 @@ body {
 }
 
 .weekdays div {
-  font-weight: bold;
   padding: 10px 0;
   background-color: #FF832A;
   color: white;
@@ -171,7 +179,7 @@ body {
   justify-content: right;
 }
 
-.a-text a{
+.a-text a {
   text-decoration: none;
 }
 
@@ -310,11 +318,22 @@ nav {
 .footer .container {
   margin-bottom: 0;
 }
+
 /* Styles for screens 800px and above */
-@media (min-width: 800px) {
+@media (max-width: 900px) {
   .container {
     width: auto;
     margin: 50px auto;
+  }
+
+  .profile {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+  }
+
+  .unlock-premium {
+    margin-right: 80px;
   }
 
   .calendar-container {
@@ -333,6 +352,15 @@ nav {
 @media (max-width: 500px) {
   body {
     font-size: 14px;
+  }
+
+  .profile {
+    position: absolute;
+    right: 10px;
+  }
+
+  .unlock-premium {
+    margin-right: 80px;
   }
 
   .container {
@@ -379,33 +407,6 @@ nav {
     gap: 10px;
     /* Reduce gap between items */
   }
-
-  .edit-right {
-
-  }
-
-  nav {
-    display: none;
-    /* Hide the full navbar */
-  }
-
-  .navbar-toggle {
-    display: block;
-    /* Show a button for navbar */
-    cursor: pointer;
-  }
-
-  .navbar-nav {
-    justify-content: center;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 14px;
-  }
-
-  .btn-login {
-    margin-top: 10px;
-  }
 }
 
 /* Styles for screens 400px and below */
@@ -418,6 +419,15 @@ nav {
   body {
     font-size: 14px;
     /* Adjust the overall font size */
+  }
+
+  .profile {
+    position: absolute;
+    right: 10px;
+  }
+
+  .unlock-premium {
+    margin-right: 80px;
   }
 
   .calendar-container {
@@ -458,29 +468,5 @@ nav {
   .legend-left {
     gap: 10px;
     /* Reduce gap between items */
-  }
-
-  .edit-right {
-
-  }
-
-  nav {
-    flex-direction: column;
-    /* Stack navbar elements */
-    align-items: center;
-  }
-
-  .navbar-nav {
-    justify-content: center;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 14px;
-    /* Smaller font for nav links */
-  }
-
-  .btn-login {
-    margin-top: 10px;
-    /* Add spacing for login button */
   }
 }

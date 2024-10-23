@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">หน้าหลัก</a>
+                        <a class="nav-link" aria-current="page" href="user-premium.html">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="table-gender/table.html">ตารางออกกำลังกาย</a>
@@ -58,7 +58,7 @@
                         <img src="./img/user.png" width="40px" height="40px" style="border-radius: 100%;">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">ตารางออกกำลังกายของฉัน</a></li>
+                        <li><a class="dropdown-item" href="planexcercise-premium.html">ตารางออกกำลังกายของฉัน</a></li>
                         <li><a class="dropdown-item" href="pickpoint.html">รับคะแนน</a></li>
                         <li><a class="dropdown-item" href="shop.html">แลกคะแนน</a></li>
                         <li>
@@ -92,8 +92,26 @@
                                 <img class="pic-allmuscle" src="./img/icon_chest_muscle.png" alt="">
                             </div>
                         </div>
-                        <button class="btn button-check">รับคะแนน</button>
+                        <button class="btn button-check" id="scoreBtn">รับคะแนน</button>
                     </div>
+                    
+                    <script>
+                        const scoreBtn = document.getElementById('scoreBtn');
+                    
+                        scoreBtn.addEventListener('click', function () {
+                            // เปลี่ยนสีของปุ่มเป็นสีเทา
+                            scoreBtn.style.backgroundColor = 'gray';
+                            scoreBtn.style.borderColor = 'gray';
+                            scoreBtn.style.color = 'white';
+                    
+                            // เปลี่ยนข้อความของปุ่มเป็น "รับคะแนนเรียบร้อย"
+                            scoreBtn.textContent = 'รับคะแนนเรียบร้อย';
+                    
+                            // ปิดการคลิกปุ่มหลังจากรับคะแนนแล้ว
+                            scoreBtn.disabled = true;
+                        });
+                    </script>
+                    
 
                     <div class="col-lg-4 pick-card">
                         <div class="row">

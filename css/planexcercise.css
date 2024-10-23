@@ -8,6 +8,10 @@
     border: none !important;
 }
 
+.navbar {
+    font-weight: 400 !important;
+}
+
 
 .plan {
     display: flex;
@@ -140,5 +144,16 @@
 @media screen and (max-width: 990px) {
     .card-excercise {
         width: 95%;
+    }
+
+    .profile {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+
+    .unlock-premium {
+        margin-right: 80px;
     }
 }
