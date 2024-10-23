@@ -1,5 +1,15 @@
+.unlock a {
+    text-decoration: none !important;
+}
+
+
+.unlock-premium {
+    background-color: #9200fa;
+    border: none !important;
+}
+
+
 .plan {
-    margin-top: 80px;
     display: flex;
 }
 
@@ -8,6 +18,12 @@
     padding: 0;
     margin: 0;
 }
+
+.text-head {
+    text-align: center;
+    margin-top: 80px;
+}
+
 
 .content {
     justify-content: space-evenly;
@@ -34,7 +50,7 @@
     align-content: center;
 }
 
-.set-and-rep ul{
+.set-and-rep ul {
     font-weight: 400;
 }
 
@@ -49,7 +65,7 @@
 
 .button-edit {
     background-color: #FF832A;
-    
+
 }
 
 .button-save {
@@ -66,6 +82,29 @@
 
 .button-deleteset {
     background-color: #FF1123;
+}
+
+.count {
+    text-align: center;
+}
+
+.count .btn {
+    width: 100%;
+    border: none !important;
+    padding: 10px;
+}
+
+.count .btn-primary:hover {
+    background-color: #0047a4;
+}
+
+.count .btn-danger:hover {
+    background-color: #a40000;
+}
+
+#time-display {
+    font-size: 48px;
+    margin: 20px 0;
 }
 
 .footer {
@@ -100,6 +139,6 @@
 
 @media screen and (max-width: 990px) {
     .card-excercise {
-        width: 100%;
+        width: 95%;
     }
 }

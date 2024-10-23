@@ -19,11 +19,16 @@ body {
 
 
 .card-shop {
+
     background-color: #d6d6d6;
     padding: 20px;
     border-radius: 15px;
     width: 45%;
     margin-bottom: 20px;
+}
+
+.code {
+    margin-top: 80px;
 }
 
 .pic-code {

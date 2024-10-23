@@ -61,7 +61,7 @@ a {
 }
 
 .time-slot.active {
-    background-color: orange;
+    background-color: #ff9100;
     color: white;
 }
 
@@ -123,6 +123,7 @@ a {
 
 .pic-machine {
     width: 30%;
+    margin: 10px 0;
 }
 
 .groupD{
@@ -200,9 +201,14 @@ a {
     padding: 30px;
 }
 
+.machine-image {
+    text-align: center;
+}
+
 .machine-image img {
-    max-width: 100%;
+    max-width: 20%;
     border-radius: 10px;
+    
 }
 .info {
     text-align: left;
@@ -210,6 +216,8 @@ a {
 }
 .info p {
     margin: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
 }
 .container-res .dropdown {
     background-color: #000;
@@ -251,13 +259,28 @@ a {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    margin-top: -10px;
 }
 .highlight img {
     max-width: 80px;
     margin-right: 15px;
 }
 
+.click-res {
+    color: #fff;
+}
+
+.content p {
+    font-weight: 300;
+    margin: 0;
+}
+
+.content h4 {
+    margin-top: 15px;
+}
+
+.content li {
+    font-family: "Bai Jamjuree", sans-serif !important;
+}
 
 @media screen and (max-width: 990px) {
 
@@ -277,4 +300,19 @@ a {
         background-color: #ff9100;
     }
 
+}
+
+
+@media screen and (max-width: 800px) { 
+    .machine-image img {
+        max-width: 30%;
+        
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .machine-image img {
+        max-width: 40%;
+        
+    }
 }

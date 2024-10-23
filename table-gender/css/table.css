@@ -83,6 +83,16 @@ a {
     border-color: #FF832A;
 }
 
+.unlock a {   
+    text-decoration: none !important;
+  }
+  
+  
+  .unlock-premium {   
+    background-color: #9200fa !important;
+    border: none !important;
+  }
+
 
 body {
     background: linear-gradient(to bottom right, #1C1C1C 0%, #0F2C5A 100%);
@@ -92,7 +102,7 @@ body {
 
 .content-wrapper {
     width: 60%;
-    margin: 70px auto;
+    margin: 90px auto 20px auto;
     padding: 20px;
     border: 2px solid #ff6700;
     border-radius: 15px;

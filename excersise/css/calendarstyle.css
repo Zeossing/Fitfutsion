@@ -1,43 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.unlock a {   
+  text-decoration: none !important;
+}
+
+
+.unlock-premium {   
+  background-color: #9200fa !important;
+  border: none !important;
+}
+
 body {
   background: linear-gradient(to bottom right, #1C1C1C 0%, #0F2C5A 100%);
   font-family: "Kanit", sans-serif !important;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 
 
 }
+
 .container {
   width: auto;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
+
 }
 
-.weekdays div{
+.calendar-main {
+  margin-top: 0 !important;
+}
+
+.calendar-head {
+  margin-bottom: 0 !important;
+  margin-top: 70px !important;
+}
+
+.weekdays div {
   border: solid 2px #000;
   border-left: none;
-  
+
 }
-.weekdays div:first-child{ 
-  border-left:solid 2px #000 ;
+
+.weekdays div:first-child {
+  border-left: solid 2px #000;
 }
 
 .calendar-container {
-  width: 100%; /* กำหนดความกว้างของปฏิทิน */
+  width: 100%;
+  /* กำหนดความกว้างของปฏิทิน */
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 20px;
   display: flex;
-  flex-direction: column; /* ให้เรียงตามแนวตั้ง */
+  flex-direction: column;
+  /* ให้เรียงตามแนวตั้ง */
   margin: 0 auto;
 }
 
 .header {
   display: flex;
-  justify-content: space-between; /* จัดให้ปุ่มอยู่ที่ด้านซ้ายและขวา */
-  align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
-  margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่างให้ header */
+  justify-content: space-between;
+  /* จัดให้ปุ่มอยู่ที่ด้านซ้ายและขวา */
+  align-items: center;
+  /* จัดให้อยู่กลางในแนวตั้ง */
+  margin-bottom: 10px;
+  /* เพิ่มระยะห่างด้านล่างให้ header */
 }
 
 .header button {
@@ -49,11 +77,13 @@ body {
   cursor: pointer;
   /* ลบ margin หรือกำหนด margin ตามที่ต้องการ */
 }
+
 .header button:hover {
   background-color: #FF832A;
 }
 
-.weekdays, .days {
+.weekdays,
+.days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
@@ -80,8 +110,10 @@ body {
 }
 
 .today {
-  background-color: #FF832A !important; /* พื้นหลังสีส้ม */
-  color: white; /* ตัวอักษรสีขาว */
+  background-color: #FF832A !important;
+  /* พื้นหลังสีส้ม */
+  color: white;
+  /* ตัวอักษรสีขาว */
 }
 
 
@@ -89,7 +121,8 @@ body {
 /* ส่วนของ legend-item */
 .legend-container {
   display: flex;
-  justify-content: left; /* จัดให้อยู่ซ้าย */
+  justify-content: left;
+  /* จัดให้อยู่ซ้าย */
   align-items: center;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -133,76 +166,83 @@ body {
   flex-direction: column;
 }
 
-.test{
+.a-text {
   display: flex;
   justify-content: right;
 }
 
+.a-text a{
+  text-decoration: none;
+}
+
 .edit-right {
-padding: 5px;
-background-color:red ;
-width: 20%;
-
-font-size: 16px;
-text-align:center; /* จัดตำแหน่งลิงก์ให้อยู่ขวา */
-margin-bottom: 5px;
+  padding: 5px 10px;
+  background-color: red;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
 }
 
-.edit-right a {
-color: #fff; /* สีของลิงก์แก้ไข */
-text-decoration: none;
-}
 
 
 h1 {
-  margin: 0; /* ยกเลิก margin เพื่อให้ข้อความชิดกับด้านบน */
-  padding: 10px 0; /* เพิ่ม padding เพื่อให้ข้อความห่างจากขอบ */
+  margin: 0;
+  /* ยกเลิก margin เพื่อให้ข้อความชิดกับด้านบน */
+  padding: 10px 0;
+  /* เพิ่ม padding เพื่อให้ข้อความห่างจากขอบ */
 }
+
 .navbar-nav .nav-link,
 .navbar-toggler,
 .form-control,
 .btn {
-    color: white !important;
+  color: white !important;
 }
 
 .navbar-toggler-icon {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 .usersetting {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .btn-login {
-    margin-left: 10px;
-    background-color: transparent;
+  margin-left: 10px;
+  background-color: transparent;
 }
 
 .icon {
-    font-size: 28px;
-    color: #fff;
+  font-size: 28px;
+  color: #fff;
 }
 
 .btn {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    border-color: #FF832A !important;
-    transition: background-color 0.3s ease, color 0.3s ease !important;
-    transition: border-color 0.3s ease, color 0.3s ease !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-color: #FF832A !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+  transition: border-color 0.3s ease, color 0.3s ease !important;
 }
 
 .btn:hover {
-    background-color: #FF832A;
-    border-color: #FF832A;
+  background-color: #FF832A;
+  border-color: #FF832A;
 }
+
 nav {
   background-color: #1C1C1C;
 }
 
 .navactive a {
-  background-color: #FF832A; /* สีพื้นหลังเมื่ออยู่หน้าหลัก */
-  color: #000; /* สีตัวอักษร */
+  background-color: #FF832A;
+  /* สีพื้นหลังเมื่ออยู่หน้าหลัก */
+  color: #000;
+  /* สีตัวอักษร */
   border-radius: 15px;
 }
 
@@ -213,7 +253,8 @@ nav {
 }
 
 .nav-link:hover {
-  color: #007bff; /* สีที่จะแสดงเมื่อ hover */
+  color: #007bff;
+  /* สีที่จะแสดงเมื่อ hover */
 }
 
 /* ถ้าต้องการเปลี่ยนสีพื้นหลังเมื่อ hover ด้วย */
@@ -221,14 +262,53 @@ nav {
   background-color: #545454;
   border-radius: 15px;
 }
+
 .past-green {
-  background-color: #28a745 !important; /* สีเขียว */
-  color: white; /* ตัวอักษรสีขาว */
+  background-color: #28a745 !important;
+  /* สีเขียว */
+  color: white;
+  /* ตัวอักษรสีขาว */
 }
 
 .past-red {
-  background-color: #dc3545 !important; /* สีแดง */
-  color: white; /* ตัวอักษรสีขาว */
+  background-color: #dc3545 !important;
+  /* สีแดง */
+  color: white;
+  /* ตัวอักษรสีขาว */
+}
+
+
+.footer {
+  background-color: #1C1C1C;
+  font-weight: 300;
+}
+
+.pic-contact {
+  margin-right: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  /* จัดเรียงไอคอนในแนวตั้ง */
+  gap: 15px;
+  /* ระยะห่างระหว่างไอคอน */
+  margin-top: 10px;
+  /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+  transition: transform 0.3s ease;
+  /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+  transform: scale(1.1);
+  /* ขยายไอคอนเมื่อ hover */
+}
+
+.footer .container {
+  margin-bottom: 0;
 }
 /* Styles for screens 800px and above */
 @media (min-width: 800px) {
@@ -236,153 +316,171 @@ nav {
     width: auto;
     margin: 50px auto;
   }
-  
+
   .calendar-container {
-      width: 100%;
+    width: 100%;
   }
 
   .edit-right {
     justify-content: right;
-    width: 25%;
   }
 
   .navbar-nav .nav-link {
-      font-size: 18px;
+    font-size: 18px;
   }
 }
+
 @media (max-width: 500px) {
   body {
-      font-size: 14px;
+    font-size: 14px;
   }
+
   .container {
     width: auto;
     margin: 50px auto;
   }
-  
+
 
   .calendar-container {
-      width: 100%; /* Full width for small screens */
-      padding: 10px;
+    width: 100%;
+    /* Full width for small screens */
+    padding: 10px;
   }
 
   .header {
-      flex-direction: row; /* Stack the elements */
-      align-items: center;
+    flex-direction: row;
+    /* Stack the elements */
+    align-items: center;
   }
 
   .header button {
-      margin-bottom: 5px;
+    margin-bottom: 5px;
   }
 
-  .weekdays, .days {
-      grid-template-columns: repeat(7, 1fr); /* Keep 7 columns */
+  .weekdays,
+  .days {
+    grid-template-columns: repeat(7, 1fr);
+    /* Keep 7 columns */
   }
 
   .days div {
-      font-size: 12px; /* Smaller font size for days */
+    font-size: 12px;
+    /* Smaller font size for days */
   }
 
   .legend-container {
 
-      align-items: left;
-      margin-left: 0;
-      justify-content: left;
+    align-items: left;
+    margin-left: 0;
+    justify-content: left;
   }
 
   .legend-left {
-      gap: 10px; /* Reduce gap between items */
+    gap: 10px;
+    /* Reduce gap between items */
   }
 
   .edit-right {
- 
-    width: 25%;
+
   }
 
   nav {
-    display: none; /* Hide the full navbar */
-}
+    display: none;
+    /* Hide the full navbar */
+  }
 
-.navbar-toggle {
-    display: block; /* Show a button for navbar */
+  .navbar-toggle {
+    display: block;
+    /* Show a button for navbar */
     cursor: pointer;
-}
+  }
 
   .navbar-nav {
-      justify-content: center;
+    justify-content: center;
   }
 
   .navbar-nav .nav-link {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .btn-login {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 }
+
 /* Styles for screens 400px and below */
 @media (max-width: 400px) {
   .container {
     width: auto;
     margin: 50px auto;
   }
-  
+
   body {
-      font-size: 14px; /* Adjust the overall font size */
+    font-size: 14px;
+    /* Adjust the overall font size */
   }
 
   .calendar-container {
-      width: 100%; /* Full width for small screens */
-      padding: 10px;
+    width: 100%;
+    /* Full width for small screens */
+    padding: 10px;
   }
 
   .header {
-      flex-direction: row; /* Stack the elements */
-      align-items: center;
+    flex-direction: row;
+    /* Stack the elements */
+    align-items: center;
   }
 
   .header button {
-      margin-bottom: 5px; /* Add spacing between buttons */
+    margin-bottom: 5px;
+    /* Add spacing between buttons */
   }
 
-  .weekdays, .days {
-      grid-template-columns: repeat(7, 1fr); /* Keep the same grid but adjust sizes */
+  .weekdays,
+  .days {
+    grid-template-columns: repeat(7, 1fr);
+    /* Keep the same grid but adjust sizes */
   }
 
   .days div {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .legend-container {
-      flex-direction: column; /* Stack the legend items */
-      align-items: left;
-      margin-right: 0;
-      margin-left: 0;
+    flex-direction: column;
+    /* Stack the legend items */
+    align-items: left;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .legend-left {
-      gap: 10px; /* Reduce gap between items */
+    gap: 10px;
+    /* Reduce gap between items */
   }
 
   .edit-right {
 
-      width: 20%;
   }
 
   nav {
-      flex-direction: column; /* Stack navbar elements */
-      align-items: center;
+    flex-direction: column;
+    /* Stack navbar elements */
+    align-items: center;
   }
 
   .navbar-nav {
-      justify-content: center;
+    justify-content: center;
   }
 
   .navbar-nav .nav-link {
-      font-size: 14px; /* Smaller font for nav links */
+    font-size: 14px;
+    /* Smaller font for nav links */
   }
 
   .btn-login {
-      margin-top: 10px; /* Add spacing for login button */
+    margin-top: 10px;
+    /* Add spacing for login button */
   }
 }
-
