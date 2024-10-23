@@ -1,0 +1,842 @@
+/* Reset styles */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  background: linear-gradient(to bottom right, #1C1C1C 0%, #0F2C5A 100%);
+  font-family: "Kanit", sans-serif;
+    background-repeat: no-repeat;
+
+}
+.exercise-card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+.card p{
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 5px;
+  margin: 0;
+}
+.card b{
+  padding-left: 5px;
+  font-weight: 300;
+}
+.exercise-header {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content h3, 
+.text-content p {
+  margin: 5px 0;
+  text-align: left;
+  color: #000;
+}
+
+.exercise-icon {
+  width: 70px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.exercise-video {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.exercise-details h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.exercise-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.exercise-details li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.buttonconfirm {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.confirm-button {
+  border-radius: 30px;
+  color: #fff;
+  background-color: #2F2F2F;
+  width: 50%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #1e1e1e;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.type-active {
+  background-color: #90EE90 !important;
+}
+
+
+h1,h2 {
+  color: #fff !important; 
+  font-size: 26px;
+  margin-bottom: 15px;
+
+
+}
+
+.card {
+  display: none; /* ซ่อนการ์ดทั้งหมดเริ่มต้น */
+  padding: 10px;
+
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-container input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filters select {
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+.card-grid {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  flex: 0 1 calc(25% - 20px); /* Allow four cards per row with some margin */
+  box-sizing: border-box; /* Include padding and border in the width */
+  margin-bottom: 20px; /* Space below each card */
+  display: block; /* Ensure cards are displayed as block elements */
+}
+.card {
+  flex: 1 1 calc(25% - 20px); /* ให้การ์ดแต่ละอันมีความกว้าง 25% และหักลบช่องว่าง */
+  max-width: calc(25% - 20px); /* จำกัดความกว้างของการ์ด */
+  box-sizing: border-box; /* รวม padding และ margin ในขนาด */
+  margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+  display: block;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.muscle-group {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  margin-top: 10px; /* ลดระยะห่างจากด้านบน */
+  margin-bottom: 10px; /* ลดระยะห่างจากด้านล่าง */
+  margin-left: 0%;
+
+}
+
+.row{
+  flex-wrap: nowrap;
+  display: flex;
+  width: 100%;
+}
+.row-2{
+  display: flex;
+  flex-wrap: nowrap; /* ห้ามเคาะบรรทัด */
+  gap:25px;
+}
+
+.card-item,
+.card-item1 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+.card-item:hover {
+  transform: scale(1.05); /* ขยายเมื่อ hover */
+}
+.card-item1:hover {
+  transform: scale(1.05); /* ขยายเมื่อ hover */
+}
+.icon {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  display: block;
+
+}
+
+.muscle-secondgroup {
+  margin-top: 10px; /* ลดระยะห่างจากด้านบน */
+  margin-bottom: 10px; /* ลดระยะห่างจากด้านล่าง */
+  width: 40%;
+  display: flex;
+  margin-left: 0%;
+  gap: 5px; /* ลดระยะห่างระหว่างการ์ด */
+}
+
+
+
+.card-item {
+  background-color: white; /* พื้นหลังสีขาว */
+  border-radius: 10px; /* ขอบมน */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเบา ๆ */
+  text-align: center;
+  transition: transform 0.2s ease-in-out; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+}
+.card-item1 {
+  background-color: white; /* พื้นหลังสีขาว */
+  border-radius: 10px; /* ขอบมน */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเบา ๆ */
+  text-align: center;
+  transition: transform 0.2s ease-in-out; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+}
+.card-item:hover {
+  transform: scale(1.05); /* ขยายการ์ดเมื่อ hover */
+}
+.card-item1:hover {
+  transform: scale(1.05); /* ขยายการ์ดเมื่อ hover */
+}
+
+.icon {
+  width: 100%;
+  max-width: 100%; /* ปรับขนาดรูปไม่ให้ใหญ่เกินไป */
+  height: auto;
+
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
+}
+
+/* จัดตำแหน่ง container ให้อยู่กลาง */
+.tab-container {
+  width: 100%; /* ให้กว้างเต็มบรรทัด */
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* จัด tab-menu ให้อยู่ตรงกลาง */
+.tab-menu {
+  display: flex; /* ใช้ inline-flex เพื่อให้อยู่ในบรรทัดเดียว */
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* สไตล์ของแต่ละหัวข้อ */
+.tab-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.tab-item.active::after {
+  background-color: white;
+}
+
+.navbar-nav .nav-link,
+.navbar-toggler,
+.form-control,
+.btn {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.usersetting {
+    margin-left: 15px;
+}
+
+.btn-login {
+    margin-left: 10px;
+    background-color: transparent;
+}
+
+.icon {
+    font-size: 28px;
+    color: #fff;
+}
+
+.btn {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-color: #FF832A !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+    transition: border-color 0.3s ease, color 0.3s ease !important;
+}
+
+.btn:hover {
+    background-color: #FF832A;
+    border-color: #FF832A;
+}
+nav {
+  background-color: #1C1C1C;
+}
+
+.navactive a {
+  background-color: #FF832A; /* สีพื้นหลังเมื่ออยู่หน้าหลัก */
+  color: #000; /* สีตัวอักษร */
+  border-radius: 15px;
+}
+
+.nav-item a.active {
+  background-color: #FF832A;
+  color: #000;
+  border-radius: 15px;
+}
+
+.nav-link:hover {
+  color: #007bff; /* สีที่จะแสดงเมื่อ hover */
+}
+
+/* ถ้าต้องการเปลี่ยนสีพื้นหลังเมื่อ hover ด้วย */
+.nav-item:hover {
+  background-color: #545454;
+  border-radius: 15px;
+}
+
+.exercise-card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Header Flexbox */
+
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content h3, 
+.text-content p {
+  margin: 5px 0;
+  text-align: left;
+  color: #000;
+}
+
+.exercise-icon {
+  width: 70px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.exercise-video {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.exercise-video iframe {
+  width: 100%; /* Ensures the video adjusts to the card’s width */
+  height: auto; /* Keeps the aspect ratio intact */
+  aspect-ratio: 16 / 9; /* Prevents video distortion */
+}
+
+.exercise-details h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.exercise-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.exercise-details li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button Styling */
+.buttonconfirm {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.confirm-button {
+  border-radius: 30px;
+  color: #fff;
+  background-color: #2F2F2F;
+  width: 50%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #1e1e1e;
+}
+
+
+
+@media (max-width: 768px) {
+  .muscle-group,
+  .muscle-secondgroup {
+display: flex;
+    flex:1;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+ margin-bottom: 20px;
+ width: 100%;
+  }
+  .row{gap: 45px;}
+  .d2 {
+
+    flex-wrap: nowrap;
+
+  }
+  .d3 {
+   
+    flex-wrap: nowrap;
+
+  }
+
+  .card-item {
+    width: 70px;/* ป้องกันไม่ให้การ์ดหดตัว */
+    white-space: nowrap; /* ทำให้ไม่ห่อบรรทัด */
+    flex-wrap: nowrap;
+   
+  }
+  .card-item1 {
+    width: 70px;/* ป้องกันไม่ให้การ์ดหดตัว */
+    white-space: nowrap; /* ทำให้ไม่ห่อบรรทัด */
+    flex-wrap: nowrap;
+   
+  }
+
+
+  .icon {
+    width: 100%;
+    height: auto;
+
+    
+  }
+
+
+  .card-grid {
+    display: flex; /* ใช้ Flexbox */
+    flex-wrap: wrap; /* ให้การ์ดห่อบรรทัดได้ */
+    gap: 15px; /* ช่องว่างระหว่างการ์ด */
+  }
+  
+  .card {
+    flex: 1 1 48%; /* ทำให้การ์ดมีความกว้างประมาณ 48% สำหรับหน้าจอเล็ก */
+    max-width: 48%; /* จำกัดความกว้างสูงสุด */
+    padding: 10px; /* เพิ่ม padding ให้กับการ์ด */
+    font-size: 14px; /* ปรับขนาดฟอนต์ให้เล็กลง */
+  }
+
+  .card img {
+    width: 100%; /* ทำให้ภาพกว้างเต็มการ์ด */
+    height: auto; /* ให้สูงอัตโนมัติ */
+  }
+  .tab-container {
+    width: 100%; /* ให้กว้างเต็มบรรทัด */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+    justify-content: space-between;
+    color: #fff;
+  }
+  
+  /* จัด tab-menu ให้อยู่ตรงกลาง */
+  .tab-menu {
+    display: flex; /* ใช้ inline-flex เพื่อให้อยู่ในบรรทัดเดียว */
+    justify-content: space-between;
+    gap: 10px; /* เพิ่มระยะห่างระหว่าง tab-item */
+  }
+  
+  /* สไตล์ของแต่ละหัวข้อ */
+  .tab-item {
+    padding: 10px 15px; /* ปรับ padding ตามต้องการ */
+    cursor: pointer;
+    position: relative;
+    font-size: 14px; /* ปรับขนาดฟอนต์ให้เล็กลง */
+    white-space: nowrap; /* ห้ามห่อบรรทัด */
+  }
+  
+  .tab-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-item.active::after {
+    background-color: white;
+  }
+  .card {
+    flex: 1 1 48%; /* ทำให้การ์ดมีความกว้างประมาณ 48% เพื่อให้แสดงสองใบต่อแถว */
+  }
+  .row-2{
+    gap: 12px;
+  }
+  .exercise-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .exercise-icon {
+    width: 60px;
+  }
+
+  .confirm-button {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  /* การจัดการขนาดการ์ดและการจัดวาง */
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap; /* ห้ามห่อบรรทัด */
+
+    gap: 15px; /* ลดช่องว่างระหว่างการ์ด */
+  }
+ 
+  .card {
+    flex: 0 0 auto; /* ให้การ์ดไม่ยืดหรือหด */
+    width: 120px; /* ลดขนาดของการ์ดให้เล็กลง */
+    font-size: 14px; /* ปรับขนาดฟอนต์ */
+  }
+  .row{
+    gap: 65px;
+  }
+  
+  .card img {
+    width: 100%; /* ให้รูปภาพขยายตามขนาดการ์ด */
+    border-radius: 8px; /* ขอบมนเล็กน้อย */
+  }
+
+  /* ปรับแต่งขนาดไอคอนให้เล็กลง */
+  .icon {
+    width: 60px; /* ลดขนาดไอคอน */
+    height: auto;
+  }
+
+  /* การจัดกลุ่มกล้ามเนื้อให้เลื่อนได้ */
+  .muscle-group,
+  .muscle-secondgroup {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* เพิ่มการเลื่อนด้านข้าง */
+    gap: 10px; /* เพิ่มช่องว่างระหว่างการ์ด */
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* ปรับขนาดของ .card-item ในกลุ่มเล็ก ๆ */
+  .card-item {
+    width: 80px; /* ลดขนาดการ์ด */
+    white-space: nowrap; /* ป้องกันการห่อบรรทัด */
+    margin-bottom: 10px;
+    flex: 0 0 auto; /* ให้การ์ดไม่ยืดหรือหด */
+  }
+  .card-item1 {
+    width: 80px; /* ลดขนาดการ์ด */
+    white-space: nowrap; /* ป้องกันการห่อบรรทัด */
+    margin-bottom: 10px;
+    flex: 0 0 auto; /* ให้การ์ดไม่ยืดหรือหด */
+  }
+
+  /* ลดขนาดของ tab-menu */
+  .tab-item {
+    font-size: 14px; /* ลดขนาดฟอนต์ */
+    padding: 10px; /* ลด padding ของแท็บ */
+  }
+
+  /* ลดขนาดหัวเรื่อง */
+  h1, h2 {
+    font-size: 20px; /* ลดขนาดฟอนต์ของหัวข้อ */
+  }
+
+  /* ลดขนาดปุ่ม */
+  .btn {
+    font-size: 14px; /* ลดขนาดตัวอักษรในปุ่ม */
+    padding: 8px 12px; /* ลด padding ในปุ่ม */
+  }
+  
+  /* ลดขนาดการค้นหา */
+  .search-container input {
+    width: 80%; /* ปรับขนาด input ให้เล็กลง */
+    padding: 8px;
+  }
+
+  /* ปรับการจัดวางฟิลเตอร์ */
+  .filters select {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 460px) {
+  .muscle-group{
+    display: flex;
+    flex-wrap: nowrap;
+
+  }
+  .muscle-secondgroup {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* เพิ่มการเลื่อนด้านข้าง */
+    gap: 10px; /* เพิ่มช่องว่างระหว่างไอเทม */
+  }
+
+  .card-item {
+    margin-bottom: 10px; /* เพิ่มช่องว่างระหว่างการ์ดด้านล่าง */
+    white-space: nowrap; /* ห้ามเคาะบรรทัด */
+    flex: 0 0 auto; /* ให้การ์ดไม่ยืดหรือหด */
+    width: 90px; /* ขนาดของการ์ดในหน้าจอเล็ก */
+  }
+  .card-item1 {
+    margin-bottom: 10px; /* เพิ่มช่องว่างระหว่างการ์ดด้านล่าง */
+    white-space: nowrap; /* ห้ามเคาะบรรทัด */
+    flex: 0 0 auto; /* ให้การ์ดไม่ยืดหรือหด */
+    width: 90px; /* ขนาดของการ์ดในหน้าจอเล็ก */
+  }
+  .icon {
+    width: 80px; /* ลดขนาดไอคอนให้เห็นได้ชัด */
+    height: auto;
+    flex: 0 0 auto; /* ให้การ์ดไม่ยืดหรือหด */
+  }
+
+  .d2, .d3 {
+    display: flex;
+    overflow-x: auto; /* เพิ่มการเลื่อนด้านข้างเมื่อเนื้อหาล้น */
+    -webkit-overflow-scrolling: touch; /* ให้การเลื่อนลื่นบนมือถือ */
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: nowrap; /* ห้ามเคาะบรรทัด */
+    gap: 75px;
+  }
+  .row-2 {
+    display: flex;
+    flex-wrap: nowrap; /* ห้ามเคาะบรรทัด */
+
+  }
+
+  .card {
+    flex: 0 0 auto; /* ให้การ์ดไม่ยืดหรือหด */
+    width: 140px; /* กำหนดขนาดของการ์ด */
+  }
+  .exercise-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exercise-icon {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .text-content h3 {
+    font-size: 18px;
+  }
+
+  .confirm-button {
+    width: 80%;
+  }
+  .exercise-card {
+    padding: 10px;
+  }
+
+  .exercise-icon {
+    width: 50px;
+  }
+
+  .text-content h3 {
+    font-size: 20px;
+  }
+
+  .confirm-button {
+    width: 70%;
+  }
+
+}
+@media (max-width: 440px) {
+  .exercise-video iframe {
+    height: 200px; /* Adjust height to prevent overflow */
+  }
+
+  .text-content h3 {
+    font-size: 16px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .confirm-button {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  /* ลดขนาดการ์ดสำหรับหน้าจอที่เล็กกว่า 400px */
+  .muscle-group,
+  .muscle-secondgroup {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* เพิ่มการเลื่อนแนวนอนเมื่อเนื้อหาล้น */
+    gap: 5px; /* ลดช่องว่างระหว่างการ์ด */
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; /* ให้เต็มหน้าจอ */
+  }
+
+  .card-item {
+    width: 50px; /* ลดขนาดการ์ดให้เล็กลง */
+    white-space: nowrap; /* ไม่ให้ข้อความห่อบรรทัด */
+    margin-bottom: 5px; /* ลดช่องว่างด้านล่างการ์ด */
+    flex: 0 0 auto; /* ให้การ์ดไม่ยืดหรือหด */
+  }
+  .card-item1 {
+    width: 50px; /* ลดขนาดการ์ดให้เล็กลง */
+    white-space: nowrap; /* ไม่ให้ข้อความห่อบรรทัด */
+    margin-bottom: 5px; /* ลดช่องว่างด้านล่างการ์ด */
+    flex: 0 0 auto; /* ให้การ์ดไม่ยืดหรือหด */
+  }
+  .row{
+    gap: 35px;
+  }
+  .row-2{
+    gap: 10 px;
+  }
+  .icon {
+    width: 50px; /* ลดขนาดไอคอนให้เล็กลง */
+    height: auto;
+  }
+
+  /* ลดขนาดฟอนต์ในหน้าจอที่เล็กกว่า 400px */
+  h1, h2 {
+    font-size: 18px; /* ปรับขนาดฟอนต์ให้เล็กลง */
+  }
+
+  /* ลดขนาดของ tab-menu */
+  .tab-item {
+    font-size: 12px; /* ปรับขนาดฟอนต์ของแท็บ */
+    padding: 8px 10px; /* ลด padding */
+  }
+
+  /* ปรับขนาดของการ์ดสำหรับรูปภาพ */
+  .card-grid {
+    display: flex;
+    
+    gap: 10px; /* ลดช่องว่างระหว่างการ์ด */
+  }
+  
+  .card {
+    width: 150px; /* ลดขนาดการ์ด */
+    font-size: 12px; /* ลดขนาดฟอนต์ในการ์ด */
+  }
+  
+  .card img {
+    width: 100%; /* ให้รูปภาพขยายตามขนาดการ์ด */
+  }
+  .text-content h3 {
+    font-size: 15px;
+  }
+
+  .text-content p {
+    font-size: 13px;
+  }
+
+  .confirm-button {
+    width: 100%;
+  }
+}
+
+ 
