@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+nav {
+    background-color: #1C1C1C;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.navactive a {
+    background-color: #FF832A;
+    color: #000;
+    border-radius: 15px;
+    font-weight: 200 !important;
+}
+
+.nav-item a.active {
+    background-color: #FF832A;
+    color: #000;
+    border-radius: 15px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    /* สีที่จะแสดงเมื่อ hover */
+}
+
+/* ถ้าต้องการเปลี่ยนสีพื้นหลังเมื่อ hover ด้วย */
+.nav-item:hover {
+    background-color: #545454;
+    border-radius: 15px;
+}
+
+
+.navbar-nav .nav-link,
+.navbar-toggler,
+.btn {
+    color: white !important;
+}
+
+.form-control {
+    color: #000;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.usersetting {
+    margin-left: 15px;
+}
+
+.btn-login {
+    margin-left: 10px;
+    background-color: transparent !important;
+    right: 20px;
+    top: 10px;
+}
+
+.icon {
+    font-size: 48px;
+    color: #fff;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #FF832A !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF832A;
+    border-color: #FF832A;
+}
+
+.profile {
+    margin: 0 0 0 auto;
+}
+
+.click {
+    padding: 0px;
+    width: 70px;
+}
+
+.unlock a {   
+    text-decoration: none !important;
+  }
+  
+  
+  .unlock-premium {   
+    background-color: #9200fa !important;
+    border: none !important;
+  }
+
+
+body {
+    background: linear-gradient(to bottom right, #1C1C1C 0%, #0F2C5A 100%);
+    color: white !important;
+    background-repeat: no-repeat;
+}
+
+.content-wrapper {
+    width: 60%;
+    margin: 90px auto 20px auto;
+    padding: 20px;
+    border: 2px solid #ff6700;
+    border-radius: 15px;
+    background-color: #1b263b;
+    text-align: left;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 15px;
+    font-family: 'Kanit', sans-serif;
+    /* Kanit font for main headings */
+}
+
+.gender-select,
+.days-select,
+.time-select {
+    margin-bottom: 30px;
+}
+
+.gender-select {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+}
+
+.gender-select input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #4CAF50;
+    /* เปลี่ยนสี radio button เมื่อเลือก */
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.gender-select label {
+    margin-right: 20px;
+}
+
+.days-select {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+    flex-wrap: nowrap;
+}
+
+.days-select button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: "Kanit", sans-serif;
+}
+
+.days-select button.active {
+    background-color: #FF832A;
+    color: #000;
+}
+
+.time-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.time-display {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 200px;
+}
+
+.time-input {
+    background-color: #ff6700;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.time-input input {
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+
+#add-time {
+    background-color: #28a745;
+}
+
+#subtract-time {
+    background-color: #ff0000d1;
+}
+
+.icon-button {
+    transition: transform 0.2s;
+    color: white;
+    border: solid 1px #000;
+    margin: 0 5px;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+    /* ขยายขนาดเมื่อวางเมาส์ */
+}
+
+.hidden {
+    display: none;
+}
+
+#time-options {
+    border: 1px solid #000;
+    position: absolute;
+    background-color: #1c1c1c;
+    z-index: 1;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#time-options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#time-options li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#time-options li:hover {
+    background-color: #000;
+}
+
+.extra-info {
+    display: none;
+}
+
+.age-group {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.age-item {
+    text-align: center;
+    margin: 5px;
+}
+
+.age-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.label-box {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.goal-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.goal-item {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.goal-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.confirm-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.confirm-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #1C1C1C;
+    font-weight: 300;
+}
+
+.pic-contact {
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    /* จัดเรียงไอคอนในแนวตั้ง */
+    gap: 15px;
+    /* ระยะห่างระหว่างไอคอน */
+    margin-top: 10px;
+    /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+    transition: transform 0.3s ease;
+    /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+    transform: scale(1.1);
+    /* ขยายไอคอนเมื่อ hover */
+}
+
+@media screen and (max-width: 900px) {
+    .content-wrapper {
+        width: 80%;
+    }
+
+    .age-group,
+    .days-select,
+    .goal-group {
+        overflow: scroll;
+    }
+
+    .profile {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+
+
+    .unlock-premium {
+        margin-right: 80px;
+    }
+}

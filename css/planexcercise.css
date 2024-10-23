@@ -1,0 +1,159 @@
+.unlock a {
+    text-decoration: none !important;
+}
+
+
+.unlock-premium {
+    background-color: #9200fa;
+    border: none !important;
+}
+
+.navbar {
+    font-weight: 400 !important;
+}
+
+
+.plan {
+    display: flex;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-head {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.content {
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.card-excercise {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    padding: 20px 10px;
+    color: #000;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 49%;
+}
+
+.pic-excercise {
+    width: 100%;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.set-and-rep {
+    align-content: center;
+}
+
+.set-and-rep ul {
+    font-weight: 400;
+}
+
+.btn-setting {
+    border-radius: 5px;
+    border: none;
+    padding: 3px 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.button-edit {
+    background-color: #FF832A;
+
+}
+
+.button-save {
+    background-color: #009821;
+}
+
+.button-addset {
+    background-color: #009821;
+}
+
+.button-unit {
+    background-color: #000;
+}
+
+.button-deleteset {
+    background-color: #FF1123;
+}
+
+.count {
+    text-align: center;
+}
+
+.count .btn {
+    width: 100%;
+    border: none !important;
+    padding: 10px;
+}
+
+.count .btn-primary:hover {
+    background-color: #0047a4;
+}
+
+.count .btn-danger:hover {
+    background-color: #a40000;
+}
+
+#time-display {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.footer {
+    background-color: #1C1C1C;
+    font-weight: 300;
+}
+
+.pic-contact {
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    /* จัดเรียงไอคอนในแนวตั้ง */
+    gap: 15px;
+    /* ระยะห่างระหว่างไอคอน */
+    margin-top: 10px;
+    /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+    transition: transform 0.3s ease;
+    /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+    transform: scale(1.1);
+    /* ขยายไอคอนเมื่อ hover */
+}
+
+
+@media screen and (max-width: 990px) {
+    .card-excercise {
+        width: 95%;
+    }
+
+    .profile {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+
+    .unlock-premium {
+        margin-right: 80px;
+    }
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fitfusion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/premium.css" type="text/css">
+    <link rel="stylesheet" href="css/resonplan.css" type="text/css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body onload="displayDate()">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="user-premium.html">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table-gender/table.html">ตารางออกกำลังกาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#cadio">แนะนำการคาร์ดิโอ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reservation.html">จองเครื่องออกกำลังกาย</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex ms-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success me-2" type="submit">
+                        <span class="material-symbols-outlined icon">
+                            search
+                        </span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Profile Icon -->
+            <ul class="navbar-nav mb-2 mb-lg-0 profile ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle click" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./img/user.png" width="40px" height="40px" style="border-radius: 100%;">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="planexcercise-premium.html">ตารางออกกำลังกายของฉัน</a></li>
+                        <li><a class="dropdown-item" href="pickpoint.html">รับคะแนน</a></li>
+                        <li><a class="dropdown-item" href="shop.html">แลกคะแนน</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">แก้ไขหน้าโปรไฟล์</a></li>
+                        <li><a class="dropdown-item" href="index.html">ออกจากระบบ</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section>
+        <article class="plan">
+            <div class="text-head">
+                <h1>ตารางออกกำลังกาย</h1>
+                <h4>ของวันที่: <span id="currentDate"></span></h4>
+            </div>
+            <div class="container for-mb">
+                <div class="col-12">
+                    <div class="row card-excercise">
+                        <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                        <div class="col-6">
+                            <h4>Incline Dumbell Press</h4>
+                            <h6>หน้าอก, อกบน</h6>
+                        </div>
+                        <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 delete">ลบ</div>
+                        <div class="col-6 change">เปลี่ยนท่า</div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="row card-excercise">
+                        <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                        <div class="col-6">
+                            <h4>Incline Dumbell Press</h4>
+                            <h6>หน้าอก, อกบน</h6>
+                        </div>
+                        <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 delete">ลบ</div>
+                        <div class="col-6 change">เปลี่ยนท่า</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row card-excercise">
+                        <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                        <div class="col-6">
+                            <h4>Incline Dumbell Press</h4>
+                            <h6>หน้าอก, อกบน</h6>
+                        </div>
+                        <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 delete">ลบ</div>
+                        <div class="col-6 change">เปลี่ยนท่า</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row card-excercise">
+                        <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                        <div class="col-6">
+                            <h4>Incline Dumbell Press</h4>
+                            <h6>หน้าอก, อกบน</h6>
+                        </div>
+                        <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 delete">ลบ</div>
+                        <div class="col-6 change">เปลี่ยนท่า</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row card-excercise">
+                        <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                        <div class="col-6">
+                            <h4>Incline Dumbell Press</h4>
+                            <h6>หน้าอก, อกบน</h6>
+                        </div>
+                        <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 delete">ลบ</div>
+                        <div class="col-6 change">เปลี่ยนท่า</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container for-pc">
+                <div class="row">
+                    <div class="col-6 right">
+                        <div class="row card-excercise">
+                            <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                            <div class="col-6">
+                                <h4>Incline Dumbell Press</h4>
+                                <h6>หน้าอก, อกบน</h6>
+                            </div>
+                            <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 delete">ลบ</div>
+                            <div class="col-6 change">เปลี่ยนท่า</div>
+                        </div>
+                    </div>
+                    <div class="col-6 right">
+                        <div class="row card-excercise">
+                            <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                            <div class="col-6">
+                                <h4>Incline Dumbell Press</h4>
+                                <h6>หน้าอก, อกบน</h6>
+                            </div>
+                            <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 delete">ลบ</div>
+                            <div class="col-6 change">เปลี่ยนท่า</div>
+                        </div>
+                    </div>
+                    <div class="col-6 right">
+                        <div class="row card-excercise">
+                            <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                            <div class="col-6">
+                                <h4>Incline Dumbell Press</h4>
+                                <h6>หน้าอก, อกบน</h6>
+                            </div>
+                            <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 delete">ลบ</div>
+                            <div class="col-6 change">เปลี่ยนท่า</div>
+                        </div>
+                    </div>
+                    <div class="col-6 right">
+                        <div class="row card-excercise">
+                            <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                            <div class="col-6">
+                                <h4>Incline Dumbell Press</h4>
+                                <h6>หน้าอก, อกบน</h6>
+                            </div>
+                            <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 delete">ลบ</div>
+                            <div class="col-6 change">เปลี่ยนท่า</div>
+                        </div>
+                    </div>
+                    <div class="col-6 right">
+                        <div class="row card-excercise">
+                            <div class="col-3"><img class="pic-plan" src="icon_abs_muscle.png" alt=""></div>
+                            <div class="col-6">
+                                <h4>Incline Dumbell Press</h4>
+                                <h6>หน้าอก, อกบน</h6>
+                            </div>
+                            <div class="col-3"><img class="pic-machine" src="icon_abs_muscle.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 delete">ลบ</div>
+                            <div class="col-6 change">เปลี่ยนท่า</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div id="footTime" class="foot-time">
+                    <div class="foot-text">
+                        <h3>เลือกเวลาในการออกกำลังกายในแต่ละเครื่อง</h3>
+                        <p>เวลาในการใช้เครื่องแต่ละเครื่องจะเว้นไว้ให้ 5 นาที</p>
+                    </div>
+                    <div class="btn-count">
+                        <div class="counter">
+                            <button class="increment" data-target="number1">v</button>
+                            <div class="number" id="number1">0</div>
+                            <button class="decrement" data-target="number1">v</button>
+                        </div>
+
+                        <div class="counter">
+                            <button class="increment" data-target="number2">v</button>
+                            <div class="number" id="number2">0</div>
+                            <button class="decrement" data-target="number2">v</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="addExcercise" class="add-excercise" style="display: none;">
+                    <div class="btn-add-excercise">
+                        เพิ่มท่าออกกำลังกาย
+                    </div>
+                </div>
+
+                <div class="row button-con">
+                    <button id="editSchedule" class="btn button-cancel">แก้ไขตาราง</button>
+                    <button id="confirmBooking" class="btn button-change">ยืนยันการจอง</button>
+                    <button id="confirmSchedule" class="btn button-change" style="display: none;">ยืนยัน</button>
+                </div>
+
+            </div>
+
+
+
+        </article>
+    </section>
+
+    <footer class="text-white mt-5 pt-4 footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: About Fitfusion -->
+                <div class="col-md-4">
+                    <h5>เกี่ยวกับ Fitfusion</h5>
+                    <p>Fitfusion เป็นแพลตฟอร์มที่ช่วยให้คุณสามารถออกกำลังกายอย่างถูกต้องและมีประสิทธิภาพ
+                        พร้อมแผนการออกกำลังกายที่ปรับให้เหมาะสมกับคุณ.</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-4">
+                    <h5>ลิงก์ด่วน</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">แผนการออกกำลังกาย</a></li>
+                        <li><a href="#" class="text-white">บทความฟิตเนส</a></li>
+                        <li><a href="#" class="text-white">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>ติดตามเรา</h5>
+
+                    <div class="social-links">
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/fb.png" alt="Facebook" width="40">
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/ig.png" alt="Twitter" width="40">
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/tw.png" alt="Instagram" width="40">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr class="bg-white">
+            <div class="text-center pb-3">
+                <p>© 2024 Fitfusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const footTime = document.getElementById("footTime");
+        const addExcercise = document.getElementById("addExcercise");
+        const editButton = document.getElementById("editSchedule");
+        const confirmButton = document.getElementById("confirmSchedule");
+        const confirmBookingButton = document.getElementById("confirmBooking");
+        const deleteButtons = document.querySelectorAll(".delete"); // ค้นหาปุ่มลบทั้งหมด
+        const changeButtons = document.querySelectorAll(".change"); // ค้นหาปุ่มเปลี่ยนท่าทั้งหมด
+
+        editButton.addEventListener("click", function () {
+            // ถ้าอยู่ในสถานะ "แก้ไขตาราง"
+            if (editButton.textContent === "แก้ไขตาราง") {
+                // ซ่อน foot-time และแสดง add-excercise
+                footTime.style.display = "none";
+                addExcercise.style.display = "block";
+
+                // เปลี่ยนปุ่มเป็น "ยกเลิก"
+                editButton.textContent = "ยกเลิก";
+
+                // ซ่อนปุ่ม "ยืนยันการจอง" และแสดงปุ่ม "ยืนยัน"
+                confirmBookingButton.style.display = "none";
+                confirmButton.style.display = "block";
+
+                // แสดงปุ่มลบและเปลี่ยนท่า
+                deleteButtons.forEach(button => button.style.display = "block");
+                changeButtons.forEach(button => button.style.display = "block");
+            } else {
+                // ถ้าอยู่ในสถานะ "ยกเลิก"
+                resetToDefault();
+            }
+        });
+
+        confirmButton.addEventListener("click", function () {
+            // เมื่อกดปุ่มยืนยัน ให้กลับไปเป็นสถานะเริ่มต้น
+            resetToDefault();
+        });
+
+        function resetToDefault() {
+            // แสดง foot-time และซ่อน add-excercise
+            footTime.style.display = "block";
+            addExcercise.style.display = "none";
+
+            // เปลี่ยนปุ่ม "ยกเลิก" กลับเป็น "แก้ไขตาราง"
+            editButton.textContent = "แก้ไขตาราง";
+
+            // แสดงปุ่ม "ยืนยันการจอง" และซ่อนปุ่ม "ยืนยัน"
+            confirmBookingButton.style.display = "block";
+            confirmButton.style.display = "none";
+
+            // ซ่อนปุ่มลบและเปลี่ยนท่า
+            deleteButtons.forEach(button => button.style.display = "none");
+            changeButtons.forEach(button => button.style.display = "none");
+        }
+
+    </script>
+
+    <script>
+        document.querySelectorAll('.increment').forEach(function (button) {
+            button.addEventListener('click', function () {
+                let target = document.getElementById(button.getAttribute('data-target'));
+                let count = parseInt(target.textContent);
+
+                if (target.id === 'number1') {
+                    count = (count + 1) % 2; // วนระหว่าง 0 และ 1
+                } else if (target.id === 'number2') {
+                    count = (count + 1) % 10; // วนระหว่าง 0 ถึง 9
+                }
+
+                target.textContent = count;
+            });
+        });
+
+        document.querySelectorAll('.decrement').forEach(function (button) {
+            button.addEventListener('click', function () {
+                let target = document.getElementById(button.getAttribute('data-target'));
+                let count = parseInt(target.textContent);
+
+                if (target.id === 'number1') {
+                    count = (count - 1 + 2) % 2; // วนระหว่าง 0 และ 1
+                } else if (target.id === 'number2') {
+                    count = (count - 1 + 10) % 10; // วนระหว่าง 0 ถึง 9
+                }
+
+                target.textContent = count;
+            });
+        });
+
+
+    </script>
+
+    <script>
+        function displayDate() {
+            var today = new Date();
+            var day = today.getDate();
+            var month = today.getMonth() + 1; // เดือนใน JavaScript เริ่มจาก 0, ดังนั้นบวก 1
+            var year = today.getFullYear();
+
+            // เพิ่ม 0 ข้างหน้าเลขวันหรือเดือนที่มีหลักเดียวเพื่อความสวยงาม
+            if (day < 10) {
+                day = '0' + day;
+            }
+            if (month < 10) {
+                month = '0' + month;
+            }
+
+            var currentDate = day + '/' + month + '/' + year;
+            document.getElementById('currentDate').textContent = currentDate;
+        }
+    </script>
+</body>
+
+</html>

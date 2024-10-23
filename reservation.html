@@ -10,11 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="premium.css" type="text/css">
-    <link rel="stylesheet" href="reservation.css" type="text/css">
+    <link rel="stylesheet" href="css/premium.css" type="text/css">
+    <link rel="stylesheet" href="css/reservation.css" type="text/css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body onload="displayDate()">
@@ -27,16 +28,16 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
+                        <a class="nav-link" aria-current="page" href="user-premium.html">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ตารางออกกำลังกาย</a>
+                        <a class="nav-link" href="table-gender/table.html">ตารางออกกำลังกาย</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">แนะนำการคาร์ดิโอ</a>
+                        <a class="nav-link" href="index.html#cadio">แนะนำการคาร์ดิโอ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">จองเครื่องออกกำลังกาย</a>
+                        <a class="nav-link active" href="reservation.html">จองเครื่องออกกำลังกาย</a>
                     </li>
                 </ul>
 
@@ -55,16 +56,17 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle click" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        <img src="pic_abs_muscle.jpg" width="40px" height="40px" style="border-radius: 100%;">
+                        <img src="./img/user.png" width="40px" height="40px" style="border-radius: 100%;">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">ตารางออกกำลังกายของฉัน</a></li>
+                        <li><a class="dropdown-item" href="planexcercise-premium.html">ตารางออกกำลังกายของฉัน</a></li>
+                        <li><a class="dropdown-item" href="pickpoint.html">รับคะแนน</a></li>
                         <li><a class="dropdown-item" href="shop.html">แลกคะแนน</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="#">แก้ไขหน้าโปรไฟล์</a></li>
-                        <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                        <li><a class="dropdown-item" href="index.html">ออกจากระบบ</a></li>
                     </ul>
                 </li>
             </ul>
@@ -74,6 +76,14 @@
 
     <section>
         <article class="reservation">
+
+            <div class="container">
+                <div class="text-head">
+                    <h1>จองเครื่องออกกำลังกาย</h1>
+                    <h4>โปรดเลือกเวลาที่จะจองเครื่องออกกำลังกาย</h4>
+                </div>
+
+            </div>
             <div class="container-fluid">
                 <div class="time-container">
                     <button class="arrow-btn" onclick="scrollTime(-1)">&#8592;</button> <!-- ลูกศรย้อนเวลา -->
@@ -123,31 +133,37 @@
                     <div id="A" class="col-12">
                         <div class="col-12">
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a1.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a2.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a3.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a4.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a5.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a6.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a7.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a8.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a9.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupA" src="./img/a10.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupA" src="./img/a11.jpg" alt="" onclick="showContainer()">
                             </div>
                         </div>
                     </div>
@@ -155,31 +171,31 @@
                     <div id="B" class="col-12" style="display:none;">
                         <div class="col-12">
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_back_muscle.png" alt="">
+                                <img class="pic-machine groupB" src="./img/b1.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_back_muscle.png" alt="">
+                                <img class="pic-machine groupB" src="./img/b2.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_back_muscle.png" alt="">
+                                <img class="pic-machine groupB" src="./img/b3.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_back_muscle.png" alt="">
+                                <img class="pic-machine groupB" src="./img/b4.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_back_muscle.png" alt="">
+                                <img class="pic-machine groupB" src="./img/b5.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_back_muscle.png" alt="">
+                                <img class="pic-machine groupB" src="./img/b6.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_back_muscle.png" alt="">
+                                <img class="pic-machine groupB" src="./img/b7.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_back_muscle.png" alt="">
+                                <img class="pic-machine groupB" src="./img/b8.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_back_muscle.png" alt="">
+                                <img class="pic-machine groupB" src="./img/b9.jpg" alt="" onclick="showContainer()">
                             </div>
                         </div>
                     </div>
@@ -187,31 +203,31 @@
                     <div id="C" class="col-12" style="display:none;">
                         <div class="col-12">
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupC" src="./img/c1.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupC" src="./img/c2.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupC" src="./img/c3.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupC" src="./img/c4.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupC" src="./img/c5.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupC" src="./img/c6.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupC" src="./img/c7.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupC" src="./img/c8.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupC" src="./img/c9.jpg" alt="" onclick="showContainer()">
                             </div>
                         </div>
                     </div>
@@ -219,183 +235,326 @@
                     <div id="D" class="col-12" style="display:none;">
                         <div class="col-12">
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupD" src="./img/d1.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupD" src="./img/d2.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupD" src="./img/d3.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupD" src="./img/d4.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupD" src="./img/d5.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine" src="icon_arm_muscle.png" alt="">
+                                <img class="pic-machine groupD" src="./img/d6.jpg" alt="" onclick="showContainer()">
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row for-pc">
                     <div class="col-4">
                         <div class="head-column">
-                            <img class="pic-row" src="icon_abs_muscle.png" alt="">
+                            <img class="pic-row" src="./img/groupA.png" alt="" onclick="showContainer()">
                         </div>
                         <div class="col-12">
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a1.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a2.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a3.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a4.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a5.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a6.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a7.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a8.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a9.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a10.jpg" alt="" onclick="showContainer()">
                             </div>
                             <div class="col-12">
-                                <img class="pic-machine groupA" src="icon_abs_muscle.png" alt="">
+                                <img class="pic-machine groupA" src="./img/a11.jpg" alt="" onclick="showContainer()">
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <br>
-                        <br>
-                        <br>
+                        <br><br><br> <br><br><br><br><br><br> <br><br><br>
                         <div class="head-column">
-                            <img class="pic-row" src="icon_abs_muscle.png" alt="">
+                            <img class="pic-row" src="./img/groupB.png" alt="" onclick="showContainer()">
+                        </div>
+                        <div class="col-12">
+                            <div class="col-12"></div>
+                            <div class="col-12">
+                                <img class="pic-machine groupB" src="./img/b1.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupB" src="./img/b2.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupB" src="./img/b3.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupB" src="./img/b4.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupB" src="./img/b5.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupB" src="./img/b6.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupB" src="./img/b7.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupB" src="./img/b8.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupB" src="./img/b9.jpg" alt="" onclick="showContainer()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <br><br><br> <br><br><br><br><br><br> <br><br><br>
+                        <div class="head-column">
+                            <img class="pic-row" src="./img/groupC.png" alt="" onclick="showContainer()">
                         </div>
                         <div class="col-12">
                             <div class="col-12">
+                                <img class="pic-machine groupC" src="./img/c1.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupC" src="./img/c2.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupC" src="./img/c3.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupC" src="./img/c4.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupC" src="./img/c5.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupC" src="./img/c6.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupC" src="./img/c7.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupC" src="./img/c8.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-12">
+                                <img class="pic-machine groupC" src="./img/c9.jpg" alt="" onclick="showContainer()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 for-pc">
+                        <div class="col-12 row">
+                            <div class="col-2">
+                                <img class="pic-row groupD" src="./img/d1.png" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-2">
+                                <img class="pic-machine groupD" src="./img/d2.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-2">
+                                <img class="pic-machine groupD" src="./img/d3.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-2">
+                                <img class="pic-machine groupD" src="./img/d4.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-2">
+                                <img class="pic-machine groupD" src="./img/d5.jpg" alt="" onclick="showContainer()">
+                            </div>
+                            <div class="col-2">
+                                <img class="pic-machine groupD" src="./img/d6.jpg" alt="" onclick="showContainer()">
+                            </div>
+                        </div>
+                    </div>
 
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupB" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupB" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupB" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupB" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupB" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupB" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupB" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupB" src="icon_abs_muscle.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <br>
-                        <br>
-                        <br>
-                        <div class="head-column">
-                            <img class="pic-row" src="icon_abs_muscle.png" alt="">
-                        </div>
-                        <div class="col-12">
-                            <div class="col-12">
-                                <img class="pic-machine groupC" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupC" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupC" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupC" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupC" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupC" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupC" src="icon_abs_muscle.png" alt="">
-                            </div>
-                            <div class="col-12">
-                                <img class="pic-machine groupC" src="icon_abs_muscle.png" alt="">
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-12 for-pc">
-                    <div class="col-12 row">
-                        <div class="col-2">
-                            <img class="pic-machine groupD" src="icon_abs_muscle.png" alt="">
-                        </div>
-                        <div class="col-2">
-                            <img class="pic-machine groupD" src="icon_abs_muscle.png" alt="">
-                        </div>
-                        <div class="col-2">
-                            <img class="pic-machine groupD" src="icon_abs_muscle.png" alt="">
-                        </div>
-                        <div class="col-2">
-                            <img class="pic-machine groupD" src="icon_abs_muscle.png" alt="">
-                        </div>
-                        <div class="col-2">
-                            <img class="pic-machine groupD" src="icon_abs_muscle.png" alt="">
-                        </div>
-                        <div class="col-2">
-                            <img class="pic-machine groupD" src="icon_abs_muscle.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
         </article>
 
         <article class="botton-reservation">
             <div class="btn-con">
                 <div class="btn-res">
-                    <a href="">จองตามตามรางของท่าน</a> <br>
+                    <a href="resonplan.html">จองตามตามรางของท่าน</a> <br>
                 </div>
-                <a href=""><u>ดูตารางออกกำลังกาย</u></a>
+                <a href="planexcercise-premium.html"><u>ดูตารางออกกำลังกาย</u></a>
             </div>
         </article>
+
+        <article class="click-res">
+            <div class="container-res">
+                <h3>จองเครื่องออกกำลังกายประจำวันที่ 24/8/2567</h3>
+                <div class="machine-image">
+                    <img src="./img/a1.jpg" alt="เครื่อง A 1">
+                </div>
+                <p style="font-weight: bolder; font-size: x-large;">เครื่อง A 1</p>
+                <div class="info" style="font-weight: bolder;">
+                    <p style="margin-bottom: 10px;">ประเภทเครื่อง: เครื่องออกกำลังกาย</p>
+                    <p>เวลา:
+                        <select class="dropdown">
+                            <option value="1">1 นาที</option>
+                            <option value="2">2 นาที</option>
+                            <option value="3">3 นาที</option>
+                            <option value="4">4 นาที</option>
+                            <option value="5">5 นาที</option>
+                            <option value="6">6 นาที</option>
+                            <option value="7">7 นาที</option>
+                            <option value="8">8 นาที</option>
+                            <option value="9">9 นาที</option>
+                            <option value="10">10 นาที</option>
+                            <option value="11">11 นาที</option>
+                            <option value="12">12 นาที</option>
+                            <option value="13">13 นาที</option>
+                            <option value="14">14 นาที</option>
+                            <option value="15" selected>15 นาที</option>
+                        </select>
+                        <span
+                            style="color: red; margin-left: 10px; font-size: 12px;">*กรุณาใช้เครื่องออกกำลังกายตามเวลาที่เลือกไว้</span>
+                    </p>
+                </div>
+                <div class="content" style="text-align: left;">
+                    <h4>รายละเอียดของเครื่องออกกำลังกาย:</h4>
+                    <ul>
+                        <li>การใช้งาน:
+
+                            ผู้ใช้จะนอนคว่ำ (prone) บนเบาะ โดยขาจะยืดออกไปข้างหลัง
+                            ใช้แรงจากกล้ามเนื้อขาหลังในการดึงน้ำหนักขึ้น โดยการงอเข่าขึ้นเข้าหาลำตัว</li>
+                        <li>ข้อดี:
+
+                            ช่วยเสริมสร้างกล้ามเนื้อขาหลัง (Hamstrings) ซึ่งมีความสำคัญต่อการเคลื่อนไหวต่าง ๆ เช่น
+                            การวิ่งและการกระโดด
+                            ลดความเสี่ยงของการบาดเจ็บที่เกิดจากกล้ามเนื้อขาหลังอ่อนแรง
+                            ช่วยปรับสมดุลระหว่างกล้ามเนื้อขาหน้า (Quadriceps) และขาหลัง</li>
+                        <li>การปรับน้ำหนัก:
+
+                            เครื่องมักจะมีระบบน้ำหนักที่สามารถปรับได้
+                            ซึ่งช่วยให้ผู้ใช้สามารถเลือกน้ำหนักที่เหมาะสมตามระดับความแข็งแรงของตนเอง</li>
+                    </ul>
+                    <h4>กล้ามเนื้อที่ได้:</h4>
+                    <div class="highlight">
+                        <img src="./img/icon_legB_muscle.png" alt="กล้ามเนื้อ" />
+                        <div>
+                            <h5>กล้ามเนื้อขาหลัง (hamstring)</h5>
+                            <p>ในขณะการออกกำลังกายจะใช้กล้ามเนื้อขาหลัง (hamstring) เป็นหลัก และจะใช้กล้ามเนื้อน่องเป็นส่วนรอง</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-cancel" onclick="cancelReservation()">ยกเลิก</button>
+                    <button class="btn btn-confirm">ยืนยันการจอง</button>
+                </div>
+            </div>
+
+            <script>
+                document.querySelector('.btn-confirm').addEventListener('click', function () {
+                    Swal.fire({
+                        title: 'จองเครื่องออกกำลังกายเรียบร้อย',
+                        html: '<h5>คุณได้จองเครื่องออกกำลังกาย A1 ในช่วงเวลา 10.15-10.30 แล้ว</h5><p style="color:#f40000;">กรุณาใช้เครื่องตามเวลาที่จอง</p>',
+                        icon: 'success',
+                        confirmButtonText: 'ตกลง',
+                        customClass: {
+                            popup: 'custom-popup', // กำหนด class ของ alert เพื่อปรับแต่ง CSS
+                            confirmButton: 'custom-confirm-btn'
+                        }
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.location.href = 'reservation.html'; // นำทางไปยังหน้าถัดไป
+                        }
+                    });
+                });
+            </script>
+        </article>
     </section>
+
+    <footer class="text-white mt-5 pt-4 footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: About Fitfusion -->
+                <div class="col-md-4">
+                    <h5>เกี่ยวกับ Fitfusion</h5>
+                    <p>Fitfusion เป็นแพลตฟอร์มที่ช่วยให้คุณสามารถออกกำลังกายอย่างถูกต้องและมีประสิทธิภาพ
+                        พร้อมแผนการออกกำลังกายที่ปรับให้เหมาะสมกับคุณ.</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-4">
+                    <h5>ลิงก์ด่วน</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">แผนการออกกำลังกาย</a></li>
+                        <li><a href="#" class="text-white">บทความฟิตเนส</a></li>
+                        <li><a href="#" class="text-white">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>ติดตามเรา</h5>
+
+                    <div class="social-links">
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/fb.png" alt="Facebook" width="40">
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/ig.png" alt="Twitter" width="40">
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/tw.png" alt="Instagram" width="40">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr class="bg-white">
+            <div class="text-center pb-3">
+                <p>© 2024 Fitfusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showContainer() {
+            // ซ่อนส่วน .for-pc และ .for-mb
+            document.querySelector('.machine').style.display = 'none';
+            document.querySelector('.botton-reservation').style.display = 'none';
+
+            // แสดงส่วน .container-res
+            document.querySelector('.container-res').style.display = 'block';
+        }
+        function cancelReservation() {
+            // ซ่อน .container-res
+            document.querySelector('.container-res').style.display = 'none';
+
+            // แสดง .botton-reservation .machine
+            document.querySelector('.machine').style.display = 'block';
+            document.querySelector('.botton-reservation').style.display = 'block';
+        } 
+    </script>
+
 
     <script>
         // ช่วงเวลาตั้งแต่ 10.00 ถึง 20.00 โดยแบ่งเป็นช่วงละ 15 นาที

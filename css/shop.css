@@ -1,0 +1,127 @@
+body {
+    color: #000;
+}
+
+.shop {
+    margin: 70px 0;
+}
+
+.shop h6 {
+    color: #fff;
+    text-align: end;
+    margin-right: 30px;
+}
+
+
+.content {
+    justify-content: space-evenly;
+}
+
+
+.card-shop {
+
+    background-color: #d6d6d6;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.code {
+    margin-top: 80px;
+}
+
+.pic-code {
+    width: 100%;
+    height: auto;
+}
+
+.code .pic-code {
+    width: 60%;
+}
+
+.code-select{
+    text-align: center;
+}
+
+.card-shop h3 {
+    font-size: 20px;
+    text-align: left;
+}
+.card-shop h5 {
+    font-weight: 300;
+    text-align: left;   
+}
+
+.button-change { 
+    background-color: #00890b;
+    border: none;
+    width: 100%;
+}
+
+.button-change:hover {
+    background-color: #015e08;
+}
+
+.button-change-active {
+    background-color: #00890b;
+    border: none;
+    width: 45%;
+}
+
+.button-change-active:hover {
+    background-color: #015e08;
+}
+
+.button-cancel {
+    background-color: #f00505;
+    border: none;
+    width: 45%;
+}
+
+.button-cancel:hover {
+    background-color: #940101;
+}
+
+.code-select {
+    width: 100%;
+}
+
+
+.footer {
+    background-color: #1C1C1C;
+    font-weight: 300;
+}
+
+.pic-contact {
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    /* จัดเรียงไอคอนในแนวตั้ง */
+    gap: 15px;
+    /* ระยะห่างระหว่างไอคอน */
+    margin-top: 10px;
+    /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+    transition: transform 0.3s ease;
+    /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+    transform: scale(1.1);
+    /* ขยายไอคอนเมื่อ hover */
+}
+
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 520px) {
+    .card-shop {
+        width: 100%;
+    }
+}

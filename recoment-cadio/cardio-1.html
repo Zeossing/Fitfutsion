@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardio D1</title>
+
+  <!-- อิมพอร์ตฟอนต์ Kanit และ Bai Jamjuree -->
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Kanit:wght@600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- อิมพอร์ต Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- อิมพอร์ตไฟล์ CSS -->
+  <link rel="stylesheet" href="./css/cardio-1.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="card-container">
+      <!-- Card D1 -->
+      <div class="card">
+        <h1>คาร์ดิโอแบบเบา</h1>
+        <p>ระดับเริ่มต้น</p>
+
+        <div class="icon-text">
+          <i class="fas fa-fire calories"></i>
+          <span>150-300 แคลอรี</span>
+        </div>
+
+        <div class="icon-text">
+          <i class="fas fa-clock time"></i>
+          <span>30-60 นาที</span>
+        </div>
+
+        <i class="fas fa-male person-icon"></i>
+
+        <!-- ปุ่ม "อ่านข้อมูลเพิ่มเติม" -->
+        <button class="read-more" onclick="toggleMoreInfo('more-info1', 'arrow-btn1')">อ่านข้อมูลเพิ่มเติม</button>
+
+        <!-- ข้อมูลเพิ่มเติม -->
+        <div class="more-info" id="more-info1">
+          <p style="margin-top: 20px;">เหมาะสำหรับใครบ้าง?</p>
+          <ul>
+            <li>ผู้เริ่มต้นออกกำลังกาย</li>
+            <li>ผู้สูงอายุ (อายุ 50 ขึ้นไป)</li>
+            <li>ผู้ที่ต้องการฟื้นฟูร่างกายหลังจากบาดเจ็บ</li>
+            <li>ผู้ที่ต้องการเผาผลาญแคลอรีอย่างต่อเนื่องเป็นเวลานาน</li>
+          </ul>
+        </div>
+
+        <!-- ปุ่มลูกศร -->
+        <button class="arrow-btn" id="arrow-btn1">
+          <a href="cardio-2.html"><i class="fas fa-arrow-right" style="color: white;"></i></a>
+        </button>
+      </div>
+
+      <!-- Card D2 -->
+      <div class="card">
+        <h1>คาร์ดิโอระดับกลาง</h1>
+        <p>ระดับปานกลาง</p>
+
+        <div class="icon-text">
+          <i class="fas fa-fire calories"></i>
+          <span>300-600 แคลอรี</span>
+        </div>
+
+        <div class="icon-text">
+          <i class="fas fa-clock time"></i>
+          <span>30-60 นาที</span>
+        </div>
+
+        <i class="fas fa-walking person-icon"></i>
+
+        <!-- ปุ่ม "อ่านข้อมูลเพิ่มเติม" -->
+        <button class="read-more" onclick="toggleMoreInfo('more-info2', 'arrow-btn2')">อ่านข้อมูลเพิ่มเติม</button>
+
+        <!-- ข้อมูลเพิ่มเติม -->
+        <div class="more-info" id="more-info2">
+          <p style="margin-top: 20px;">เหมาะสำหรับใครบ้าง?</p>
+          <ul>
+            <li>ผู้ที่มีประสบการณ์ในการออกกำลังกาย</li>
+            <li>ผู้ที่ต้องการเพิ่มระดับความฟิต</li>
+            <li>ผู้ที่ต้องการเผาผลาญแคลอรีเพิ่ม</li>
+          </ul>
+        </div>
+
+        <!-- ปุ่มลูกศร -->
+        <button class="arrow-btn" id="arrow-btn2">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Card D3 -->
+      <div class="card">
+        <h1>คาร์ดิโอระดับสูง</h1>
+        <p>ระดับสูง</p>
+
+        <div class="icon-text">
+          <i class="fas fa-fire calories"></i>
+          <span>600-1000 แคลอรี</span>
+        </div>
+
+        <div class="icon-text">
+          <i class="fas fa-clock time"></i>
+          <span>45-90 นาที</span>
+        </div>
+
+        <i class="fas fa-running person-icon"></i>
+
+        <!-- ปุ่ม "อ่านข้อมูลเพิ่มเติม" -->
+        <button class="read-more" onclick="toggleMoreInfo('more-info3', 'arrow-btn3')">อ่านข้อมูลเพิ่มเติม</button>
+
+        <!-- ข้อมูลเพิ่มเติม -->
+        <div class="more-info" id="more-info3">
+          <p style="margin-top: 20px;">เหมาะสำหรับใครบ้าง?</p>
+          <ul>
+            <li>นักกีฬา</li>
+            <li>ผู้ที่ต้องการฝึกฝนระดับความทนทานสูง</li>
+            <li>ผู้ที่ต้องการเผาผลาญแคลอรีสูงสุด</li>
+          </ul>
+        </div>
+
+        <!-- ปุ่มลูกศร -->
+        <button class="arrow-btn" id="arrow-btn3">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMoreInfo(infoId, arrowBtnId) {
+      var moreInfo = document.getElementById(infoId);
+      var arrowBtn = document.getElementById(arrowBtnId);
+
+      if (moreInfo.classList.contains('show')) {
+        moreInfo.classList.remove('show');
+        arrowBtn.style.display = 'none'; // ซ่อนปุ่มเมื่อไม่แสดงข้อมูล
+      } else {
+        moreInfo.classList.add('show');
+        arrowBtn.style.display = 'flex'; // แสดงปุ่มเมื่อแสดงข้อมูล
+      }
+    }
+  </script>
+</body>
+
+</html>

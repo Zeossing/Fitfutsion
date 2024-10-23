@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(to bottom, #0D1724, #1A3350);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px; /* เพิ่ม padding เพื่อป้องกันการหายของขอบข้าง */
+    font-family: 'Bai Jamjuree', sans-serif; /* ใช้ฟอนต์ Bai Jamjuree สำหรับเนื้อหา */
+}
+.login-container {
+    background-color: #1A3350;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 100%; /* ให้กล่องยืดหยุ่นตามขนาดหน้าจอ */
+    width: 320px; /* กำหนดความกว้างสูงสุด */
+}
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Kanit', sans-serif; /* ใช้ฟอนต์ Kanit สำหรับหัวข้อหลัก */
+}
+input[type="text"], input[type="password"] {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.login-button {
+    background-color: #FF7900;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 10px;
+}
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-login img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.social-login img.google {
+    width: 42px;
+    height: auto;
+}
+.signup {
+    margin-top: 20px;
+    color: #FF7900;
+}
+.signup a {
+    color: #FF7900;
+    text-decoration: none;
+}
+p {
+    color: white;
+}

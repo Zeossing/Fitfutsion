@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitfusion</title>
+  <link rel="stylesheet" href="./css/muscleexercisestyles.css">
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">หน้าหลัก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="table-gender/table.html">ตารางออกกำลังกาย</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#cadio">แนะนำการคาร์ดิโอ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reservation.html">จองเครื่องออกกำลังกาย</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success me-2" type="submit">
+            <span class="material-symbols-outlined icon">
+              search
+            </span>
+          </button>
+        </form>
+      </div>
+      <a href="Login-Regis/LogIN.html"><button class="btn btn-primary btn-login ms-3 ms-auto">เข้าสู่ระบบ</button></a>
+
+
+      <!-- <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="pic_abs_muscle.jpg" width="50px" height="50px" style="border-radius: 100%;">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">ตารางออกกำลังกายของฉัน</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">แก้ไขหน้าโปรไฟล์</a></li>
+                  <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                </ul>
+              </li>
+              </ul> -->
+
+
+
+    </div>
+  </nav>
+  <article class="main-excercise">
+    <div class="container">
+      <header>
+        <h1>กล้ามเนื้อหลัก</h1>
+        <div class="muscle-group">
+          <div class="container-fluid">
+            <div class="d2">
+              <div class="row">
+                <div class="col-1">
+                  <div class="card-item muscle-active" data-muscle="chest" class="icon">
+                    <img src="./icon/icon_chest.png" alt="Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="card-item" data-muscle="back" class="icon">
+                    <img src="./icon/icon_back.png" alt="Back Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="card-item" data-muscle="shoulder" class="icon">
+                    <img src="./icon/icon_sholder.png" alt="Shoulder Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="card-item" data-muscle="arm" class="icon">
+                    <img src="./icon/icon_arm.png" alt="Arm Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="card-item" data-muscle="leg" class="icon">
+                    <img src="./icon/icon_leg.png" alt="Leg Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="card-item" data-muscle="abs" class="icon">
+                    <img src="./icon/icon_abs.png" alt="Abs Muscle" class="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+        <h2>กล้ามเนื้อรอง</h2>
+        <div class="muscle-secondgroup muscle-chest">
+          <div class="container-fluid">
+            <div class="d3">
+              <div class="row-2">
+                <div class="col-md-2">
+                  <div class="card-item1 musclesecond-active" data-muscle="chest-top" class="icon">
+                    <img src="./icon/chesttop.png" alt="Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="middle-chest" class="icon">
+                    <img src="./icon/middlechest-02.png" alt="Middle Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="bottom-chest" class="icon">
+                    <img src="./icon/Bottomchest-02.png" alt="Bottom Chest Muscle" class="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="muscle-secondgroup muscle-back" style="display: none;">
+          <div class="container-fluid">
+            <div class="d3">
+              <div class="row-2">
+                <div class="col-md-2">
+                  <div class="card-item1 type-active" data-muscle="chest-top" class="icon">
+                    <img src="./icon/icon_back.png" alt="Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="middle-chest" class="icon">
+                    <img src="./icon/icon_back.png" alt="Middle Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="bottom-chest" class="icon">
+                    <img src="./icon/icon_back.png" alt="Bottom Chest Muscle" class="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="muscle-secondgroup muscle-shoulder" style="display: none;">
+          <div class="container-fluid">
+            <div class="d3">
+              <div class="row-2">
+                <div class="col-md-2">
+                  <div class="card-item1 type-active" data-muscle="chest-top" class="icon">
+                    <img src="./icon/icon_frontdealt-05-02.png" alt="Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="middle-chest" class="icon">
+                    <img src="./icon/icon_sidedealt-05.png" alt="Middle Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="bottom-chest" class="icon">
+                    <img src="./icon/icon_reardealt-04-04.png" alt="Bottom Chest Muscle" class="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+      if (muscle === 'arm-forearm') {
+        document.querySelectorAll('.arm-forearm-exercise').forEach(card => {
+          card.style.display = 'block';
+        });
+      } else if (muscle === 'arm-bicep') {
+        document.querySelectorAll('.arm-bicep-exercise').forEach(card => {
+          card.style.display = 'block';
+        });
+      } else if (muscle === 'arm-tricep') {
+        document.querySelectorAll('.arm-tricep-exercise').forEach(card => {
+          card.style.display = 'block';
+        });
+        
+      }
+    -->
+        <div class="muscle-secondgroup muscle-arm" style="display: none;">
+          <div class="container-fluid">
+            <div class="d3">
+              <div class="row-2">
+                <div class="col-md-2">
+                  <div class="card-item1 type-active" data-muscle="arm-tricep" class="icon">
+                    <img src="./icon/icon_tricep-04-04.png" alt="arm muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="arm-bicep" class="icon">
+                    <img src="./icon/icon_bicep-02.png" alt="arm muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1 muscle-icon" data-muscle="arm-forearm">
+                    <img src="./icon/icon_forearm-02.png" alt="Arm Forearm Muscle" class="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="muscle-secondgroup muscle-leg" style="display: none;">
+          <div class="container-fluid">
+            <div class="d3">
+              <div class="row-2">
+                <div class="col-md-2">
+                  <div class="card-item1 type-active" data-muscle="chest-top" class="icon">
+                    <img src="./icon/icon_quad-03.png" alt="Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="middle-chest" class="icon">
+                    <img src="./icon/icon_outterleg-03.png" alt="Middle Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="bottom-chest" class="icon">
+                    <img src="./icon/icon_hamstring-06-06.png" alt="Bottom Chest Muscle" class="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="muscle-secondgroup muscle-abs" style="display: none;">
+          <div class="container-fluid">
+            <div class="d3">
+              <div class="row-2">
+                <div class="col-md-2">
+                  <div class="card-item1 type-active" data-muscle="chest-top" class="icon">
+                    <img src="./icon/icon_abs.png" alt="Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="middle-chest" class="icon">
+                    <img src="./icon/icon_back.png" alt="Middle Chest Muscle" class="icon">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card-item1" data-muscle="bottom-chest" class="icon">
+                    <img src="./icon/Bottomchest-02.png" alt="Bottom Chest Muscle" class="icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-container">
+          <div class="tab-menu">
+            <h3 class="tab-item active" data-tab="1">ฟรีเวท</h3>
+            <h3 class="tab-item" data-tab="2">แมชชีน</h3>
+            <h3 class="tab-item" data-tab="3">ยืดกล้ามเนื้อ</h3>
+          </div>
+        </div>
+
+
+      </header>
+
+      <main>
+
+        <div class="card-grid" id="free-weights">
+          <div class="card col-md-3 chest-exercise middle-chest-exercise"
+            onclick="showExercise('Dumbbell Bench Press')">
+            <img src="./gif/dumbellchestpress.gif" alt="Dumbbell Bench Press">
+            <p>Dumbbell Bench Press</p>
+            <b>อก, chest</b>
+          </div>
+          <div class="card col-md-3 chest-exercise chest-top-exercise" onclick="showExercise('Dumbbell Incline Press')">
+            <img src="./gif/dumbellinclinepress.gif" alt="Dumbbell Incline Bench Press">
+            <p>Dumbbell Incline Press</p>
+            <b>อก, chest</b>
+          </div>
+          <div class="card col-md-3 chest-exercise chest-bottom-exercise"
+            onclick="showExercise('Dumbbell Decline Press')">
+            <img src="./gif/dumbelldeclinechestpress.gif" alt="Dumbbell Decline Press">
+            <p>Dumbbell Decline Press</p>
+            <b>อก, chest</b>
+          </div>
+          <div class="card col-md-3 chest-exercise chest-bottom-exercise"
+            onclick="showExercise('Decline Barbell chestpress')">
+            <img src="./gif/declinebarbellchestpress.gif" alt="Decline Barbell Chestpress">
+            <p>Decline Barbell chestpress</p>
+            <b>อก, chest</b>
+          </div>
+          <div class="card col-md-3 chest-exercise middle-chest-exercise" onclick="showExercise('Barbell Bench Press')">
+            <img src="./gif/chestpressbarbell.gif" alt="Bench Press">
+            <p>Barbell Bench Press</p>
+            <b>อก, chest</b>
+          </div>
+          <div class="card col-md-3 chest-exercise chest-top-exercise"
+            onclick="showExercise('Barbell Incline Bench Press')">
+            <img src="./gif/inclinebenchpress.gif" alt="Incline Bench Press">
+            <p>Barbell Incline Bench Press</p>
+            <b>อก, chest</b>
+          </div>
+
+        </div>
+
+
+        <div class="card-grid" id="machines" style="display:none; ">
+
+          <div class="card col-md-3 chest-exercise chest-bottom-exercise"
+            onclick="showExercise('StandingCable DeclinePress')">
+            <img src="./gif/StandingCable DeclinePress.gif" alt="Standing Cable Decline Press">
+            <p>Standing Cable Decline Press</p>
+            <b>อก, chest</b>
+          </div>
+
+          <div class="card col-md-3 chest-exercise middle-chest-exercise" onclick="showExercise('Cable Fly Machine')">
+            <img src="./gif/cableflymachine.gif" alt="Cable Fly">
+            <p>Cable Fly Machine</p>
+            <b>อก, chest</b>
+          </div>
+          <div class="card col-md-3 chest-exercise middle-chest-exercise" onclick="showExercise('Cable ChestFly')">
+            <img src="./gif/cablechestfly.gif" alt="Cable Fly">
+            <p>Cable ChestFly</p>
+            <b>อก, chest</b>
+          </div>
+          <div class="card col-md-3 chest-exercise chest-top-exercise" onclick="showExercise('Low Cable Fly')">
+            <img src="./gif/cableupperchest.gif" alt="Low Cable Fly">
+            <p>Low Cable Fly</p>
+            <b>อก, chest</b>
+          </div>
+          <div class="card col-md-3 chest-exercise chest-top-exercise"
+            onclick="showExercise('incline benchpress machine')">
+            <img src="./gif/inclinebenchpressmachine.gif" alt="inclinebenchpressmachine">
+            <p>incline benchpress machine</p>
+            <b>อก, chest</b>
+          </div>
+        </div>
+
+        <div class="exercise-card" id="StandingCable DeclinePress" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>StandingCable DeclinePress</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/Bottomchest-02.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/8NvsuQBP-kA?si=Cp85bmSJeCv6QI9Z&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Standing Cable Decline Press ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่ายืน:</b> ยืนตรงกับเคเบิล โดยให้เท้าห่างกันในระดับไหล่เพื่อให้เกิดความมั่นคง</li>
+              <li><b>เริ่มต้น:</b> ปรับระดับของสายเคเบิลให้อยู่ต่ำกว่าระดับไหล่เล็กน้อย
+                และจับด้ามเคเบิลด้วยมือทั้งสองข้าง
+              </li>
+              <li><b>การยก:</b> ค่อยๆ พลักน้ำหนักไปด้านล่างในลักษณะตัว V โดยให้แน่ใจว่ากล้ามเนื้อหน้าอกถูกบีบในส่วนล่าง
+              </li>
+              <li><b>การลดลง:</b> ค่อยๆ ปล่อยน้ำหนักกลับขึ้นในท่าตรง เพื่อให้กล้ามเนื้อหน้าอกยืดตัวได้เต็มที่
+                ก่อนเริ่มทำซ้ำตามจำนวนครั้งที่ต้องการ</li>
+            </ul>
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+        <div class="exercise-card" id="Dumbbell Bench Press" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>Dumbbell Bench Press</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/middlechest-02.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/AduT4Eq-iP0?si=gmaZKSJw9Z8FEcPX&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Dumbbell Bench Press ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่านอน:</b> นอนหงายบนม้านั่ง โดยให้ศีรษะ, หลัง, และก้นสัมผัสกับม้านั่ง</li>
+              <li><b>เริ่มต้น:</b> ถือดัมเบลล์ในมือทั้งสองข้าง โดยให้แขนยืดตรงและดัมเบลล์อยู่ระดับอก</li>
+              <li><b>การยก:</b> ค่อยๆ ยกดัมเบลล์ขึ้นไปจนแขนเหยียดตรง แต่ไม่ล็อคข้อศอก สายตาจับจ้องที่เพดาน</li>
+              <li><b>การลดลง:</b> ค่อยๆ ลดดัมเบลล์กลับมาที่ระดับอก โดยให้ข้อศอกอยู่ต่ำกว่าระดับไหล่</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยควรควบคุมการเคลื่อนไหวให้มั่นคงและช้าๆ</li>
+            </ul>
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+        <div class="exercise-card" id="Dumbbell Incline Press" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>Dumbbell Incline Press</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/chesttop.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/oZVCBM9f8Eo?si=nugEl8zp-i0o1KLS&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Dumbbell Incline Press ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่านอน:</b> นอนหงายบนม้านั่งที่ปรับเอียงประมาณ 30-45 องศา โดยให้ศีรษะ, หลัง, และก้นสัมผัสกับม้านั่ง
+              </li>
+              <li><b>เริ่มต้น:</b> ถือดัมเบลล์ในมือทั้งสองข้าง โดยให้แขนยืดตรงเหนือหน้าอก และฝ่ามือหันเข้าหากัน</li>
+              <li><b>การยก:</b> ค่อยๆ ยกดัมเบลล์ขึ้นไปจนแขนเหยียดตรง แต่ไม่ล็อคข้อศอก
+                ควรยกขึ้นจนดัมเบลล์อยู่ในระดับที่เสมอกันเหนือหน้าอก</li>
+              <li><b>การลดลง:</b> ค่อยๆ ลดดัมเบลล์กลับมาที่ระดับอก โดยให้ข้อศอกอยู่ต่ำกว่าระดับไหล่
+                ควบคุมการเคลื่อนไหวให้มั่นคง</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยรักษาความสม่ำเสมอในการฝึก</li>
+            </ul>
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+
+        <div class="exercise-card" id="Dumbbell Decline Press" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>Dumbbell Decline Press</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/Bottomchest-02.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/4R_GwRhG0rY?si=nCPppcJTyPTlenii&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Dumbbell Decline Press ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่านอน:</b> นอนหงายบนม้านั่งที่ปรับลดต่ำลง โดยให้ศีรษะอยู่ต่ำกว่าขา</li>
+              <li><b>เริ่มต้น:</b> ถือดัมเบลล์ในมือทั้งสองข้าง โดยให้แขนยืดตรงเหนือหน้าอก และฝ่ามือหันเข้าหากัน</li>
+              <li><b>การยก:</b> ค่อยๆ ยกดัมเบลล์ลงไปที่ระดับอก โดยให้ข้อศอกอยู่ที่มุมประมาณ 45 องศา
+                เพื่อให้กล้ามเนื้อหน้าอกส่วนล่างทำงานได้อย่างมีประสิทธิภาพ</li>
+              <li><b>การลดลง:</b> ค่อยๆ ลดดัมเบลล์กลับไปที่ตำแหน่งเริ่มต้น โดยให้กล้ามเนื้อหน้าอกยืดได้เต็มที่</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยรักษาท่าทางและการควบคุมการเคลื่อนไหวให้มั่นคง</li>
+            </ul>
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+
+        <div class="exercise-card" id="Decline Barbell chestpress" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>Decline Barbell chestpress</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/Bottomchest-02.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/6yGZ0KCaiWM?si=bqSsqXFLJb8u5VZ5&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Decline Barbell Chest Press ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่านอน:</b> นอนหงายบนม้านั่งที่ปรับลดต่ำลง โดยให้ศีรษะอยู่ต่ำกว่าขา</li>
+              <li><b>เริ่มต้น:</b> จับบาร์เบลล์ในมือทั้งสองข้าง โดยให้มือห่างกันประมาณกว้างไหล่
+                และยกบาร์เบลล์ขึ้นไปเหนือหน้าอก</li>
+              <li><b>การยก:</b> ค่อยๆ ลดบาร์เบลล์ลงไปที่ระดับอก โดยให้ข้อศอกอยู่ที่มุมประมาณ 45 องศา
+                เพื่อให้กล้ามเนื้อหน้าอกส่วนล่างทำงานได้อย่างมีประสิทธิภาพ</li>
+              <li><b>การดันขึ้น:</b> ดันบาร์เบลล์กลับขึ้นไปที่ตำแหน่งเริ่มต้น โดยใช้กล้ามเนื้อหน้าอกและไหล่</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยรักษาท่าทางและการควบคุมการเคลื่อนไหวให้มั่นคง</li>
+            </ul>
+
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+        <div class="exercise-card" id="Barbell Bench Press" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>Barbell Bench Press</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/middlechest-02.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/CjHIKDQ4RQo?si=YFqktbp6HrxWSCIe&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Barbell Bench Press ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่านอน:</b> นอนหงายบนม้านั่งราบ โดยให้ศีรษะ, หลัง, และสะโพกสัมผัสกับม้านั่ง</li>
+              <li><b>ตำแหน่งมือ:</b> จับบาร์เบลล์ให้กว้างกว่าความกว้างของไหล่เล็กน้อย โดยให้มืออยู่ในตำแหน่งที่ปลอดภัย
+              </li>
+              <li><b>เริ่มต้น:</b> ยกบาร์เบลล์ขึ้นไปให้เหนือหน้าอก โดยให้แขนเหยียดตรง</li>
+              <li><b>การลดลง:</b> ค่อยๆ ลดบาร์เบลล์ลงไปที่ระดับหน้าอก โดยควบคุมการเคลื่อนไหว ไม่ให้บาร์เบลล์กระแทกหน้าอก
+              </li>
+              <li><b>การดันขึ้น:</b> ดันบาร์เบลล์กลับขึ้นไปที่ตำแหน่งเริ่มต้น โดยใช้กล้ามเนื้อหน้าอก, ไหล่ และแขน</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยรักษาท่าทางให้ถูกต้องและมั่นคง</li>
+            </ul>
+
+
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+
+        <div class="exercise-card" id="Barbell Incline Bench Press" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>Barbell Incline Bench Press</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/chesttop.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/2jFFCy8JBU8?si=MtFrofmDbkKwBIb5&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Barbell Incline Bench Press ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่านอน:</b> นอนหงายบนม้านั่งที่ปรับให้เอียงขึ้นประมาณ 30-45 องศา โดยให้ศีรษะ, หลัง,
+                และสะโพกสัมผัสกับม้านั่ง</li>
+              <li><b>ตำแหน่งมือ:</b> จับบาร์เบลล์ให้กว้างกว่าความกว้างของไหล่เล็กน้อย โดยให้มืออยู่ในตำแหน่งที่ปลอดภัย
+              </li>
+              <li><b>เริ่มต้น:</b> ยกบาร์เบลล์ขึ้นไปให้เหนือหน้าอก โดยให้แขนเหยียดตรง</li>
+              <li><b>การลดลง:</b> ค่อยๆ ลดบาร์เบลล์ลงไปที่ระดับหน้าอก โดยควบคุมการเคลื่อนไหว ไม่ให้บาร์เบลล์กระแทกหน้าอก
+              </li>
+              <li><b>การดันขึ้น:</b> ดันบาร์เบลล์กลับขึ้นไปที่ตำแหน่งเริ่มต้น โดยใช้กล้ามเนื้อหน้าอกส่วนบนและไหล่</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยรักษาท่าทางให้ถูกต้องและมั่นคง</li>
+            </ul>
+
+
+
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+        <div class="exercise-card" id="Cable Fly Machine" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>Cable Fly Machine</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/middlechest-02.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/eGjt4lk6g34?si=_LmvItcXa_53hMqK&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Cable Fly Machine ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่ายืนหรือนั่ง:</b> สามารถทำได้ในท่านั่ง
+                โดยปรับเก้าอี้ให้สูงพอสมควรเพื่อให้ไหล่ระดับเดียวกับสายเคเบิล</li>
+              <li><b>ตำแหน่งมือ:</b> จับสายเคเบิลด้วยมือทั้งสองข้าง โดยให้มืออยู่ในระดับไหล่</li>
+              <li><b>เริ่มต้น:</b> ดึงสายเคเบิลออกมาด้านข้างจนอยู่ในตำแหน่งที่เหมาะสม</li>
+              <li><b>การยก:</b> ค่อยๆ นำมือเข้าหากัน โดยให้แขนค่อนข้างตรงและไม่งอข้อศอกมากเกินไป</li>
+              <li><b>การลดลง:</b> ค่อยๆ ลดมือกลับไปยังตำแหน่งเริ่มต้น โดยควบคุมการเคลื่อนไหวให้ช้าและมั่นคง</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยรักษาท่าทางให้ถูกต้องตลอดการออกกำลังกาย</li>
+            </ul>
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+
+        <div class="exercise-card" id="Cable ChestFly" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>Cable ChestFly</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/middlechest-02.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/4mfLHnFL0Uw?si=SyBGrYfnOlEXJqzP&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Cable Chest Fly ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่านั่งหรือลุก:</b> สามารถทำได้ในท่ายืนหรือนั่ง
+                แต่ควรตั้งค่าม้านั่งให้เหมาะสมกับการทำงานของกล้ามเนื้อหน้าอก</li>
+              <li><b>ตำแหน่งมือ:</b> จับสายเคเบิลด้วยมือทั้งสองข้าง โดยให้มืออยู่ในระดับไหล่</li>
+              <li><b>เริ่มต้น:</b> ดึงสายเคเบิลออกมาด้านข้างจนอยู่ในตำแหน่งที่เหมาะสม และทำให้แขนอยู่ในมุม 90
+                องศากับลำตัว
+              </li>
+              <li><b>การยก:</b> ค่อยๆ นำมือเข้าหากัน โดยให้แขนค่อนข้างตรงและไม่งอข้อศอกมากเกินไป</li>
+              <li><b>การลดลง:</b> ค่อยๆ ลดมือกลับไปยังตำแหน่งเริ่มต้น โดยควบคุมการเคลื่อนไหวให้ช้าและมั่นคง</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยรักษาท่าทางให้ถูกต้องตลอดการออกกำลังกาย</li>
+            </ul>
+
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+        <div class="exercise-card" id="Low Cable Fly" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>Low Cable Fly</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/chesttop.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/cltq5-wzObk?si=lmvQPhRbpGvfde4R&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Low Cable Fly ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่ายืนหรือนั่ง:</b> ยืนในท่าที่มั่นคงโดยให้เท้าแยกห่างออกจากกันเล็กน้อย และให้เข่าอยู่ในท่าตรง</li>
+              <li><b>ตำแหน่งสายเคเบิล:</b> ปรับสายเคเบิลให้อยู่ต่ำกว่าระดับไหล่ประมาณ 30-45 องศา</li>
+              <li><b>เริ่มต้น:</b> จับสายเคเบิลด้วยมือทั้งสองข้างให้แขนเหยียดตรง และตั้งอยู่ข้างๆ ลำตัว</li>
+              <li><b>การยก:</b> ค่อยๆ ดึงสายเคเบิลเข้าหาตัว โดยให้มืออยู่ในแนวตั้งขนานกับพื้น
+                สร้างแรงตึงที่กล้ามเนื้อหน้าอก</li>
+              <li><b>การลดลง:</b> ค่อยๆ ปล่อยมือกลับไปยังตำแหน่งเริ่มต้น โดยควบคุมการเคลื่อนไหวให้ช้าและมั่นคง
+                เพื่อไม่ให้เกิดการบาดเจ็บ</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยรักษาท่าทางให้ถูกต้องตลอดการออกกำลังกาย</li>
+            </ul>
+
+
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+
+
+        <div class="exercise-card" id="incline benchpress machine" style="display: none;">
+          <div class="exercise-header">
+            <div class="text-content">
+              <h3>incline benchpress machine</h3>
+              <p>อก, Chest</p>
+            </div>
+            <img src="./icon/chesttop.png" alt="chest" class="exercise-icon">
+          </div>
+          <div class="exercise-video">
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/TrTSvn5-MTk?si=-4PrsWio1likPjie&amp;start=73"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="exercise-details">
+            <h3>วิธีทำ Incline Bench Press Machine ที่ถูกต้อง</h3>
+            <ul>
+              <li><b>ท่านั่ง:</b> นั่งบนเครื่องโดยให้หลังติดกับพนักพิงและตั้งให้เอียงประมาณ 30-45 องศา</li>
+              <li><b>ตำแหน่งมือ:</b> จับที่ด้ามจับให้แน่น โดยให้มือห่างกันประมาณกว้างไหล่</li>
+              <li><b>เริ่มต้น:</b> ยกน้ำหนักขึ้นจนแขนเหยียดตรงโดยให้ข้อมืออยู่ในแนวเดียวกันกับข้อศอก</li>
+              <li><b>การยก:</b> ค่อยๆ ลดน้ำหนักลงโดยให้ข้อศอกอยู่ในแนวที่ปลอดภัย ไม่ให้ต่ำเกินไปจนเกิดแรงกดที่หัวไหล่
+              </li>
+              <li><b>การลดลง:</b> ควบคุมการเคลื่อนไหวให้ช้าและมั่นคง โดยให้กล้ามเนื้อหน้าอกยืดออกเต็มที่</li>
+              <li><b>ทำซ้ำ:</b> ทำซ้ำตามจำนวนครั้งที่ต้องการ โดยควรระวังไม่ให้เกิดการบาดเจ็บที่ข้อศอกและไหล่</li>
+            </ul>
+
+
+
+
+          </div>
+          <div class="buttonconfirm">
+            <button class="confirm-button" onclick="confirmExercise()">ย้อนกลับ</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </article>
+  <footer class="text-white mt-5 pt-4 footer">
+    <div class="container">
+      <div class="row">
+        <!-- Column 1: About Fitfusion -->
+        <div class="col-md-4">
+          <h5>เกี่ยวกับ Fitfusion</h5>
+          <p>Fitfusion เป็นแพลตฟอร์มที่ช่วยให้คุณสามารถออกกำลังกายอย่างถูกต้องและมีประสิทธิภาพ
+            พร้อมแผนการออกกำลังกายที่ปรับให้เหมาะสมกับคุณ.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-md-4">
+          <h5>ลิงก์ด่วน</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">แผนการออกกำลังกาย</a></li>
+            <li><a href="#" class="text-white">บทความฟิตเนส</a></li>
+            <li><a href="#" class="text-white">ติดต่อเรา</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5>ติดตามเรา</h5>
+
+          <div class="social-links">
+            <a href="#" class="text-white">
+              <img class="pic-contact" src="img/fb.png" alt="Facebook" width="40">
+            </a>
+
+            <a href="#" class="text-white">
+              <img class="pic-contact" src="img/ig.png" alt="Twitter" width="40">
+            </a>
+
+            <a href="#" class="text-white">
+              <img class="pic-contact" src="img/tw.png" alt="Instagram" width="40">
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+      <hr class="bg-white">
+      <div class="text-center pb-3">
+        <p>© 2024 Fitfusion. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    let lastSelectedExercise = ''; // Variable to store the last selected exercise
+    let selectedMainIcon = null;  // เก็บไอคอนของกล้ามเนื้อหลักที่เลือก
+    let selectedSecondaryIcon = null;  // เก็บไอคอนของกล้ามเนื้อรองที่เลือก
+
+    function showExercise(exerciseId) {
+      // Hide all exercise cards
+      const allCards = document.querySelectorAll('.exercise-card');
+      allCards.forEach(card => card.style.display = 'none');
+
+      // Show the selected exercise card
+      const selectedCard = document.getElementById(exerciseId);
+      if (selectedCard) {
+        selectedCard.style.display = 'block';
+        lastSelectedExercise = exerciseId; // Store the last selected exercise ID
+        window.scrollTo({ top: selectedCard.offsetTop, behavior: 'smooth' });
+      }
+
+      // Additionally, hide all muscle group cards if needed
+      const muscleCards = document.querySelectorAll('.card');
+      muscleCards.forEach(card => card.style.display = 'none');
+    }
+
+    function confirmExercise() {
+      // Hide all exercise cards
+      document.querySelectorAll('.exercise-card').forEach(card => {
+        card.style.display = 'none'; // Hide all exercise detail cards
+      });
+
+      // Show all exercise cards again
+      document.querySelectorAll('.card').forEach(card => {
+        card.style.display = 'flex'; // Show all exercise cards
+      });
+    }
+
+    function showExercisesForExercise(exerciseId) {
+      // Determine muscle group based on the exercise ID
+      let muscleGroup = '';
+      switch (exerciseId) {
+        case 'hammer-curl':
+        case 'wrist-curl':
+        case 'bicep-curl':
+          muscleGroup = 'arm-forearm';
+          break;
+        case 'incline-press':
+          muscleGroup = 'chest-top';
+          break;
+        // Add other cases as necessary for different exercises
+      }
+
+      // Show the appropriate exercise cards based on the muscle group
+      if (muscleGroup) {
+        document.querySelectorAll(`.${muscleGroup}-exercise`).forEach(card => {
+          card.style.display = 'flex';
+        });
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.style.display = 'flex'; // แสดงการ์ดทั้งหมดเมื่อโหลดหน้า
+      });
+    });
+
+    const tabItems = document.querySelectorAll('.tab-item');
+    const cardGrids = document.querySelectorAll('.card-grid');
+
+    tabItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const tab = item.getAttribute('data-tab');
+
+        // Hide all card grids
+        cardGrids.forEach(grid => grid.style.display = 'none');
+
+        // Show the selected card grid
+        document.getElementById(tab === '1' ? 'free-weights' : 'machines').style.display = 'flex';
+
+        // Update active tab
+        tabItems.forEach(tabItem => tabItem.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
+
+    // ฟังก์ชันรีเซ็ตสีของปุ่มกล้ามเนื้อ
+    function resetMuscleButtonColors() {
+      // รีเซ็ตสีพื้นหลังของไอคอนกล้ามเนื้อหลักทั้งหมด
+      document.querySelectorAll('.card-item[data-muscle]').forEach(icon => {
+        icon.style.backgroundColor = ''; // รีเซ็ตสีพื้นหลัง
+        icon.classList.remove('muscle-active'); // ลบคลาส active
+      });
+
+      // รีเซ็ตสีพื้นหลังของกล้ามเนื้อรองทั้งหมด
+      document.querySelectorAll('.muscle-secondgroup .card-item1').forEach(icon => {
+        icon.style.backgroundColor = ''; // รีเซ็ตสีพื้นหลัง
+        icon.classList.remove('type-active'); // ลบคลาส active
+      });
+    }
+
+    // ฟังก์ชันจัดการการย้อนกลับ
+    function goBack() {
+      resetMuscleButtonColors(); // เรียกใช้ฟังก์ชันรีเซ็ตสี
+      // โค้ดการย้อนกลับที่คุณต้องการจะไปที่นี่
+    }
+
+    // การจัดการเหตุการณ์สำหรับคลิกที่ไอคอนกล้ามเนื้อหลัก
+    document.querySelectorAll('.card-item[data-muscle]').forEach(icon => {
+      icon.addEventListener('click', function () {
+        const muscle = this.getAttribute('data-muscle');
+
+        // แสดงท่าที่ตรงกับกล้ามเนื้อหลักที่ถูกเลือก
+        showMainExercises(muscle);
+
+        // แสดงกลุ่มกล้ามเนื้อรองที่สัมพันธ์กับกล้ามเนื้อหลักที่ถูกเลือก
+        showMuscleGroup(muscle);
+
+        // เปลี่ยนสีพื้นหลังของไอคอนหลักที่ถูกคลิก
+        changeBackgroundColor(this, true);
+      });
+    });
+
+    // ฟังก์ชันจัดการการคลิกที่ไอคอนกล้ามเนื้อรอง
+    document.querySelectorAll('.muscle-secondgroup .card-item1').forEach(icon => {
+      icon.addEventListener('click', function (event) {
+        event.stopPropagation();  // ป้องกันการคลิกที่ไอคอนหลัก
+
+        const secondaryMuscle = this.getAttribute('data-muscle');
+
+        // แสดงท่าที่ตรงกับกล้ามเนื้อรองที่ถูกเลือก
+        showSecondaryExercises(secondaryMuscle);
+
+        // เปลี่ยนสีพื้นหลังของไอคอนรองที่ถูกคลิก
+        changeBackgroundColor(this, false);
+      });
+    });
+
+    // ฟังก์ชันแสดงกลุ่มกล้ามเนื้อรองที่สัมพันธ์กับกล้ามเนื้อหลักที่ถูกเลือก
+    function showMuscleGroup(muscle) {
+      const selectedMuscleGroup = document.querySelector('.muscle-' + muscle);
+      if (selectedMuscleGroup && selectedMuscleGroup.style.display !== 'flex') {
+        document.querySelectorAll('.muscle-secondgroup').forEach(function (group) {
+          group.style.display = 'none';
+        });
+        selectedMuscleGroup.style.display = 'flex';
+      }
+    }
+
+    // ฟังก์ชันแสดงท่าออกกำลังกายตามกล้ามเนื้อหลักที่เลือก
+    function showMainExercises(muscle) {
+      // รีเซ็ตสีพื้นหลังของไอคอนกล้ามเนื้อหลักทั้งหมดก่อน
+      resetMuscleButtonColors();
+
+      // ซ่อนท่าทั้งหมดก่อน
+      document.querySelectorAll('.card').forEach(card => {
+        card.style.display = 'none';
+      });
+
+      // แสดงท่าที่ตรงกับกล้ามเนื้อหลักที่ถูกเลือก
+      if (muscle === 'chest') {
+        document.querySelectorAll('.chest-exercise').forEach(card => {
+          card.style.display = 'flex';
+        });
+      } else if (muscle === 'chest-top') {
+        document.querySelectorAll('.chest-top-exercise').forEach(card => {
+          card.style.display = 'flex';
+        });
+      } else if (muscle === 'bottom-chest') {
+        document.querySelectorAll('.chest-bottom-exercise').forEach(card => {
+          card.style.display = 'flex';
+        });
+      } else if (muscle === 'arm-forearm') {
+        document.querySelectorAll('.arm-forearm-exercise').forEach(card => {
+          card.style.display = 'flex';
+        });
+      }
+    }
+
+    // ฟังก์ชันแสดงท่าออกกำลังกายตามกล้ามเนื้อรองที่เลือก
+    function showSecondaryExercises(muscle) {
+      // ซ่อนท่าทั้งหมดก่อน
+      document.querySelectorAll('.card').forEach(card => {
+        card.style.display = 'none'; // ซ่อนท่าทั้งหมด
+      });
+
+      // แสดงท่าที่ตรงกับกล้ามเนื้อรองที่ถูกเลือก
+      if (muscle === 'chest-top') {
+        document.querySelectorAll('.chest-top-exercise').forEach(card => {
+          card.style.display = 'flex'; // แสดงท่าที่ตรงกับกล้ามเนื้อบนของหน้าอก
+        });
+      } else if (muscle === 'middle-chest') {
+        document.querySelectorAll('.middle-chest-exercise').forEach(card => {
+          card.style.display = 'flex'; // แสดงท่าที่ตรงกับกล้ามเนื้อกลางของหน้าอก
+        });
+      } else if (muscle === 'bottom-chest') {
+        document.querySelectorAll('.chest-bottom-exercise').forEach(card => {
+          card.style.display = 'flex'; // แสดงท่าที่ตรงกับกล้ามเนื้อด้านล่างของหน้าอก
+        });
+      }
+    }
+
+    // ฟังก์ชันเปลี่ยนสีพื้นหลังและย้ายคลาส
+    function changeBackgroundColor(clickedIcon, isMainGroup) {
+      if (isMainGroup) {
+        // จัดการเฉพาะกับกล้ามเนื้อหลัก (muscle-active)
+        if (selectedMainIcon && selectedMainIcon !== clickedIcon) {
+          selectedMainIcon.style.backgroundColor = '';  // รีเซ็ตสีพื้นหลัง
+          selectedMainIcon.classList.remove('muscle-active');  // ลบคลาส active สำหรับกล้ามเนื้อหลัก
+        }
+
+        // เปลี่ยนสีพื้นหลังของไอคอนหลักที่ถูกเลือก
+        clickedIcon.style.backgroundColor = '#007bff';  // สีพื้นหลังใหม่
+        clickedIcon.classList.add('muscle-active');  // เพิ่มคลาส active เฉพาะสำหรับกล้ามเนื้อหลัก
+        selectedMainIcon = clickedIcon;  // เก็บค่าไอคอนหลักที่เลือก
+        selectedSecondaryIcon = null; // รีเซ็ตค่ากล้ามเนื้อรองเมื่อเลือกกล้ามเนื้อหลักใหม่
+      } else {
+        // จัดการเฉพาะกับกล้ามเนื้อรอง (type-active)
+        if (selectedSecondaryIcon && selectedSecondaryIcon !== clickedIcon) {
+          selectedSecondaryIcon.style.backgroundColor = '';  // รีเซ็ตสีพื้นหลัง
+          selectedSecondaryIcon.classList.remove('type-active');  // ลบคลาส active สำหรับกล้ามเนื้อรอง
+        }
+
+        // เปลี่ยนสีพื้นหลังของไอคอนรองที่ถูกเลือก
+        clickedIcon.style.backgroundColor = '#90EE90';  // สีพื้นหลังใหม่สำหรับกล้ามเนื้อรอง
+        clickedIcon.classList.add('type-active');  // เพิ่มคลาส active เฉพาะสำหรับกล้ามเนื้อรอง
+        selectedSecondaryIcon = clickedIcon;  // เก็บค่าไอคอนรองที่เลือก
+      }
+    }
+
+    function showExercises(muscle) {
+      // Hide all exercises first
+      document.querySelectorAll('.card').forEach(card => {
+        card.style.display = 'none';
+      });
+
+      // Show exercises based on the selected muscle
+      document.querySelectorAll(`.${muscle}-exercise`).forEach(card => {
+        card.style.display = 'flex';
+      });
+    }
+
+    // Usage example
+    document.querySelectorAll('.card-item[data-muscle]').forEach(icon => {
+      icon.addEventListener('click', function () {
+        const muscle = this.getAttribute('data-muscle');
+        showExercises(muscle); // Call the function with the selected muscle
+      });
+    });
+  </script>
+
+
+
+
+
+</body>
+
+</html>
