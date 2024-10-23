@@ -1,0 +1,226 @@
+nav {
+  background-color: #1C1C1C;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navactive a {
+  background-color: #FF832A;
+  color: #000;
+  border-radius: 15px;
+}
+
+.nav-item a.active {
+  background-color: #FF832A;
+  color: #000;
+  border-radius: 15px;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  /* สีที่จะแสดงเมื่อ hover */
+}
+
+/* ถ้าต้องการเปลี่ยนสีพื้นหลังเมื่อ hover ด้วย */
+.nav-item:hover {
+  background-color: #545454;
+  border-radius: 15px;
+}
+
+
+.navbar-nav .nav-link,
+.navbar-toggler,
+.btn {
+  color: white !important;
+}
+
+.form-control {
+  color: #000;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.usersetting {
+  margin-left: 15px;
+}
+
+.btn-login {
+  margin-left: 10px;
+  background-color: transparent !important;
+  right: 20px;
+  top: 10px;
+}
+
+.icon {
+  font-size: 48px;
+  color: #fff;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #FF832A !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FF832A;
+  border-color: #FF832A;
+}
+
+body {
+  background: linear-gradient(to bottom right, #1C1C1C 0%, #0F2C5A 100%);
+  color: white !important;
+  font-family: "Kanit", sans-serif !important;
+  background-repeat: no-repeat;
+}
+
+.re-cadio {
+  margin-top: 80px;
+}
+
+.card-custom {
+  background-color: #1c1c1c !important;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff !important;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff4d4d;
+}
+
+.icon-section {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.text-primary-custom {
+  color: #fff;
+}
+
+.rounded-img {
+  border-radius: 10px;
+}
+
+.re-cadio a,
+.re-cadio p,
+.re-cadio li {
+  color: #fff;
+}
+
+.bordered-icon-text {
+  border: 2px solid #fff;
+  padding: 5px 15px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.bordered-icon-text i {
+  margin-right: 10px;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -10px;
+}
+
+.icon-and-profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-container {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  pointer-events: none;
+}
+
+.share-icon {
+  font-size: 24px;
+  color: white;
+  margin-left: 10px;
+}
+
+/* ทุกหัวข้อใช้ฟอนต์ Kanit */
+h2,
+h4 {
+  font-family: 'Kanit', sans-serif;
+  /* ใช้ฟอนต์ Kanit สำหรับหัวข้อ */
+}
+
+/* คลาสสำหรับใช้ฟอนต์ Bai Jamjuree */
+.bai-jamjuree {
+  font-family: 'Bai Jamjuree', sans-serif;
+  /* ใช้ฟอนต์ Bai Jamjuree */
+}
+
+/* เพิ่มระยะห่างให้ไอคอนกับข้อความ */
+.bai-jamjuree i {
+  margin-right: 5px;
+  /* เพิ่มระยะห่างด้านขวาของไอคอน */
+}
+
+.footer {
+  background-color: #1C1C1C;
+  font-weight: 300;
+}
+
+.pic-contact {
+  margin-right: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  /* จัดเรียงไอคอนในแนวตั้ง */
+  gap: 15px;
+  /* ระยะห่างระหว่างไอคอน */
+  margin-top: 10px;
+  /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+  transition: transform 0.3s ease;
+  /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+  transform: scale(1.1);
+  /* ขยายไอคอนเมื่อ hover */
+}

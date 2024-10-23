@@ -57,6 +57,35 @@ body {
     background-color: #1c1c1c!important;
 }
 
+.footer {
+    background-color: #1C1C1C;
+    font-weight: 300;
+}
+
+.pic-contact {
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    /* จัดเรียงไอคอนในแนวตั้ง */
+    gap: 15px;
+    /* ระยะห่างระหว่างไอคอน */
+    margin-top: 10px;
+    /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+    transition: transform 0.3s ease;
+    /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+    transform: scale(1.1);
+    /* ขยายไอคอนเมื่อ hover */
+}
+
 @media screen and (max-width: 990px) {
     .pick-card {
         width: 100%;

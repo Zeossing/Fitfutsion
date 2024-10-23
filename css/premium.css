@@ -76,6 +76,11 @@ nav {
     width: 70px;
 }
 
+.unlock-premium {   
+    background-color: #9200fa;
+    border: none !important;
+}
+
 
 body {
     background: linear-gradient(to bottom right, #1C1C1C 0%, #0F2C5A 100%);
@@ -266,9 +271,38 @@ input[type="text"]:focus {
     background-color: #007d28; 
 }
 
-.row p {
+.cardnumber p {
     text-align: center;
     font-weight: 300;
+}
+
+.footer {
+    background-color: #1C1C1C;
+    font-weight: 300;
+}
+
+.pic-contact {
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    /* จัดเรียงไอคอนในแนวตั้ง */
+    gap: 15px;
+    /* ระยะห่างระหว่างไอคอน */
+    margin-top: 10px;
+    /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+    transition: transform 0.3s ease;
+    /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+    transform: scale(1.1);
+    /* ขยายไอคอนเมื่อ hover */
 }
 
 
@@ -292,6 +326,10 @@ input[type="text"]:focus {
         right: 10px;
     }
 
+
+    .unlock-premium {
+        margin-right: 80px;
+    }
     .show {
         margin: 0 0 0 auto;
     }

@@ -26,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ตารางออกกำลังกาย</a>
+                        <a class="nav-link" href="table-gender/table.html">ตารางออกกำลังกาย</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">แนะนำการคาร์ดิโอ</a>
+                        <a class="nav-link" href="index.html#cadio">แนะนำการคาร์ดิโอ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">จองเครื่องออกกำลังกาย</a>
@@ -118,21 +118,21 @@
                 document.getElementById("selectCard").style.display = "block";
                 document.getElementById("selectCard").scrollIntoView({ behavior: "smooth" });
             });
-
+    
             document.getElementById("cancelButton").addEventListener("click", function () {
                 if (confirm("คุณต้องการยกเลิกการปลดล็อกระบบ Premium หรือไม่?")) {
-                    document.getElementById("prePremiumSection").style.display = "block";
-                    document.getElementById("selectCard").style.display = "none";
+                    // เปลี่ยนหน้าไปยัง user.html
+                    window.location.href = "user.html"; // เปลี่ยนเส้นทางตามที่คุณต้องการ
                 }
             });
-
+    
             document.getElementById("backButton").addEventListener("click", function () {
                 document.getElementById("prePremiumSection").style.display = "block";
                 document.getElementById("selectCard").style.display = "none";
             });
         });
-
     </script>
+    
 
     <section class="select-card" id="selectCard" style="display: none;">
         <article>
@@ -172,6 +172,52 @@
         </article>
     </section>
 
+    <footer class="text-white mt-5 pt-4 footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: About Fitfusion -->
+                <div class="col-md-4">
+                    <h5>เกี่ยวกับ Fitfusion</h5>
+                    <p>Fitfusion เป็นแพลตฟอร์มที่ช่วยให้คุณสามารถออกกำลังกายอย่างถูกต้องและมีประสิทธิภาพ
+                        พร้อมแผนการออกกำลังกายที่ปรับให้เหมาะสมกับคุณ.</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-4">
+                    <h5>ลิงก์ด่วน</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">แผนการออกกำลังกาย</a></li>
+                        <li><a href="#" class="text-white">บทความฟิตเนส</a></li>
+                        <li><a href="#" class="text-white">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>ติดตามเรา</h5>
+
+                    <div class="social-links">
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/fb.png" alt="Facebook" width="40">
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/ig.png" alt="Twitter" width="40">
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/tw.png" alt="Instagram" width="40">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr class="bg-white">
+            <div class="text-center pb-3">
+                <p>© 2024 Fitfusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

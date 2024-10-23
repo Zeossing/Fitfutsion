@@ -133,8 +133,6 @@ a {
     display: none;
 }
 
-
-
 .botton-reservation {
     text-align: center;
     margin: 20px auto;
@@ -163,6 +161,102 @@ a {
     background-color: #b46c00; /* เปลี่ยนสีเมื่อวางเมาส์อยู่เหนือ */
 }
 
+.footer {
+    background-color: #1C1C1C;
+    font-weight: 300;
+}
+
+.pic-contact {
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    /* จัดเรียงไอคอนในแนวตั้ง */
+    gap: 15px;
+    /* ระยะห่างระหว่างไอคอน */
+    margin-top: 10px;
+    /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+    transition: transform 0.3s ease;
+    /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+    transform: scale(1.1);
+    /* ขยายไอคอนเมื่อ hover */
+}
+
+
+.container-res {
+    display: none;
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: #1a2d3d;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.machine-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.info {
+    text-align: left;
+    margin-top: 15px;
+}
+.info p {
+    margin: 5px 0;
+}
+.container-res .dropdown {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 10px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.container-res .btn {
+    padding: 12px;
+    width: 48%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1em;
+}
+.container-res .btn-cancel {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+.container-res  .btn-confirm {
+    background-color: #4caf50;
+    color: #fff;
+}
+.muscle-info {
+    margin-top: 15px;
+    text-align: left;
+}
+.highlight {
+    background-color: #fff;
+    color: #000;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+.highlight img {
+    max-width: 80px;
+    margin-right: 15px;
+}
 
 
 @media screen and (max-width: 990px) {

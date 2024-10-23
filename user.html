@@ -11,6 +11,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/premium.css" type="text/css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -33,14 +34,16 @@
                         <a class="nav-link" href="table-gender/table.html">ตารางออกกำลังกาย</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cadio">แนะนำการคาร์ดิโอ</a>
+                        <a class="nav-link" href="index.html#cadio">แนะนำการคาร์ดิโอ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">จองเครื่องออกกำลังกาย</a>
                     </li>
                 </ul>
 
-                <form class="d-flex" role="search">
+                
+
+                <form class="d-flex ms-auto" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success me-2" type="submit">
                         <span class="material-symbols-outlined icon">
@@ -49,24 +52,30 @@
                     </button>
                 </form>
             </div>
-            <a href="Login-Regis/LogIN.html"><button class="btn btn-primary btn-login ms-3 ms-auto">เข้าสู่ระบบ</button></a>
 
+            <div class="unlock d-flex ms-auto">
+                <a href="premium.html">
+                <button class="btn unlock-premium">Unlock Premium</button>
+            </a>
+            </div>
 
-            <!-- <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="pic_abs_muscle.jpg" width="50px" height="50px" style="border-radius: 100%;">
+            <!-- Profile Icon -->
+            <ul class="navbar-nav mb-2 mb-lg-0 profile ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle click" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="img/pic_abs_muscle.jpg" width="40px" height="40px" style="border-radius: 100%;">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                      <li><a class="dropdown-item" href="#">ตารางออกกำลังกายของฉัน</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">แก้ไขหน้าโปรไฟล์</a></li>
-                      <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                        <li><a class="dropdown-item" href="#">ตารางออกกำลังกายของฉัน</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">แก้ไขหน้าโปรไฟล์</a></li>
+                        <li><a class="dropdown-item" href="index.html">ออกจากระบบ</a></li>
                     </ul>
-                  </li>
-                  </ul> -->
-
-
+                </li>
+            </ul>
 
         </div>
     </nav>
