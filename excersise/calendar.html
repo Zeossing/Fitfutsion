@@ -77,10 +77,10 @@
     </header>
     <div class="calendar container">
         <div class="test">
-        <div class="edit-right">
-            <a href="#" style="text-align: right;">แก้ไขตาราง</a>
+            <div class="edit-right">
+                <a href="#" style="text-align: right;">แก้ไขตาราง</a>
+            </div>
         </div>
-    </div>
         <div class="calendar-container">
             <div class="header">
                 <button id="prev-month">&lt;</button>
@@ -107,7 +107,7 @@
 
         // เก็บชื่อรูปภาพ
         const imageFiles = [
-         './icon/icon_chest.png',
+            './icon/icon_chest.png',
             './icon/icon_back.png',
             './icon/icon_leg.png',
             './icon/icon_sholder.png',
@@ -129,7 +129,7 @@
         ];
 
         // ชื่อวันในสัปดาห์ภาษาไทย
-       
+
 
         function updateCalendar(year, month) {
             const firstDay = new Date(year, month, 1).getDay();
@@ -154,7 +154,14 @@
 
                 if (date === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
                     dateDiv.classList.add('today');
+                    dateDiv.textContent = date;
+
+                    // เพิ่มการเปลี่ยนหน้าเมื่อคลิก
+                    dateDiv.onclick = function () {
+                        window.location.href = 'target_page.html'; // ใส่ชื่อหน้า HTML ที่ต้องการไป
+                    };
                 }
+
 
                 // ตรวจสอบว่าหากวันนั้นเกินกว่าวันที่ปัจจุบัน จะเป็นพื้นหลังสีขาวและไม่สุ่มสีหรือรูปภาพ
                 if (currentDate > today) {
