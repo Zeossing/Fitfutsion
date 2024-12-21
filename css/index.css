@@ -475,32 +475,72 @@ body {
     display: block;
     max-height: 500px;
   }
-   
-  .cadio ul li {
-    color: #000;
-  }
-  
-  .cadio .arrow-btn {
+
+  .info-btn {
+    background-color: #000;  /* พื้นหลังดำ */
+    color: white;  /* ตัวอักษรสีขาว */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    background-color: #000;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s ease;
+    position: absolute;  /* เพื่อให้ปุ่มอยู่ทางขวาของการ์ด */
+    right: 10px;  /* ระยะห่างจากขอบขวาของการ์ด */
+    bottom: 10px;  /* ระยะห่างจากขอบล่างของการ์ด */
+  }
+
+  .info-btn i {
+    margin-left: 10px;  /* เพิ่มระยะห่างระหว่างข้อความและลูกศร */
   }
   
-  .cadio .arrow-btn:hover {
-    background-color: #333;
+  .info-btn:hover {
+    background-color: #FF832A;  /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    transform: scale(1.05);  /* ขยายขนาดเมื่อ hover */
   }
+  
+  .cadio ul li {
+    color: #000;
+  }
+  .cadio {
+    position: relative;
+}
+
+.cadio .arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.cadio .card {
+    position: relative;
+    padding-bottom: 80px; /* Adds spacing to ensure button doesn't overlap content */
+}
+
+.cadio .arrow-btn:hover {
+    background-color: #FF832A;
+    transform: scale(1.05);
+}
+
+.arrow {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
 
 .main-question {
     display: flex;

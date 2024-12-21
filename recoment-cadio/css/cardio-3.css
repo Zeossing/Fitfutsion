@@ -225,3 +225,49 @@ h4 {
   transform: scale(1.1);
   /* ขยายไอคอนเมื่อ hover */
 }
+
+.yoga-tutorial {
+  background: linear-gradient(to bottom, #1C1C1C, #2D3E50);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.yoga-tutorial h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #FF832A;
+}
+
+.yoga-tutorial p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.radius {
+  border-radius: 5px;
+}
+
+.video-frame {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #FF832A;
+}
+
+.video-frame iframe {
+  border: none;
+}
+
+h4.kanit {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #FF832A;
+}
+
+.bai-jamjuree {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
