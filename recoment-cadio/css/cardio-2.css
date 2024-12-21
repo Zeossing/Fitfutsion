@@ -147,3 +147,13 @@ body {
     font-size: 12px;
     font-family: 'Kanit', sans-serif;
 }
+
+.content-card a {
+    color: inherit; /* ไม่เปลี่ยนสีข้อความ */
+    text-decoration: none; /* เอาเส้นใต้ของลิงก์ออก */
+}
+
+.content-card:hover {
+    transform: scale(1.05);
+    cursor: pointer; /* ทำให้ cursor เป็นมือเมื่อคลิก */
+}
