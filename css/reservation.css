@@ -15,14 +15,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: #666666;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
 .arrow-btn {
-    background-color: #555;
+    background-color: #080808;
     color: white;
     border: none;
     padding: 10px;
@@ -46,18 +46,20 @@ a {
 }
 
 .time-slot {
-    background-color: #ccc;
+    background-color: #f4f4f4;
     color: black;
     padding: 10px;
     text-align: center;
     width: 100%;
     border-left: 3px solid #333;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
     cursor: pointer;
     font-size: 14px;
 }
 
-.time-slot:first-child {
-    border-left: none;
+.time-slot:last-child{
+    border-right: 3px solid #333;
 }
 
 .time-slot.active {
@@ -112,6 +114,12 @@ a {
     font-weight: 300;
 }
 
+.blueprint {
+    width: 60%;
+    height: auto;
+    padding: 15px 0;
+}
+
 .col-12 , .head-column {
     text-align: center;
 }
@@ -121,14 +129,29 @@ a {
     width: 10%;
 }
 
+
 .pic-machine {
     width: 30%;
     margin: 10px 0;
 }
 
+.res {
+    filter: sepia(1) hue-rotate(90deg) saturate(2) brightness(1);
+}
+
+.fail {
+    filter: sepia(1) hue-rotate(-50deg) saturate(3) brightness(1);
+}
+
+.wait{
+    filter: sepia(1) hue-rotate(-10deg) saturate(3) brightness(1);    
+}
+
 .groupD{
     width: 60% !important;
 }
+
+
 
 .for-mb {
     display: none;
@@ -282,6 +305,7 @@ a {
     font-family: "Bai Jamjuree", sans-serif !important;
 }
 
+
 @media screen and (max-width: 990px) {
 
     .for-pc {
@@ -308,11 +332,18 @@ a {
         max-width: 30%;
         
     }
+    .blueprint{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px) { 
     .machine-image img {
         max-width: 40%;
         
+    }
+
+    .blueprint{
+        width: 100%;
     }
 }

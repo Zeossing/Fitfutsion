@@ -44,13 +44,8 @@ body {
 }
 
 .weekdays div {
-  border: solid 1px #000;
-  border-left: none;
-
-}
-
-.weekdays div:first-child {
-  border-left: solid 1px #000;
+  margin: 0 2px;
+  border-radius: 5px;
 }
 
 .calendar-container {
@@ -140,14 +135,17 @@ body {
 .legend-left {
   display: flex;
   align-items: center;
-  gap: 15px;
-  flex-direction: column;
+  gap: 20px;
 }
 
 .legend-item {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.legend-item span {
+  color: #fff;
 }
 
 .legend-box {
@@ -166,17 +164,16 @@ body {
 
 .legend-orange {
   background-color: #FF832A;
-  margin-left: -77px;
 }
 
 .workout {
   display: flex;
-  flex-direction: column;
 }
 
 .a-text {
   display: flex;
   justify-content: right;
+  align-items: center;
 }
 
 .a-text a {
