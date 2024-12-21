@@ -12,7 +12,13 @@ body {
 a {
   text-decoration: none;
 }
+h6 {
+    color: black; /* สีเริ่มต้น */
+}
 
+h6.clicked {
+    color: white; /* สีเมื่อถูกคลิก */
+}
 .exercise-card {
   width: 80%;
   max-width: 600px;
@@ -290,11 +296,17 @@ h1,h2 {
 
 /* สไตล์ของแต่ละหัวข้อ */
 .tab-item {
+  position: relative;
+  display: inline-block;
   padding: 10px 20px;
   cursor: pointer;
-  position: relative;
+  color: #fff; /* ตัวหนังสือสีขาว */
+  font-size: 16px;
+  text-align: center;
+  border: none; /* ไม่ให้มีขอบเดิม */
 }
 
+/* เส้นใต้จะยังคงแสดงผลอยู่ตลอดเวลา */
 .tab-item::after {
   content: '';
   position: absolute;
@@ -302,13 +314,21 @@ h1,h2 {
   left: 0;
   right: 0;
   height: 3px;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
+  background-color: #fff; /* เส้นใต้จะเป็นสีขาวตลอดเวลา */
+  transition: background-color 0.3s ease, border 0.3s ease;
 }
 
+/* เมื่อกด (active) ให้เส้นใต้หายไปและมีขอบรอบ */
 .tab-item.active::after {
-  background-color: white;
+  background-color: transparent; /* ซ่อนเส้นใต้เมื่อกด */
 }
+
+.tab-item.active {
+  border: 2px solid #fff; /* ขอบรอบปุ่ม */
+  border-radius: 8px; /* ขอบมน */
+  color: #fff; /* สีของตัวหนังสือ */
+}
+
 
 .navbar-nav .nav-link,
 .navbar-toggler,
@@ -452,6 +472,7 @@ nav {
   margin-top: 15px;
 }
 
+
 .confirm-button {
   border-radius: 30px;
   color: #fff;
@@ -515,7 +536,7 @@ display: flex;
  margin-bottom: 20px;
  width: 100%;
   }
-  .main-excercise .row{gap: 45px;}
+  .main-excercise .row{gap: 25px;}
   .d2 {
 
     flex-wrap: nowrap;
@@ -601,9 +622,7 @@ display: flex;
     transition: background-color 0.3s ease;
   }
   
-  .tab-item.active::after {
-    background-color: white;
-  }
+
   .card {
     flex: 1 1 48%; /* ทำให้การ์ดมีความกว้างประมาณ 48% เพื่อให้แสดงสองใบต่อแถว */
   }
@@ -622,6 +641,40 @@ display: flex;
   .confirm-button {
     width: 60%;
   }
+  .muscle-group-container {
+    position: relative; /* เพื่อให้ลูกศรอยู่ในตำแหน่งที่สัมพันธ์กับ div นี้ */
+    overflow-x: auto; /* เปิดการเลื่อนแนวนอน */
+    white-space: nowrap; /* ไม่ให้เนื้อหาแบ่งบรรทัด */
+    display: flex; /* ทำให้รายการขยายเป็นแถว */
+}
+
+.muscle-group-container .card-item {
+    display: inline-block; /* ทำให้แต่ละ item อยู่ในบรรทัดเดียวกัน */
+    margin-right: 10px; /* ช่องว่างระหว่างแต่ละ item */
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 18%;
+    right: 10px; /* ปรับให้ลูกศรอยู่ที่ขอบขวาของ container */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งแสง */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer; /* ให้ผู้ใช้รู้ว่าสามารถคลิกได้ */
+
+}
+
+.scroll-arrow::after {
+    content: '➔'; /* ใช้สัญลักษณ์ลูกศร */
+    font-size: 18px;
+    color: white;
+}
+
 }
 @media (max-width: 500px) {
   /* การจัดการขนาดการ์ดและการจัดวาง */
@@ -637,9 +690,7 @@ display: flex;
     width: 120px; /* ลดขนาดของการ์ดให้เล็กลง */
     font-size: 14px; /* ปรับขนาดฟอนต์ */
   }
-  .main-excercise .row{
-    gap: 65px;
-  }
+ 
   
   .card img {
     width: 100%; /* ให้รูปภาพขยายตามขนาดการ์ด */
@@ -706,6 +757,40 @@ display: flex;
     padding: 8px;
     font-size: 14px;
   }
+  .muscle-group-container {
+    position: relative; /* เพื่อให้ลูกศรอยู่ในตำแหน่งที่สัมพันธ์กับ div นี้ */
+    overflow-x: auto; /* เปิดการเลื่อนแนวนอน */
+    white-space: nowrap; /* ไม่ให้เนื้อหาแบ่งบรรทัด */
+    display: flex; /* ทำให้รายการขยายเป็นแถว */
+}
+
+.muscle-group-container .card-item {
+    display: inline-block; /* ทำให้แต่ละ item อยู่ในบรรทัดเดียวกัน */
+    margin-right: 10px; /* ช่องว่างระหว่างแต่ละ item */
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 18%;
+    right: 10px; /* ปรับให้ลูกศรอยู่ที่ขอบขวาของ container */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งแสง */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer; /* ให้ผู้ใช้รู้ว่าสามารถคลิกได้ */
+
+}
+
+.scroll-arrow::after {
+    content: '➔'; /* ใช้สัญลักษณ์ลูกศร */
+    font-size: 18px;
+    color: white;
+}
+
 }
 @media (max-width: 460px) {
   .muscle-group{
@@ -747,12 +832,12 @@ display: flex;
   .main-excercise .row {
     display: flex;
     flex-wrap: nowrap; /* ห้ามเคาะบรรทัด */
-    gap: 75px;
+    gap: 80px;
   }
   .main-excercise .row-2 {
     display: flex;
     flex-wrap: nowrap; /* ห้ามเคาะบรรทัด */
-
+   
   }
 
   .card {
@@ -791,6 +876,39 @@ display: flex;
   .confirm-button {
     width: 70%;
   }
+  .muscle-group-container {
+    position: relative; /* เพื่อให้ลูกศรอยู่ในตำแหน่งที่สัมพันธ์กับ div นี้ */
+    overflow-x: auto; /* เปิดการเลื่อนแนวนอน */
+    white-space: nowrap; /* ไม่ให้เนื้อหาแบ่งบรรทัด */
+    display: flex; /* ทำให้รายการขยายเป็นแถว */
+}
+
+.muscle-group-container .card-item {
+    display: inline-block; /* ทำให้แต่ละ item อยู่ในบรรทัดเดียวกัน */
+    margin-right: 10px; /* ช่องว่างระหว่างแต่ละ item */
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 18%;
+    right: 20px; /* ปรับให้ลูกศรอยู่ที่ขอบขวาของ container */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งแสง */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer; /* ให้ผู้ใช้รู้ว่าสามารถคลิกได้ */
+    z-index: 10; /* ทำให้ลูกศรอยู่ด้านหน้าของ element อื่น ๆ */
+}
+
+.scroll-arrow::after {
+    content: '>'; /* ใช้สัญลักษณ์ลูกศร */
+    font-size: 18px;
+    color: white;
+}
 
 }
 @media (max-width: 440px) {
@@ -821,6 +939,11 @@ display: flex;
     margin-left: 0;
     margin-right: 0;
     width: 100%; /* ให้เต็มหน้าจอ */
+  }
+  .main-excercise .row {
+    display: flex;
+    flex-wrap: nowrap; /* ห้ามเคาะบรรทัด */
+    gap: 40px;
   }
 
   .card-item {
@@ -883,6 +1006,40 @@ display: flex;
   .confirm-button {
     width: 100%;
   }
+  .muscle-group-container {
+    position: relative; /* เพื่อให้ลูกศรอยู่ในตำแหน่งที่สัมพันธ์กับ div นี้ */
+    overflow-x: auto; /* เปิดการเลื่อนแนวนอน */
+    white-space: nowrap; /* ไม่ให้เนื้อหาแบ่งบรรทัด */
+    display: flex; /* ทำให้รายการขยายเป็นแถว */
+}
+
+.muscle-group-container .card-item {
+    display: inline-block; /* ทำให้แต่ละ item อยู่ในบรรทัดเดียวกัน */
+    margin-right: 10px; /* ช่องว่างระหว่างแต่ละ item */
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 16%;
+    right: 10px; /* ปรับให้ลูกศรอยู่ที่ขอบขวาของ container */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งแสง */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer; /* ให้ผู้ใช้รู้ว่าสามารถคลิกได้ */
+
+}
+
+.scroll-arrow::after {
+    content: '➔'; /* ใช้สัญลักษณ์ลูกศร */
+    font-size: 18px;
+    color: white;
+}
+
 }
 
  
