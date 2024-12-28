@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+nav {
+    background-color: #1C1C1C;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navactive a {
+    background-color: #FF832A;
+    color: #000;
+    border-radius: 15px;
+}
+
+.nav-item a.active {
+    background-color: #FF832A;
+    color: #000;
+    border-radius: 15px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    /* สีที่จะแสดงเมื่อ hover */
+}
+
+/* ถ้าต้องการเปลี่ยนสีพื้นหลังเมื่อ hover ด้วย */
+.nav-item:hover {
+    background-color: #545454;
+    border-radius: 15px;
+}
+
+
+.navbar-nav .nav-link,
+.navbar-toggler,
+.btn {
+    color: white !important;
+}
+
+.form-control {
+    color: #000;
+}
+
+ .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+ .usersetting {
+    margin-left: 15px;
+}
+
+.btn-login {
+    margin-left: 10px;
+    background-color: transparent;
+    right: 20px;
+    top: 10px;
+}
+
+.icon {
+    font-size: 48px;
+    color: #fff;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #FF832A;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF832A;
+    border-color: #FF832A;
+}
+
+.profile {
+    margin: 0 0 0 auto;
+}
+
+.click {
+    padding: 0px;
+    width: 70px;
+}
+
+
+body {
+    background: linear-gradient(to bottom right, #1C1C1C 0%, #0F2C5A 100%);
+    color: white;
+    font-family: "Kanit", sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+
+.core-muscle li{
+    font-family: "Bai Jamjuree", sans-serif !important;
+}
+
+.core-muscle {
+    padding-top: 70px; 
+}
+
+.align-con {
+    display: flex;
+    justify-content: center;
+}
+
+.text-head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.text-head h1:first-child {
+    text-align: center;
+    width: 95%;
+    padding: 20px;
+    border: solid 1px #fff;
+    margin:15px;
+    border-radius: 15px;
+}
+
+.container-for-mb {
+    display: none;
+}
+
+.container-for-pc {
+    width: 95%;
+    height: 500px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    transition: ease-in-out 0.5s;
+    background-color: #1C1C1C;
+    border-radius: 15px;
+    border: 1px solid #444444;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    text-decoration: none !important;
+   display: flex;
+}
+
+
+
+
+
+
+
+.card-image {
+    position: relative;
+    /* ทำให้แน่ใจว่าภาพจะอยู่ด้านหน้า */
+    z-index: 2;
+    /* ตั้งค่า z-index สูงขึ้นเพื่อให้อยู่ด้านหน้า */
+    margin-bottom: 10px;
+    /* เพิ่มระยะห่างระหว่างภาพและข้อความ */
+    width: 80%;
+    height: auto;
+}
+
+.card-image-hover {
+    width: 30%;
+    height: auto;
+}
+
+.core-muscle h4 {
+    color: white;
+    /* เปลี่ยนสีข้อความให้เห็นชัด */
+    z-index: 2;
+    /* ตั้งค่า z-index สูงขึ้นเพื่อให้อยู่ด้านหน้า */
+    position: relative;
+    /* ทำให้แน่ใจว่าข้อความจะอยู่ด้านหน้า */
+    text-align: center;
+    font-size: 33px;
+    font-weight: 400;
+    margin-top: 5%;
+
+    
+}
+
+.activehover h1 {
+    color: #FF1123;
+}
+
+.activehover h3 {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Bai Jamjuree", sans-serif !important;
+    width: 70%;
+}
+
+
+
+.center-img {
+    justify-content: space-around;
+}
+
+.icon-muscle {
+    background-color: #757A82;
+    margin: 2px;
+    width: 45%;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+
+.pic-muscle {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.main-question h1 {
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    border: solid 1px #fff;
+    padding: 20px;
+}
+
+.cadio {
+    margin: 40px 0;
+}
+
+.cadio .row {
+    justify-content: space-evenly;
+}
+
+.cadio .text-head h1 {
+    width: 100% !important;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 0 0 0 0;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 15px;
+  }
+
+  .card h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Bai Jamjuree', sans-serif;
+  }
+
+  .icon-text {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .icon-text i {
+    margin-right: 10px;
+  }
+  
+  .calories {
+    color: #ff4c4c;
+  }
+  
+  .time {
+    color: #4caf50;
+  }
+  
+  .person-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 40px;
+    color: #000000;
+  }
+  
+  .read-more {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more:hover {
+    background-color: #45a049;
+  }
+
+  .more-info {
+    margin-top: 10px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    color: #000000;
+  }
+  
+  .more-info p {
+    font-size: larger;
+    font-family: "Kanit", sans-serif;
+  }
+
+  .more-info ul {
+    font-family: "Bai Jamjuree", sans-serif !important;
+  }
+  
+  .more-info.show {
+    display: block;
+    max-height: 500px;
+  }
+
+  .info-btn {
+    background-color: #000;  /* พื้นหลังดำ */
+    color: white;  /* ตัวอักษรสีขาว */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s ease;
+    position: absolute;  /* เพื่อให้ปุ่มอยู่ทางขวาของการ์ด */
+    right: 10px;  /* ระยะห่างจากขอบขวาของการ์ด */
+    bottom: 10px;  /* ระยะห่างจากขอบล่างของการ์ด */
+  }
+
+  .info-btn i {
+    margin-left: 10px;  /* เพิ่มระยะห่างระหว่างข้อความและลูกศร */
+  }
+  
+  .info-btn:hover {
+    background-color: #FF832A;  /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    transform: scale(1.05);  /* ขยายขนาดเมื่อ hover */
+  }
+  
+  .cadio ul li {
+    color: #000;
+  }
+  .cadio {
+    position: relative;
+}
+
+.cadio .arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.cadio .card {
+    position: relative;
+    padding-bottom: 80px; /* Adds spacing to ensure button doesn't overlap content */
+}
+
+.cadio .arrow-btn:hover {
+    background-color: #FF832A;
+    transform: scale(1.05);
+}
+
+.arrow {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+.main-question {
+    display: flex;
+    margin: 20px 0;
+}
+
+.pic-question {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.block-question p,
+.block-question ul {
+    font-family: "Bai Jamjuree", sans-serif !important;
+    font-size: 18px;
+}
+
+.block-question h3 {
+    color: #FF832A;
+}
+
+.link {
+    color: #FF832A;
+}
+
+.block-question {
+    align-content: center;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.block-question.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.footer {
+    background-color: #1C1C1C;
+    font-weight: 300;
+}
+
+.pic-contact {
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    /* จัดเรียงไอคอนในแนวตั้ง */
+    gap: 15px;
+    /* ระยะห่างระหว่างไอคอน */
+    margin-top: 10px;
+    /* ระยะห่างระหว่างหัวข้อกับไอคอน */
+}
+
+.pic-contact {
+    transition: transform 0.3s ease;
+    /* เพิ่มแอนิเมชันเมื่อ hover */
+}
+
+.pic-contact:hover {
+    transform: scale(1.1);
+    /* ขยายไอคอนเมื่อ hover */
+}
+
+
+.nonehover span {
+    text-decoration: none;
+    color: white;
+    font-size: 200px;
+    font-weight: 300;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
