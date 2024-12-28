@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Edit Exercise</title>
+    <link rel="stylesheet" href="name-panel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>แก้ไขข้อมูลท่าออกกำลังกาย</h1>
+        <form action="/update-exercise" method="POST" enctype="multipart/form-data">
+            <!-- ชื่อท่าออกกำลังกาย -->
+            <label for="exercise-name">ชื่อท่าออกกำลังกาย</label>
+            <input type="text" id="exercise-name" name="exercise_name" placeholder="ชื่อท่าออกกำลังกาย" required>
+
+            <!-- กล้ามเนื้อที่ได้: แบ่งเป็นสองส่วน -->
+            <label for="primary-muscles">กล้ามเนื้อหลัก</label>
+            <input type="text" id="primary-muscles" name="primary_muscles" placeholder="กล้ามเนื้อหลัก" required>
+
+            <label for="secondary-muscles">กล้ามเนื้อรอง</label>
+            <input type="text" id="secondary-muscles" name="secondary_muscles" placeholder="กล้ามเนื้อรอง">
+
+            <!-- อัปโหลดไฟล์ GIF -->
+            <label for="exercise-gif">ไฟล์ GIF</label>
+            <input type="file" id="exercise-gif" name="exercise_gif" accept="image/gif">
+
+            <!-- เปลี่ยนลิงก์ YouTube -->
+            <label for="youtube-link">ลิงก์คลิป YouTube</label>
+            <input type="url" id="youtube-link" name="youtube_link" placeholder="ลิงก์คลิป YouTube" required>
+
+            <!-- รายละเอียดของคลิป YouTube -->
+            <label for="youtube-details">รายละเอียดของคลิป YouTube</label>
+            <textarea id="youtube-details" name="youtube_details" rows="5" placeholder="รายละเอียดเพิ่มเติมเกี่ยวกับคลิป"></textarea>
+
+            <!-- ปุ่มบันทึก -->
+            <button type="submit">บันทึกข้อมูล</button>
+        </form>
+    </div>
+</body>
+</html>
