@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fitfusion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/premium.css" type="text/css">
+    <link rel="stylesheet" href="css/scanres.css" type="text/css">
+    <link rel="stylesheet" href="css/planexcercise.css" type="text/css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="user-premium.html">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table-gender/table.html">ตารางออกกำลังกาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#cadio">แนะนำการคาร์ดิโอ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">จองเครื่องออกกำลังกาย</a>
+                    </li>
+                </ul>
+
+
+
+                <form class="d-flex ms-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success me-2" type="submit">
+                        <span class="material-symbols-outlined icon">
+                            search
+                        </span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Profile Icon -->
+            <ul class="navbar-nav mb-2 mb-lg-0 profile ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle click" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./img/user.png" width="40px" height="40px" style="border-radius: 100%;">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="planexcercise-premium.html">ตารางออกกำลังกายของฉัน</a></li>
+                        <li><a class="dropdown-item" href="pickpoint.html">รับคะแนน</a></li>
+                        <li><a class="dropdown-item" href="shop.html">แลกคะแนน</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">แก้ไขหน้าโปรไฟล์</a></li>
+                        <li><a class="dropdown-item" href="index.html">ออกจากระบบ</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section>
+        <article class="mainscan">
+            <div class="container-fluid">
+
+                <div class="displayscan">
+                    <div class="more">
+                        <i class="material-icons" style="font-size: 32px;">info</i>
+                    </div>
+
+                    <div class="video-modal" id="videoModal">
+                        <div class="video-container">
+                            <button class="close-btn" id="closeBtn">&times;</button>
+                            <h3>ควิปวิดีโอสำหรับเครื่อง Leg Curl</h3>
+                            <iframe src="https://www.youtube.com/embed/P7-RxTVe6O0?si=7ySgacBOd8zpQTJm&amp;start=59" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <h2>เครื่อง: Leg Crul</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="mechine" src="./img/a1.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+
+                            <div class="time-res">
+                                <b>เวลาที่คุณจอง</b> <br>
+                                <p>10.00 - 10.20 น.</p>
+                            </div>
+                            <div class="give-muscle">
+                                <b>กล้ามเนื้อที่ได้</b> <br>
+                                <img class="muscle-main" src="./img/icon_legB_muscle.png" alt="">
+                                <p>กล้ามเนื้อขาหลัง</p>
+
+                            </div>
+                        </div>
+                        <div class="set-and-rep" data-card-id="1">
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul>
+                                        <h6>เซ็ท</h6>
+                                        <li class="set-item">1</li>
+                                        <li class="set-item">2</li>
+                                        <li class="set-item">3</li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul>
+                                        <h6>ครั้ง</h6>
+                                        <li class="reps">12</li>
+                                        <li class="reps">12</li>
+                                        <li class="reps">12</li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul>
+                                        <h6 class="unit-label" id="unitLabel" style="cursor: pointer;">kg</h6>
+                                        <select id="unitSelect" style="display: none;">
+                                            <option value="kg">kg</option>
+                                            <option value="lb">lb</option>
+                                        </select>
+                                        <li class="weight">20.00</li>
+                                        <li class="weight">20.00</li>
+                                        <li class="weight">20.00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="align-btn">
+                                <button class="button-save btn-setting" id="saveButtonContainer"
+                                    style="display: none;">บันทึก</button>
+
+
+                                <button class="button-edit btn-setting" id="editButton">แก้ไข</button>
+                                <!-- ปุ่มสำหรับแก้ไข -->
+                                <button class="button-addset btn-setting" id="addSetButton">เพิ่มเซ็ท</button>
+
+                                <button class="button-deleteset btn-setting" id="deleteSetButton">ลบเซ็ท</button>
+                                <!-- ปุ่มสำหรับเพิ่มเซ็ท -->
+                                <button class="button-unit btn-setting" id="toggleUnitButton">เปลี่ยนหน่วยเป็น
+                                    lb</button>
+                                <!-- ปุ่มสำหรับเปลี่ยนหน่วย -->
+                            </div>
+                        </div>
+
+                        <div class="time-close">
+                            <h1>เวลาที่คุณเหลือ</h1>
+                            <div class="time-count"></div><span>นาที</span>
+                        </div>
+
+                        <div class="btn-success">
+                            <button class="btn-confirm">ใช้เครื่องเสร็จสิ้น</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer class="text-white mt-5 pt-4 footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: About Fitfusion -->
+                <div class="col-md-4">
+                    <h5>เกี่ยวกับ Fitfusion</h5>
+                    <p>Fitfusion เป็นแพลตฟอร์มที่ช่วยให้คุณสามารถออกกำลังกายอย่างถูกต้องและมีประสิทธิภาพ
+                        พร้อมแผนการออกกำลังกายที่ปรับให้เหมาะสมกับคุณ.</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-4">
+                    <h5>ลิงก์ด่วน</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">แผนการออกกำลังกาย</a></li>
+                        <li><a href="#" class="text-white">บทความฟิตเนส</a></li>
+                        <li><a href="#" class="text-white">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>ติดตามเรา</h5>
+
+                    <div class="social-links">
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/fb.png" alt="Facebook" width="40">
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/ig.png" alt="Twitter" width="40">
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <img class="pic-contact" src="img/tw.png" alt="Instagram" width="40">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr class="bg-white">
+            <div class="text-center pb-3">
+                <p>© 2024 Fitfusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const moreIcon = document.querySelector('.more');
+        const videoModal = document.getElementById('videoModal');
+        const closeBtn = document.getElementById('closeBtn');
+
+        // เปิด modal เมื่อคลิกที่ info
+        moreIcon.addEventListener('click', () => {
+            videoModal.style.display = 'flex';
+        });
+
+        // ปิด modal เมื่อคลิกปุ่มปิด
+        closeBtn.addEventListener('click', () => {
+            videoModal.style.display = 'none';
+        });
+
+        // ปิด modal เมื่อคลิกรอบๆ
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                videoModal.style.display = 'none';
+            }
+        });
+    </script>
+
+    <script>
+        // Get the confirm button
+        const confirmButton = document.querySelector('.btn-confirm');
+
+        // Add click event to show SweetAlert2
+        confirmButton.addEventListener('click', () => {
+            Swal.fire({
+                title: 'ยืนยันการใช้งาน',
+                text: 'คุณต้องการยืนยันว่าใช้เครื่องเสร็จสิ้นแล้วหรือไม่?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#28a745',
+                cancelButtonColor: '#dc3545',
+                confirmButtonText: 'ยืนยัน',
+                cancelButtonText: 'ยกเลิก'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                Swal.fire(
+                    'สำเร็จ!',
+                    'การใช้งานเสร็จสิ้น.',
+                    'success'
+                ).then(() => {
+                    // Redirect to another page
+                    window.location.href = 'reservation.html'; 
+                });
+            }
+            });
+        });
+    </script>
+
+    <script>
+        // ตั้งค่าเวลานับถอยหลัง (17 นาที)
+        let remainingTime = 17 * 60; // 17 นาทีในหน่วยวินาที
+
+        // ฟังก์ชันอัปเดตเวลานับถอยหลัง
+        function updateCountdown() {
+            const minutes = Math.floor(remainingTime / 60); // คำนวณนาทีที่เหลือ
+            const seconds = remainingTime % 60; // คำนวณวินาทีที่เหลือ
+
+            // แสดงเวลาที่เหลือในฟอร์แมต MM:SS
+            document.querySelector('.time-count').textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+            // ลดเวลาลงทีละวินาที
+            remainingTime--;
+
+            // หยุดเมื่อเวลาหมด
+            if (remainingTime < 0) {
+                clearInterval(countdownInterval);
+                document.querySelector('.time-count').textContent = "หมดเวลา!";
+            }
+        }
+
+        // เริ่มนับถอยหลัง
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        // เรียกฟังก์ชันครั้งแรกทันทีเพื่อแสดงเวลาเริ่มต้น
+        updateCountdown();
+    </script>
+
+    <script>
+        let currentUnit = "kg"; // หน่วยที่ใช้งานปัจจุบัน
+
+        // ฟังก์ชันแปลงน้ำหนัก kg <-> lb
+        function convertWeight(weight, fromUnit, toUnit) {
+            const factor = 2.20462; // 1 kg = 2.20462 lb
+            if (fromUnit === "kg" && toUnit === "lb") {
+                return (weight * factor).toFixed(2); // kg -> lb
+            } else if (fromUnit === "lb" && toUnit === "kg") {
+                return (weight / factor).toFixed(2); // lb -> kg
+            }
+            return weight; // ถ้าไม่เปลี่ยนหน่วย
+        }
+
+        // ฟังก์ชันเพื่อให้ทุกเซ็ตใน card เป็น editable
+        function makeAllEditable(card) {
+            card.querySelectorAll(".reps, .weight").forEach(function (element) {
+                const currentText = element.textContent;
+                const inputField = document.createElement("input");
+                inputField.type = "text";
+                inputField.value = currentText;
+                inputField.style.width = "40px";
+                inputField.style.height = "20px";
+                element.textContent = ""; // ลบข้อความปัจจุบัน
+                element.appendChild(inputField);
+            });
+
+            // ซ่อนปุ่มแก้ไขและแสดงปุ่มบันทึก
+            card.querySelector(".button-edit").style.display = "none";
+            card.querySelector(".button-save").style.display = "inline";
+        }
+
+        // ฟังก์ชันบันทึกค่าใหม่
+        function saveChanges(card) {
+            card.querySelectorAll(".reps, .weight").forEach(function (element) {
+                const inputField = element.querySelector("input");
+                if (inputField) {
+                    element.textContent = inputField.value; // บันทึกค่าใหม่
+                }
+            });
+
+            // ซ่อนปุ่มบันทึกและแสดงปุ่มแก้ไขอีกครั้ง
+            card.querySelector(".button-save").style.display = "none";
+            card.querySelector(".button-edit").style.display = "inline";
+        }
+
+        // ฟังก์ชันเพิ่มเซ็ตใหม่
+        function addSet(card) {
+            const setCount = card.querySelectorAll(".set-item").length + 1;
+
+            const setElement = document.createElement("li");
+            setElement.className = "set-item";
+            setElement.textContent = setCount;
+
+            const repsElement = document.createElement("li");
+            repsElement.className = "reps";
+            repsElement.textContent = "0";
+
+            const weightElement = document.createElement("li");
+            weightElement.className = "weight";
+            weightElement.textContent = "0.00";
+
+            // เพิ่มเซ็ตใหม่ในแต่ละคอลัมน์
+            card.querySelector(".col-4:nth-of-type(1) ul").appendChild(setElement);
+            card.querySelector(".col-4:nth-of-type(2) ul").appendChild(repsElement);
+            card.querySelector(".col-4:nth-of-type(3) ul").appendChild(weightElement);
+        }
+
+        // ฟังก์ชันเปลี่ยนหน่วยน้ำหนัก
+        function toggleUnit(card) {
+            const currentUnit = card.getAttribute("data-current-unit") || "kg";
+            const newUnit = currentUnit === "kg" ? "lb" : "kg";
+
+            card.querySelectorAll(".weight").forEach(function (element) {
+                const currentWeight = parseFloat(element.textContent);
+                if (!isNaN(currentWeight)) {
+                    const newWeight = convertWeight(currentWeight, currentUnit, newUnit);
+                    element.textContent = newWeight;
+                }
+            });
+
+            // อัปเดตหน่วยที่ใช้งานปัจจุบัน
+            card.setAttribute("data-current-unit", newUnit);
+            card.querySelector(".unit-label").textContent = newUnit;
+            card.querySelector(".button-unit").textContent = `เปลี่ยนหน่วยเป็น ${newUnit === "kg" ? "lb" : "kg"}`;
+        }
+
+        // ฟังก์ชันลบเซ็ต
+        function deleteSet(card) {
+            const setItems = card.querySelectorAll(".set-item");
+            const repsItems = card.querySelectorAll(".reps");
+            const weightItems = card.querySelectorAll(".weight");
+
+            if (setItems.length > 0) {
+                setItems[setItems.length - 1].remove(); // ลบเซ็ทล่าสุด
+                repsItems[repsItems.length - 1].remove(); // ลบ reps ล่าสุด
+                weightItems[weightItems.length - 1].remove(); // ลบ weight ล่าสุด
+            }
+        }
+
+        // ผูก event handler กับ card ทุกใบ
+        document.querySelectorAll('.set-and-rep').forEach(function (card) {
+            // ฟังก์ชันแก้ไข
+            card.querySelector(".button-edit").addEventListener("click", function () {
+                makeAllEditable(card);
+            });
+
+            // ฟังก์ชันบันทึก
+            card.querySelector(".button-save").addEventListener("click", function () {
+                saveChanges(card);
+            });
+
+            // ฟังก์ชันเพิ่มเซ็ต
+            card.querySelector(".button-addset").addEventListener("click", function () {
+                addSet(card);
+            });
+
+            // ฟังก์ชันเปลี่ยนหน่วยน้ำหนัก
+            card.querySelector(".button-unit").addEventListener("click", function () {
+                toggleUnit(card);
+            });
+
+            // ฟังก์ชันลบเซ็ต
+            card.querySelector(".button-deleteset").addEventListener("click", function () {
+                deleteSet(card);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

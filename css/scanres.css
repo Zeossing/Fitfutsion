@@ -1,0 +1,163 @@
+.mainscan {
+    margin-top: 80px;
+}
+
+.displayscan {
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+}
+
+.more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.video-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.video-container h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 4px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mainscan h2 { 
+    padding: 20px;
+    text-align: center;
+}
+
+.mainscan .col-6:first-child {
+    padding-left: 25px;
+    text-align: center;
+}
+
+.mainscan .col-6{
+    margin-bottom: 10px;
+}
+
+.mechine {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.time-res b{
+    font-size: 20px;
+}
+
+.time-res p {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.give-muscle b{
+    font-size: 20px;
+}
+
+.muscle-main {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.align-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.time-close {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.time-count {
+    display: inline-flex;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.time-close span{
+    font-size: 30px
+}
+
+.btn-success {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-confirm {
+    background-color: #00890b;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0 30px 0;
+    color: #fff;
+}
+
+.btn-confirm:hover {
+    background-color: #218838;
+}
+
+
+
