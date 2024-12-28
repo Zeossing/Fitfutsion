@@ -122,29 +122,35 @@ a {
 
 .col-12 , .head-column {
     text-align: center;
+    align-content: center;
 }
 
 
 .pic-row {
-    width: 10%;
+    width: 15%;
+}
+
+.groupD-icon {
+    width: 35%;
 }
 
 
 .pic-machine {
     width: 30%;
     margin: 10px 0;
+    filter: brightness(0.9);
 }
 
 .res {
-    filter: sepia(1) hue-rotate(90deg) saturate(2) brightness(1);
+    filter: sepia(1) hue-rotate(90deg) saturate(3) brightness(0.9);
 }
 
 .fail {
-    filter: sepia(1) hue-rotate(-50deg) saturate(3) brightness(1);
+    filter: sepia(1) hue-rotate(-50deg) saturate(3) brightness(0.9);
 }
 
 .wait{
-    filter: sepia(1) hue-rotate(-10deg) saturate(3) brightness(1);    
+    filter: sepia(1) hue-rotate(-10deg) saturate(3) brightness(0.9);    
 }
 
 .groupD{
