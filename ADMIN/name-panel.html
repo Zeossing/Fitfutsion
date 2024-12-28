@@ -16,10 +16,21 @@
 
             <!-- กล้ามเนื้อที่ได้: แบ่งเป็นสองส่วน -->
             <label for="primary-muscles">กล้ามเนื้อหลัก</label>
-            <input type="text" id="primary-muscles" name="primary_muscles" placeholder="กล้ามเนื้อหลัก" required>
-
+            <select id="primary-muscles" name="primary_muscles" required>
+                <option value="chest">อก</option>
+                <option value="back">หลัง</option>
+                <option value="sholder">หัวไหล่</option>
+                <option value="arm">แขน</option>
+                <option value="leg">ขา</option>
+                <option value="abs">หน้าท้อง</option>
+            </select>
             <label for="secondary-muscles">กล้ามเนื้อรอง</label>
-            <input type="text" id="secondary-muscles" name="secondary_muscles" placeholder="กล้ามเนื้อรอง">
+            <select id="secondary-muscles" name="secondary_muscles" required>
+                <option value="upper-chest">อกบน</option>
+                <option value="middle-chest">อกกลาง</option>
+                <option value="lower-chest">อกล่าง</option>
+
+            </select>
 
             <!-- อัปโหลดไฟล์ GIF -->
             <label for="exercise-gif">ไฟล์ GIF</label>

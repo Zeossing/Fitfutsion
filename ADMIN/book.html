@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>แก้ไขท่าออกกำลังกาย</title>
     <link rel="stylesheet" href="book.css">
+    
 </head>
 <body>
-    <h1>แก้ไขเกี่ยวกับการจองเครื่องออกกำลังกาย</h1>
+    
+    <h1 style="margin-top: 20px;">แก้ไขเกี่ยวกับการจองเครื่องออกกำลังกาย</h1>
 
     <!-- ควบคุมปุ่ม -->
     <div class="controls-container">
@@ -22,7 +24,7 @@
         </div>
         <div class="buttons-container">
             <button class="add-button" onclick="addData()">เพิ่มข้อมูล</button>
-            <button class="view-results-button" onclick="viewResults()">ตัวอย่างผลลัพธ์</button>
+            <a href="../reservation.html"><button class="view-results-button" onclick="viewResults()">ตัวอย่างผลลัพธ์</button></a>
         </div>
     </div>
 
@@ -89,9 +91,6 @@
             alert("เพิ่มข้อมูลใหม่!");
         }
 
-        function viewResults() {
-            alert("ดูตัวอย่างผลลัพธ์!");
-        }
     </script>
 </body>
 </html>
