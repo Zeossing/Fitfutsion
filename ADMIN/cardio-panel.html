@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Edit Cardio</title>
+    <link rel="stylesheet" href="cardio-panel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>แก้ไขข้อมูลการคาร์ดิโอ</h1>
+        <form action="/update-cardio" method="POST" enctype="multipart/form-data">
+            <!-- ชื่อคลิปวิดีโอ -->
+            <label for="video-name">ชื่อคลิปวิดีโอ</label>
+            <input type="text" id="video-name" name="video_name" placeholder="ชื่อคลิปวิดีโอ" required>
+
+            <!-- อัปโหลดรูป -->
+            <label for="cardio-image">รูป</label>
+            <input type="file" id="cardio-image" name="cardio_image" accept="image/*">
+
+            <!-- เวลาที่ใช้ -->
+            <label for="duration">เวลาที่ใช้</label>
+            <select id="duration" name="duration" required>
+                <option value="5">5 นาที</option>
+                <option value="10">10 นาที</option>
+                <option value="15">15 นาที</option>
+                <option value="20">20 นาที</option>
+                <option value="25">25 นาที</option>
+                <option value="30">30 นาที</option>
+            </select>
+
+            <!-- การเผาผลาญ -->
+            <label for="calories-burned">การเผาผลาญ</label>
+            <input type="text" id="calories-burned" name="calories_burned" placeholder="จำนวนแคลอรี่ที่เผาผลาญ" required>
+
+            <!-- ปุ่มบันทึก -->
+            <button type="submit">บันทึกข้อมูล</button>
+        </form>
+    </div>
+</body>

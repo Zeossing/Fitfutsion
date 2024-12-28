@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Edit Equipment</title>
+    <link rel="stylesheet" href="book-panel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>แก้ไขข้อมูลเครื่องออกกำลังกาย</h1>
+        <form action="/update-equipment" method="POST" enctype="multipart/form-data">
+            <!-- ชื่อเครื่องออกกำลังกาย -->
+            <label for="equipment-name">ชื่อเครื่องออกกำลังกาย</label>
+            <input type="text" id="equipment-name" name="equipment_name" placeholder="ชื่อเครื่องออกกำลังกาย" required>
+
+            <!-- อัปโหลดรูป -->
+            <label for="equipment-image">รูป</label>
+            <input type="file" id="equipment-image" name="equipment_image" accept="image/*">
+
+            <!-- เวลาที่ใช้น้อยที่สุด -->
+            <label for="min-duration">เวลาที่ใช้น้อยที่สุด</label>
+            <select id="min-duration" name="min_duration" required>
+                <option value="5">5 นาที</option>
+                <option value="10">10 นาที</option>
+                <option value="15">15 นาที</option>
+                <option value="20">20 นาที</option>
+                <option value="25">25 นาที</option>
+                <option value="30">30 นาที</option>
+            </select>
+
+            <!-- เวลาที่ใช้มากที่สุด -->
+            <label for="max-duration">เวลาที่ใช้มากที่สุด</label>
+            <select id="max-duration" name="max_duration" required>
+                <option value="5">5 นาที</option>
+                <option value="10">10 นาที</option>
+                <option value="15">15 นาที</option>
+                <option value="20">20 นาที</option>
+                <option value="25">25 นาที</option>
+                <option value="30">30 นาที</option>
+            </select>
+
+            <!-- สถานะ -->
+            <label for="status">สถานะ</label>
+            <select id="status" name="status" required>
+                <option value="available">พร้อมใช้งาน</option>
+                <option value="reserved">จองแล้ว</option>
+                <option value="unavailable">ไม่พร้อมใช้งาน</option>
+            </select>
+
+            <!-- ปุ่มบันทึก -->
+            <button type="submit">บันทึกข้อมูล</button>
+        </form>
+    </div>
+</body>
+</html>

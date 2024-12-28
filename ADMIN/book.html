@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แก้ไขท่าออกกำลังกาย</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <h1>แก้ไขเกี่ยวกับการจองเครื่องออกกำลังกาย</h1>
+
+    <!-- ควบคุมปุ่ม -->
+    <div class="controls-container">
+        <div>
+            <h2>แถวของเครื่องออกกำลังกาย</h2>
+            <div class="row-buttons">
+                <button class="add-button">A</button>
+                <button class="add-button">B</button>
+                <button class="add-button">C</button>
+                <button class="add-button">D</button>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button class="add-button" onclick="addData()">เพิ่มข้อมูล</button>
+            <button class="view-results-button" onclick="viewResults()">ตัวอย่างผลลัพธ์</button>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ลำดับ</th>
+                <th>ชื่อเครื่องออกกำลังกาย</th>
+                <th>รูป</th>
+                <th>เวลาที่ใช้น้อยที่สุด</th>
+                <th>เวลาที่ใช้มากที่สุด</th>
+                <th>สถานะ</th>
+                <th>คำอธิบาย</th>
+                <th>การจัดการ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>เครื่อง A1</td>
+                <td>A1.jpg</td>
+                <td>5 นาที</td>
+                <td>20 นาที</td>
+                <td style="color: green;"><b>พร้อมใช้งาน</b></td>
+                <td>คำอธิบาย...</td>
+                <td class="actions">
+                    <button class="edit-button"><a href="book-panel.html" style="color: white;">แก้ไข</a></button>
+                    <button class="delete-button">ลบ</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>เครื่อง A2</td>
+                <td>A1.jpg</td>
+                <td>5 นาที</td>
+                <td>20 นาที</td>
+                <td style="color: green;"><b>พร้อมใช้งาน</b></td>
+                <td>คำอธิบาย...</td>
+                <td class="actions">
+                    <button class="edit-button">แก้ไข</button>
+                    <button class="delete-button">ลบ</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>เครื่อง A3</td>
+                <td>A1.jpg</td>
+                <td>5 นาที</td>
+                <td>20 นาที</td>
+                <td style="color: green;"><b>พร้อมใช้งาน</b></td>
+                <td>คำอธิบาย...</td>
+                <td class="actions">
+                    <button class="edit-button">แก้ไข</button>
+                    <button class="delete-button">ลบ</button>
+                </td>
+            </tr>
+            
+            <!-- รายการเพิ่มเติม -->
+        </tbody>
+    </table>
+
+    <script>
+        function addData() {
+            alert("เพิ่มข้อมูลใหม่!");
+        }
+
+        function viewResults() {
+            alert("ดูตัวอย่างผลลัพธ์!");
+        }
+    </script>
+</body>
+</html>

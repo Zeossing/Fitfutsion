@@ -92,15 +92,14 @@
                     <div class="video-modal" id="videoModal">
                         <div class="video-container">
                             <button class="close-btn" id="closeBtn">&times;</button>
-                            <h3>ควิปวิดีโอสำหรับเครื่อง Leg Curl</h3>
-                            <iframe src="https://www.youtube.com/embed/P7-RxTVe6O0?si=7ySgacBOd8zpQTJm&amp;start=59" 
-                                title="YouTube video player" frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                            </iframe>
+                            <h3>ควิปวิดีโอสำหรับเครื่อง Mechine Incline Chest Press</h3>
+                            <iframe src="https://www.youtube.com/embed/bbbiEEAEsP8?si=qKN356DOgC8-5hOn"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <h2>เครื่อง: Leg Crul</h2>
+                    <h2>Mechine Incline Chest Press</h2>
                     <div class="row">
                         <div class="col-6">
                             <img class="mechine" src="./img/a1.jpg" alt="">
@@ -113,8 +112,8 @@
                             </div>
                             <div class="give-muscle">
                                 <b>กล้ามเนื้อที่ได้</b> <br>
-                                <img class="muscle-main" src="./img/icon_legB_muscle.png" alt="">
-                                <p>กล้ามเนื้อขาหลัง</p>
+                                <img class="muscle-main" src="./img/icon_chestB_muscle.png" alt="">
+                                <p>กล้ามอกด้านบน</p>
 
                             </div>
                         </div>
@@ -230,6 +229,19 @@
     </footer>
 
     <script>
+        // Show a SweetAlert2 popup when the page loads
+        Swal.fire({
+            title: 'เข้าสู่ระบบสำเร็จ!',
+            html: `
+                <p>ขอให้คุณออกกำลังกายอย่างปลอดภัยและมีความสุข</p>
+                <p style="color: red;">*กรุณาตรวจสอบเวลาการใช้งานที่เหลืออย่างสม่ำเสมอ*</p>
+            `,
+            icon: 'success',
+            confirmButtonText: 'ตกลง'
+        });
+    </script>
+
+    <script>
         const moreIcon = document.querySelector('.more');
         const videoModal = document.getElementById('videoModal');
         const closeBtn = document.getElementById('closeBtn');
@@ -269,15 +281,15 @@
                 cancelButtonText: 'ยกเลิก'
             }).then((result) => {
                 if (result.isConfirmed) {
-                Swal.fire(
-                    'สำเร็จ!',
-                    'การใช้งานเสร็จสิ้น.',
-                    'success'
-                ).then(() => {
-                    // Redirect to another page
-                    window.location.href = 'reservation.html'; 
-                });
-            }
+                    Swal.fire(
+                        'สำเร็จ!',
+                        'การใช้งานเสร็จสิ้น.',
+                        'success'
+                    ).then(() => {
+                        // Redirect to another page
+                        window.location.href = 'reservation.html';
+                    });
+                }
             });
         });
     </script>
