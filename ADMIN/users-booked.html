@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>แก้ไขการจองเครื่องออกกำลังกาย</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="users-booked.css">
+    <link rel="stylesheet" href="navbar.css">
     <script>
         function saveData() {
             alert("ได้บันทึกข้อมูลแล้ว!");
@@ -12,90 +14,136 @@
     </script>
 </head>
 <body>
-    <h1>รายชื่อผู้จองเครื่องออกกำลังกาย</h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="name-ex.html">ท่าออกกำลังกาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cardio.html">คาร์ดิโอ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book.html">แผนผังเครื่องออกกำลังกาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="users-booked.html">สถานะการจองของผู้ใช้งาน</a>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="row-container">
-        <h2>แถวของเครื่องออกกำลังกาย</h2>
-        <div class="row-buttons">
-            <button>A</button>
-            <button>B</button>
-            <button>C</button>
-            <button>D</button>
+            <!-- Profile Icon -->
+            <ul class="navbar-nav mb-2 mb-lg-0 profile ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle click" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../img/user.png" width="40px" height="40px" style="border-radius: 100%;">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="../index.html">ออกจากระบบ</a></li>
+                    </ul>
+                </li>
+            </ul>
+
         </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="mb-4">รายชื่อผู้จองเครื่องออกกำลังกาย</h1>
+
+        <div class="row-container mb-4">
+            <h2>แถวของเครื่องออกกำลังกาย</h2>
+            <div class="btn-group">
+                <button class="btn btn-primary">A</button>
+                <button class="btn btn-primary">B</button>
+                <button class="btn btn-primary">C</button>
+                <button class="btn btn-primary">D</button>
+            </div>
+        </div>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ลำดับ</th>
+                    <th>ชื่อเครื่องออกกำลังกาย</th>
+                    <th>ชื่อผู้จอง</th>
+                    <th>เบอร์โทร</th>
+                    <th>เวลาเริ่มต้น</th>
+                    <th>เวลาสิ้นสุด</th>
+                    <th>สถานะ</th>
+                    <th>การจัดการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" value="เครื่อง A1" class="form-control" readonly></td>
+                    <td><input type="text" value="ปรเมศ" class="form-control" readonly></td>
+                    <td><input type="text" value="0812345678" class="form-control" readonly></td>
+                    <td><input type="text" value="10:00" class="form-control" readonly></td>
+                    <td><input type="text" value="10:30" class="form-control" readonly></td>
+                    <td>
+                        <!-- สถานะที่สามารถแก้ไขได้ -->
+                        <select class="form-select" name="status">
+                            <option value="completed">เสร็จสิ้น</option>
+                            <option value="in_use" selected>กำลังใช้งาน</option>
+                            <option value="pending">รอดำเนินการ</option>
+                        </select>
+                    </td>
+                    <td class="actions">
+                        <button class="btn btn-success" onclick="saveData()">บันทึก</button>
+                        <button class="btn btn-danger">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" value="เครื่อง A2" class="form-control" readonly></td>
+                    <td><input type="text" value="เมธี" class="form-control" readonly></td>
+                    <td><input type="text" value="0898765432" class="form-control" readonly></td>
+                    <td><input type="text" value="11:00" class="form-control" readonly></td>
+                    <td><input type="text" value="11:30" class="form-control" readonly></td>
+                    <td>
+                        <!-- สถานะที่สามารถแก้ไขได้ -->
+                        <select class="form-select" name="status">
+                            <option value="completed">เสร็จสิ้น</option>
+                            <option value="in_use">กำลังใช้งาน</option>
+                            <option value="pending" selected>รอดำเนินการ</option>
+                        </select>
+                    </td>
+                    <td class="actions">
+                        <button class="btn btn-success" onclick="saveData()">บันทึก</button>
+                        <button class="btn btn-danger">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" value="เครื่อง A3" class="form-control" readonly></td>
+                    <td><input type="text" value="โจนาธาร" class="form-control" readonly></td>
+                    <td><input type="text" value="0845789789" class="form-control" readonly></td>
+                    <td><input type="text" value="11:00" class="form-control" readonly></td>
+                    <td><input type="text" value="11:30" class="form-control" readonly></td>
+                    <td>
+                        <!-- สถานะที่สามารถแก้ไขได้ -->
+                        <select class="form-select" name="status">
+                            <option value="completed">เสร็จสิ้น</option>
+                            <option value="in_use">กำลังใช้งาน</option>
+                            <option value="pending" selected>รอดำเนินการ</option>
+                        </select>
+                    </td>
+                    <td class="actions">
+                        <button class="btn btn-success" onclick="saveData()">บันทึก</button>
+                        <button class="btn btn-danger">ลบ</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>ลำดับ</th>
-                <th>ชื่อเครื่องออกกำลังกาย</th>
-                <th>ชื่อผู้จอง</th>
-                <th>เบอร์โทร</th>
-                <th>เวลาเริ่มต้น</th>
-                <th>เวลาสิ้นสุด</th>
-                <th>สถานะ</th>
-                <th>การจัดการ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td><input type="text" value="เครื่อง A1" readonly></td>
-                <td><input type="text" value="ปรเมศ" readonly></td>
-                <td><input type="text" value="0812345678" readonly></td>
-                <td><input type="text" value="10:00"></td>
-                <td><input type="text" value="10:30"></td>
-                <td>
-                    <select>
-                        <option value="completed">เสร็จสิ้น</option>
-                        <option value="in_use" selected>กำลังใช้งาน</option>
-                        <option value="pending">รอดำเนินการ</option>
-                    </select>
-                </td>
-                <td class="actions">
-                    <button class="save-button" onclick="saveData()">บันทึก</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td><input type="text" value="เครื่อง A2" readonly></td>
-                <td><input type="text" value="เมธี" readonly></td>
-                <td><input type="text" value="0898765432" readonly></td>
-                <td><input type="text" value="11:00"></td>
-                <td><input type="text" value="11:30"></td>
-                <td>
-                    <select>
-                        <option value="completed">เสร็จสิ้น</option>
-                        <option value="in_use">กำลังใช้งาน</option>
-                        <option value="pending" selected>รอดำเนินการ</option>
-                    </select>
-                </td>
-                <td class="actions">
-                    <button class="save-button" onclick="saveData()">บันทึก</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td><input type="text" value="เครื่อง A3" readonly></td>
-                <td><input type="text" value="โจนาธาร" readonly></td>
-                <td><input type="text" value="0845789789" readonly></td>
-                <td><input type="text" value="11:00"></td>
-                <td><input type="text" value="11:30"></td>
-                <td>
-                    <select>
-                        <option value="completed">เสร็จสิ้น</option>
-                        <option value="in_use">กำลังใช้งาน</option>
-                        <option value="pending" selected>รอดำเนินการ</option>
-                    </select>
-                </td>
-                <td class="actions">
-                    <button class="save-button" onclick="saveData()">บันทึก</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

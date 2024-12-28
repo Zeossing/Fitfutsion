@@ -4,49 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel - Edit Exercise</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="name-panel.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <div class="container">
-        <h1>แก้ไขข้อมูลท่าออกกำลังกาย</h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="name-ex.html">ท่าออกกำลังกาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cardio.html">คาร์ดิโอ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book.html">แผนผังเครื่องออกกำลังกาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="users-booked.html">สถานะการจองของผู้ใช้งาน</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Profile Icon -->
+            <ul class="navbar-nav mb-2 mb-lg-0 profile ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle click" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../img/user.png" width="40px" height="40px" style="border-radius: 100%;">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="../index.html">ออกจากระบบ</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="mb-4">แก้ไขข้อมูลท่าออกกำลังกาย</h1>
         <form action="/update-exercise" method="POST" enctype="multipart/form-data">
             <!-- ชื่อท่าออกกำลังกาย -->
-            <label for="exercise-name">ชื่อท่าออกกำลังกาย</label>
-            <input type="text" id="exercise-name" name="exercise_name" placeholder="ชื่อท่าออกกำลังกาย" required>
+            <div class="mb-3">
+                <label for="exercise-name" class="form-label">ชื่อท่าออกกำลังกาย</label>
+                <input type="text" id="exercise-name" name="exercise_name" class="form-control" placeholder="ชื่อท่าออกกำลังกาย" required>
+            </div>
 
             <!-- กล้ามเนื้อที่ได้: แบ่งเป็นสองส่วน -->
-            <label for="primary-muscles">กล้ามเนื้อหลัก</label>
-            <select id="primary-muscles" name="primary_muscles" required>
-                <option value="chest">อก</option>
-                <option value="back">หลัง</option>
-                <option value="sholder">หัวไหล่</option>
-                <option value="arm">แขน</option>
-                <option value="leg">ขา</option>
-                <option value="abs">หน้าท้อง</option>
-            </select>
-            <label for="secondary-muscles">กล้ามเนื้อรอง</label>
-            <select id="secondary-muscles" name="secondary_muscles" required>
-                <option value="upper-chest">อกบน</option>
-                <option value="middle-chest">อกกลาง</option>
-                <option value="lower-chest">อกล่าง</option>
+            <div class="mb-3">
+                <label for="primary-muscles" class="form-label">กล้ามเนื้อหลัก</label>
+                <select id="primary-muscles" name="primary_muscles" class="form-select" required>
+                    <option value="chest">อก</option>
+                    <option value="back">หลัง</option>
+                    <option value="shoulder">หัวไหล่</option>
+                    <option value="arm">แขน</option>
+                    <option value="leg">ขา</option>
+                    <option value="abs">หน้าท้อง</option>
+                </select>
+            </div>
 
-            </select>
+            <div class="mb-3">
+                <label for="secondary-muscles" class="form-label">กล้ามเนื้อรอง</label>
+                <select id="secondary-muscles" name="secondary_muscles" class="form-select" required>
+                    <option value="upper-chest">อกบน</option>
+                    <option value="middle-chest">อกกลาง</option>
+                    <option value="lower-chest">อกล่าง</option>
+                </select>
+            </div>
 
             <!-- อัปโหลดไฟล์ GIF -->
-            <label for="exercise-gif">ไฟล์ GIF</label>
-            <input type="file" id="exercise-gif" name="exercise_gif" accept="image/gif">
+            <div class="mb-3">
+                <label for="exercise-gif" class="form-label">ไฟล์ GIF</label>
+                <input type="file" id="exercise-gif" name="exercise_gif" class="form-control" accept="image/gif">
+            </div>
 
             <!-- เปลี่ยนลิงก์ YouTube -->
-            <label for="youtube-link">ลิงก์คลิป YouTube</label>
-            <input type="url" id="youtube-link" name="youtube_link" placeholder="ลิงก์คลิป YouTube" required>
+            <div class="mb-3">
+                <label for="youtube-link" class="form-label">ลิงก์คลิป YouTube</label>
+                <input type="url" id="youtube-link" name="youtube_link" class="form-control" placeholder="ลิงก์คลิป YouTube" required>
+            </div>
 
             <!-- รายละเอียดของคลิป YouTube -->
-            <label for="youtube-details">รายละเอียดของคลิป YouTube</label>
-            <textarea id="youtube-details" name="youtube_details" rows="5" placeholder="รายละเอียดเพิ่มเติมเกี่ยวกับคลิป"></textarea>
+            <div class="mb-3">
+                <label for="youtube-details" class="form-label">รายละเอียดของคลิป YouTube</label>
+                <textarea id="youtube-details" name="youtube_details" class="form-control" rows="5" placeholder="รายละเอียดเพิ่มเติมเกี่ยวกับคลิป"></textarea>
+            </div>
 
             <!-- ปุ่มบันทึก -->
-            <button type="submit">บันทึกข้อมูล</button>
+            <button type="submit" class="btn btn-primary">บันทึกข้อมูล</button>
         </form>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

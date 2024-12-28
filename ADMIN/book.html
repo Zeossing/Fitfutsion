@@ -4,93 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>แก้ไขท่าออกกำลังกาย</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="book.css">
-    
 </head>
 <body>
-    
-    <h1 style="margin-top: 20px;">แก้ไขเกี่ยวกับการจองเครื่องออกกำลังกาย</h1>
-
-    <!-- ควบคุมปุ่ม -->
-    <div class="controls-container">
-        <div>
-            <h2>แถวของเครื่องออกกำลังกาย</h2>
-            <div class="row-buttons">
-                <button class="add-button">A</button>
-                <button class="add-button">B</button>
-                <button class="add-button">C</button>
-                <button class="add-button">D</button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="name-ex.html">ท่าออกกำลังกาย</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cardio.html">คาร์ดิโอ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="book.html">แผนผังเครื่องออกกำลังกาย</a></li>
+                    <li class="nav-item"><a class="nav-link" href="users-booked.html">สถานะการจองของผู้ใช้งาน</a></li>
+                </ul>
             </div>
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../img/user.png" width="40px" height="40px" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="../index.html">ออกจากระบบ</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <div class="buttons-container">
-            <button class="add-button" onclick="addData()">เพิ่มข้อมูล</button>
-            <a href="../reservation.html"><button class="view-results-button" onclick="viewResults()">ตัวอย่างผลลัพธ์</button></a>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">แก้ไขเกี่ยวกับการจองเครื่องออกกำลังกาย</h1>
+
+        <!-- Exercise Row Selection -->
+        <div class="controls-container mb-12">
+            <h2>แถวของเครื่องออกกำลังกาย</h2>
+            
+            
+        </div>
+        <div class="btn-group mb-6">
+            <button class="btn btn-primary">A</button>
+            <button class="btn btn-primary">B</button>
+            <button class="btn btn-primary">C</button>
+            <button class="btn btn-primary">D</button>
+        </div>
+        <div class=" mb-6 d-flex justify-content-end">
+            <button class="btn btn-success" id="addDataButton">เพิ่มข้อมูล</button>
+            <a href="../reservation.html" class="btn btn-info ms-2">ตัวอย่างผลลัพธ์</a>
+        </div>
+
+        <!-- Exercise Equipment Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>ลำดับ</th>
+                        <th>ชื่อเครื่องออกกำลังกาย</th>
+                        <th>รูป</th>
+                        <th>เวลาที่ใช้น้อยที่สุด</th>
+                        <th>เวลาที่ใช้มากที่สุด</th>
+                        <th>สถานะ</th>
+                        <th>คำอธิบาย</th>
+                        <th>การจัดการ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table Rows -->
+                    <tr>
+                        <td>1</td>
+                        <td>เครื่อง A1</td>
+                        <td>A1.jpg</td>
+                        <td>5 นาที</td>
+                        <td>20 นาที</td>
+                        <td class="text-success"><b>พร้อมใช้งาน</b></td>
+                        <td>คำอธิบาย...</td>
+                        <td class="d-flex justify-content-around">
+                            <button class="btn btn-warning"><a href="book-panel.html" class="text-white">แก้ไข</a></button>
+                            <button class="btn btn-danger" onclick="deleteRow(this)">ลบ</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>เครื่อง A2</td>
+                        <td>A2.jpg</td>
+                        <td>5 นาที</td>
+                        <td>20 นาที</td>
+                        <td class="text-success"><b>พร้อมใช้งาน</b></td>
+                        <td>คำอธิบาย...</td>
+                        <td class="d-flex justify-content-around">
+                            <button class="btn btn-warning"><a href="book-panel.html" class="text-white">แก้ไข</a></button>
+                            <button class="btn btn-danger" onclick="deleteRow(this)">ลบ</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>เครื่อง A3</td>
+                        <td>A3.jpg</td>
+                        <td>5 นาที</td>
+                        <td>20 นาที</td>
+                        <td class="text-success"><b>พร้อมใช้งาน</b></td>
+                        <td>คำอธิบาย...</td>
+                        <td class="d-flex justify-content-around">
+                            <button class="btn btn-warning"><a href="book-panel.html" class="text-white">แก้ไข</a></button>
+                            <button class="btn btn-danger" onclick="deleteRow(this)">ลบ</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>ลำดับ</th>
-                <th>ชื่อเครื่องออกกำลังกาย</th>
-                <th>รูป</th>
-                <th>เวลาที่ใช้น้อยที่สุด</th>
-                <th>เวลาที่ใช้มากที่สุด</th>
-                <th>สถานะ</th>
-                <th>คำอธิบาย</th>
-                <th>การจัดการ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>เครื่อง A1</td>
-                <td>A1.jpg</td>
-                <td>5 นาที</td>
-                <td>20 นาที</td>
-                <td style="color: green;"><b>พร้อมใช้งาน</b></td>
-                <td>คำอธิบาย...</td>
-                <td class="actions">
-                    <button class="edit-button"><a href="book-panel.html" style="color: white;">แก้ไข</a></button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>เครื่อง A2</td>
-                <td>A1.jpg</td>
-                <td>5 นาที</td>
-                <td>20 นาที</td>
-                <td style="color: green;"><b>พร้อมใช้งาน</b></td>
-                <td>คำอธิบาย...</td>
-                <td class="actions">
-                    <button class="edit-button">แก้ไข</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>เครื่อง A3</td>
-                <td>A1.jpg</td>
-                <td>5 นาที</td>
-                <td>20 นาที</td>
-                <td style="color: green;"><b>พร้อมใช้งาน</b></td>
-                <td>คำอธิบาย...</td>
-                <td class="actions">
-                    <button class="edit-button">แก้ไข</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            
-            <!-- รายการเพิ่มเติม -->
-        </tbody>
-    </table>
-
+    <!-- JavaScript -->
     <script>
-        function addData() {
+        // Function to add data (for demo purposes)
+        document.getElementById('addDataButton').addEventListener('click', function() {
             alert("เพิ่มข้อมูลใหม่!");
-        }
+        });
 
+        // Function to delete a row from the table
+        function deleteRow(button) {
+            if (confirm('คุณแน่ใจว่าต้องการลบข้อมูลนี้?')) {
+                var row = button.closest('tr');
+                row.remove();
+            }
+        }
     </script>
 </body>
 </html>

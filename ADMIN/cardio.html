@@ -1,119 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>แก้ไขท่าออกกำลังกาย</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="cardio.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
+
 <body>
-    <h1>แก้ไขเกี่ยวกับคาร์ดิโอ</h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="name-ex.html">ท่าออกกำลังกาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cardio.html">คาร์ดิโอ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book.html">แผนผังเครื่องออกกำลังกาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="users-booked.html">สถานะการจองของผู้ใช้งาน</a>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="buttons-container">
-        <button class="add-button" onclick="addData()">เพิ่มข้อมูล</button>
-        <a href="../recoment-cadio/cardio-2.html"><button class="view-results-button" onclick="viewResults()">ตัวอย่างผลลัพธ์</button></a>
+            <!-- Profile Icon -->
+            <ul class="navbar-nav mb-2 mb-lg-0 profile ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle click" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../img/user.png" width="40px" height="40px" style="border-radius: 100%;">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="../index.html">ออกจากระบบ</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">แก้ไขเกี่ยวกับคาร์ดิโอ</h1>
+
+        <!-- ปุ่มเพิ่มข้อมูลและดูผลลัพธ์ -->
+        <div class="d-flex justify-content-end mb-4">
+            <button class="btn btn-success" onclick="addData()">เพิ่มข้อมูล</button>
+            <a href="../recoment-cadio/cardio-2.html"><button class="btn btn-primary">ตัวอย่างผลลัพธ์</button></a>
+        </div>
+
+        <!-- ตารางข้อมูลการคาร์ดิโอ -->
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ลำดับ</th>
+                    <th>ชื่อคลิปการคาร์ดิโอ</th>
+                    <th>รูป</th>
+                    <th>เวลาที่ใช้</th>
+                    <th>การเผาผลาญ</th>
+                    <th>วีดีโอ</th>
+                    <th>คำอธิบาย</th>
+                    <th>การจัดการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>คาร์ดิโอเบิร์นไขมัน 15 นาที ท่าง่าย ไม่กระโดด</td>
+                    <td>A1.jpg</td>
+                    <td>15-30 นาที</td>
+                    <td>150 แคลอรี่</td>
+                    <td><a href="#">ลิงก์</a></td>
+                    <td>คำอธิบาย...</td>
+                    <td class="actions">
+                        <button class="btn btn-warning"><a href="cardio-panel.html"
+                                class="text-white">แก้ไข</a></button>
+                        <button class="btn btn-danger">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>คาร์ดิโอ 30 นาที ไขมันลด ท่าง่าย ไม่กระโดด</td>
+                    <td>A2.jpg</td>
+                    <td>15-30 นาที</td>
+                    <td>150 แคลอรี่</td>
+                    <td><a href="#">ลิงก์</a></td>
+                    <td>คำอธิบาย...</td>
+                    <td class="actions">
+                        <button class="btn btn-warning">แก้ไข</button>
+                        <button class="btn btn-danger">ลบ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>15 MIN STANDING CARDIO</td>
+                    <td>A3.jpg</td>
+                    <td>15-30 นาที</td>
+                    <td>150 แคลอรี่</td>
+                    <td><a href="#">ลิงก์</a></td>
+                    <td>คำอธิบาย...</td>
+                    <td class="actions">
+                        <button class="btn btn-warning">แก้ไข</button>
+                        <button class="btn btn-danger">ลบ</button>
+                    </td>
+                </tr>
+                <!-- เพิ่มเติมข้อมูล -->
+            </tbody>
+        </table>
     </div>
-
-    <table>
-        <thead>
-            <tr>
-                <th>ลำดับ</th>
-                <th>ชื่อคลิปการคาร์ดิโอ</th>
-                <th>รูป</th>
-                <th>เวลาที่ใช้</th>
-                <th>การเผาผลาญ</th>
-                <th>วีดีโอ</th>
-                <th>คำอธิบาย</th>
-                <th>การจัดการ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>คาร์ดิโอเบิร์นไขมัน 15 นาที ท่าง่าย ไม่กระโดด</td>
-                <td>A1.jpg</td>
-                <td>15-30 นาที</td>
-                <td>150 แคลอรี่</td>
-                <td><a href="#">ลิงก์</a></td>
-                <td>คำอธิบาย...</td>
-                <td class="actions">
-                    <button class="edit-button"><a href="cardio-panel.html" style="color: white;">แก้ไข</a></button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td> คาร์ดิโอ 30 นาที ไขมันลด ท่าง่าย ไม่กระโดด </td>
-                <td>A2.jpg</td>
-                <td>15-30 นาที</td>
-                <td>150 แคลอรี่</td>
-                <td><a href="#">ลิงก์</a></td>
-                <td>คำอธิบาย...</td>
-                <td class="actions">
-                    <button class="edit-button">แก้ไข</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>15 MIN STANDING CARDIO</td>
-                <td>A3.jpg</td>
-                <td>15-30 นาที</td>
-                <td>150 แคลอรี่</td>
-                <td><a href="#">ลิงก์</a></td>
-                <td>คำอธิบาย...</td>
-                <td class="actions">
-                    <button class="edit-button">แก้ไข</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>คาร์ดิโอ 30 นาที ออกกกำลังกายลดไขมัน</td>
-                <td>A4.jpg</td>
-                <td>15-30 นาที</td>
-                <td>150 แคลอรี่</td>
-                <td><a href="#">ลิงก์</a></td>
-                <td>คำอธิบาย...</td>
-                <td class="actions">
-                    <button class="edit-button">แก้ไข</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>20 นาที คาร์ดิโอ ลดน้ำหนัก แบบยืน ทำตามง่ายๆได้ที่บ้าน</td>
-                <td>A5.jpg</td>
-                <td>15-30 นาที</td>
-                <td>150 แคลอรี่</td>
-                <td><a href="#">ลิงก์</a></td>
-                <td>คำอธิบาย...</td>
-                <td class="actions">
-                    <button class="edit-button">แก้ไข</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>30 นาที คาร์ดิโอง่ายๆ ออกกำลังกายทั่วร่าง ลดทุกส่วน</td>
-                <td>A6.jpg</td>
-                <td>15-30 นาที</td>
-                <td>150 แคลอรี่</td>
-                <td><a href="#">ลิงก์</a></td>
-                <td>คำอธิบาย...</td>
-                <td class="actions">
-                    <button class="edit-button">แก้ไข</button>
-                    <button class="delete-button">ลบ</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
 
     <script>
         function addData() {
             alert("เพิ่มข้อมูลใหม่!");
         }
-
     </script>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
