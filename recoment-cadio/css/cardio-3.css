@@ -246,6 +246,11 @@ h4 {
 
 .radius {
   border-radius: 5px;
+
+}
+.mb {
+
+
 }
 
 .video-frame {
@@ -271,3 +276,11 @@ h4.kanit {
 }
 
 
+@media screen and (max-width: 600) {
+  .pc {
+    display: none;
+  }
+  .mb {
+    display: flex;
+  }
+}
